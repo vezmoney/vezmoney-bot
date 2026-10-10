@@ -82,6 +82,9 @@ const mediodia = (f) => ({ ...f, pill: "FERIADO EN CHILE", fecha: f.dia, texto: 
 const feedF = (f) => ({ ...f, pill: "FERIADO EN CHILE", fecha: f.dia, mensaje: "Hoy trabajamos **con normalidad**", detalle: `Atendemos de ${f.horario}` });
 const domingo = (f) => ({ ...f, pill: "FERIADO EN CHILE", fecha: f.dia, texto: "Un día para recordar y acompañar a quienes ya no están. Hoy descansamos en familia.", mensaje: "Hoy **descansamos**", detalle: "Retomamos el lunes 2 de noviembre desde las 08:30.", cta: "COTIZA EN VEZMONEY.COM" });
 
+// Recordatorio del domingo 11: mañana, feriado, trabajamos con horario normal
+const recordatorio = { pill: "MAÑANA, LUNES 12 DE OCTUBRE", fecha: "Domingo 11 de octubre", titulo: "Mañana trabajamos **con normalidad**", texto: "Aunque mañana lunes 12 es feriado, estaremos atendiendo en nuestro horario habitual.", mensaje: "Cotiza y envía **desde las 08:30**", detalle: "Lunes 12 de octubre, de 08:30 a 20:00.", photo: "fer_barco-atardecer", pos: "50% 45%" };
+
 export const captionFeriado = (f) => `Hoy ${f.dia.toLowerCase()} es feriado en Chile: ${f.nombre} ${f.emoji}
 
 ${f.texto}
@@ -127,6 +130,7 @@ if (process.argv[1]?.endsWith("avisos.mjs")) {
     await R(story(mediodia(f)), `content/feriados/${f.date}_story-mediodia.jpg`, 1920);
     await R(feed(feedF(f)), `content/feriados/${f.date}_feed.jpg`, 1350);
   }
+  await R(story(recordatorio), "content/feriados/2026-10-11_story-recordatorio.jpg", 1920);
   await R(story(domingo(DOMINGO)), `content/feriados/${DOMINGO.date}_story-domingo.jpg`, 1920);
   for (const p of PAISES) await R(story(paisStory(p)), `content/feriados-paises/${p.date}_story-${p.code.toLowerCase()}.jpg`, 1920);
   for (const p of CIERRES) await R(p.tipo === "story" ? story(p) : feed(p), `content/cierres/${p.id}.jpg`, p.tipo === "story" ? 1920 : 1350);
