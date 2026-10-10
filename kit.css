@@ -1,0 +1,18 @@
+/* vezmoney-bot · kit.css — sistema visual VezMoney 2026: azul protagonista, blanco, rosa solo como acento (feed 1080x1350 y story 1080x1920) */
+@font-face{font-family:"Inter";src:url("assets/fonts/Inter-400.ttf");font-weight:400}
+@font-face{font-family:"Inter";src:url("assets/fonts/Inter-500.ttf");font-weight:500}
+@font-face{font-family:"Inter";src:url("assets/fonts/Inter-600.ttf");font-weight:600}
+@font-face{font-family:"Inter";src:url("assets/fonts/Inter-700.ttf");font-weight:700}
+@font-face{font-family:"Inter";src:url("assets/fonts/Inter-800.ttf");font-weight:800}
+@font-face{font-family:"Inter";src:url("assets/fonts/Inter-900.ttf");font-weight:900}
+:root{
+  --azul:#001C70; --vez:#03258C; --cielo:#5B8CFF; --lav:#A3A7F7; --turq:#22C7C9; --rosa:#F20775;
+  --tinta:#191919; --grafito:#2F3441; --gris:#5D6574; --gris50:#8E96A6; --gris20:#D8DDE8; --nube:#F6F7FB; --white:#fff; --exito:#15B86A;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow:hidden;font-family:"Inter","Arial",sans-serif;color:var(--azul);font-variant-numeric:tabular-nums}
+#root{position:relative;overflow:hidden}
+body.story,body.story #root{width:1080px;height:1920px}
+body.feed,body.feed #root{width:1080px;height:1350px}
+.abs{position:absolute}
+.m{font-family:"Inter","Arial",sans-serif;letter-spacing:-.02em}

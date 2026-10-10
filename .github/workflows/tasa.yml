@@ -1,0 +1,94 @@
+name: Publicaciones de tasa VezMoney
+
+on:
+  schedule:
+    # Varios intentos por hora (minutos 2, 12, 24 y 36 UTC): GitHub atrasa los cron entre 10 y 25 min, y el primero que llegue publica;
+    # los demás salen en 1 segundo sin hacer nada. El script decide por la HORA Y EL DÍA DE CHILE si toca publicar,
+    # así que no importa el cambio de horario de verano/invierno (UTC 11–20 cubre las 8–16 h de Chile en ambos).
+    - cron: "2 11-20 * * *"
+    - cron: "12 11-20 * * *"
+    - cron: "24 11-20 * * *"
+    - cron: "36 11-20 * * *"
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "vista-previa = genera todas las plantillas (no publica) · check = prueba el token de Metricool · borrador = prueba completa con borradores (no publica) · publicar = publica de verdad"
+        type: choice
+        options: [vista-previa, check, borrador, publicar]
+        default: vista-previa
+      hora:
+        description: "(opcional) forzar hora de Chile 0-23, solo para modo publicar"
+        required: false
+      fecha:
+        description: "(opcional) forzar fecha AAAA-MM-DD, solo para pruebas"
+        required: false
+
+concurrency:
+  group: vezmoney-bot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ¿Hay algo que publicar a esta hora?
+        id: chk
+        env:
+          EVENT: ${{ github.event_name }}
+          METRICOOL_TOKEN: ${{ secrets.METRICOOL_TOKEN }}
+        run: node src/should-run.mjs
+
+      - uses: actions/setup-node@v4
+        if: steps.chk.outputs.go == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+        if: steps.chk.outputs.go == 'true'
+
+      - uses: actions/cache@v4
+        if: steps.chk.outputs.go == 'true'
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('package-lock.json') }}
+
+      - run: npx playwright install --with-deps chromium
+        if: steps.chk.outputs.go == 'true'
+
+      - name: Identidad de git para guardar las imágenes
+        if: steps.chk.outputs.go == 'true'
+        run: |
+          git config user.name "vezmoney-bot"
+          git config user.email "vezmoney-bot@users.noreply.github.com"
+
+      - name: Ejecutar
+        if: steps.chk.outputs.go == 'true'
+        env:
+          METRICOOL_TOKEN: ${{ secrets.METRICOOL_TOKEN }}
+          METRICOOL_USER_ID: ${{ secrets.METRICOOL_USER_ID }}
+          METRICOOL_BLOG_ID: ${{ secrets.METRICOOL_BLOG_ID }}
+          EVENT: ${{ github.event_name }}
+          MODO: ${{ inputs.modo || 'publicar' }}
+          FORCE_HOUR: ${{ inputs.hora }}
+          FORCE_DATE: ${{ inputs.fecha }}
+        run: |
+          case "$MODO" in
+            vista-previa) node src/preview.mjs ;;
+            check)        node src/run.mjs --check ;;
+            borrador)     node src/run.mjs --draft ;;
+            *)            node src/run.mjs ;;
+          esac
+
+      - name: Guardar las imágenes de la vista previa
+        if: ${{ inputs.modo == 'vista-previa' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: vista-previa
+          path: preview/

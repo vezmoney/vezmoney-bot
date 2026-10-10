@@ -1,0 +1,15 @@
+node_modules/
+page.html
+preview/
+.DS_Store
+demos/
+tools/
+src/_sheet.mjs
+sheets/
+tools/
+assets/broll/
+assets/photos/dev*.jpg
+assets/photos/_sheet*.jpg
+tools/_stock/
+_stock/
+pres/

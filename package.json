@@ -1,0 +1,12 @@
+{
+  "name": "vezmoney-bot",
+  "private": true,
+  "type": "module",
+  "description": "Publica automáticamente las historias y el post de tasa de VezMoney (datos reales de api.vezmoney.com) vía Metricool",
+  "scripts": {
+    "preview": "node src/preview.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.63.0"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "timezone": "America/Santiago",
+  "maxLateMinutes": 45,
+  "maxRateAgeMinutes": 100,
+  "publishDelayMinutes": 3,
+  "keepDays": 3,
+  "slots": [
+    {
+      "hour": 8,
+      "corridor": "BS",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "hour": 9,
+      "corridor": "BS",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "alsoFeed": true
+    },
+    {
+      "hour": 10,
+      "corridor": "BS",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "hour": 11,
+      "corridor": "BS",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "hour": 12,
+      "corridor": "BS",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "hour": 13,
+      "corridor": "PE",
+      "days": [
+        6
+      ]
+    },
+    {
+      "hour": 14,
+      "corridor": "CO",
+      "days": [
+        6
+      ]
+    },
+    {
+      "hour": 15,
+      "corridor": "PE",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "hour": 16,
+      "corridor": "CO",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "networks": {
+    "story": [
+      "instagram",
+      "facebook"
+    ],
+    "post": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ]
+  },
+  "closedDates": [],
+  "dayOverrides": {},
+  "paused": true
+}
