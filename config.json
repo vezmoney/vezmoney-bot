@@ -7,7 +7,7 @@
   "slots": [
     {
       "hour": 8,
-      "corridor": "BS",
+      "corridor": "CLVE",
       "days": [
         1,
         2,
@@ -19,7 +19,7 @@
     },
     {
       "hour": 9,
-      "corridor": "BS",
+      "corridor": "CLVE",
       "days": [
         1,
         2,
@@ -32,7 +32,7 @@
     },
     {
       "hour": 10,
-      "corridor": "BS",
+      "corridor": "CLVE",
       "days": [
         1,
         2,
@@ -44,7 +44,7 @@
     },
     {
       "hour": 11,
-      "corridor": "BS",
+      "corridor": "CLVE",
       "days": [
         1,
         2,
@@ -56,7 +56,7 @@
     },
     {
       "hour": 12,
-      "corridor": "BS",
+      "corridor": "CLVE",
       "days": [
         1,
         2,
@@ -68,39 +68,51 @@
     },
     {
       "hour": 13,
-      "corridor": "PE",
+      "corridor": "CLPE",
       "days": [
         6
       ]
     },
     {
       "hour": 14,
-      "corridor": "CO",
+      "corridor": "CLCO",
       "days": [
         6
       ]
     },
     {
       "hour": 15,
-      "corridor": "PE",
       "days": [
         1,
         2,
         3,
         4,
         5
-      ]
+      ],
+      "corridorByDay": {
+        "1": "CLPE",
+        "2": "PEVE",
+        "3": "CLEC",
+        "4": "CLUS",
+        "5": "PEVE"
+      }
     },
     {
       "hour": 16,
-      "corridor": "CO",
       "days": [
         1,
         2,
         3,
         4,
         5
-      ]
+      ],
+      "corridorByDay": {
+        "1": "CLCO",
+        "2": "COVE",
+        "3": "CLAR",
+        "4": "CLPE",
+        "5": "COVE"
+      }
     }
   ],
   "networks": {
@@ -116,5 +128,6 @@
   },
   "closedDates": [],
   "dayOverrides": {},
-  "paused": true
+  "paused": true,
+  "showDisclaimer": false
 }

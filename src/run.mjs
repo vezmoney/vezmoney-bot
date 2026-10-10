@@ -41,8 +41,9 @@ const dayOfYear = Math.floor((Date.UTC(now.y, now.mo - 1, now.d) - Date.UTC(now.
 // slots del día (por día de la semana) y su posición entre las historias Chile→Venezuela
 const ov = cfg.dayOverrides?.[now.date] ?? {}; // horarios especiales por fecha (cierre temprano, menos historias)
 const todaySlots = ov.slots ?? cfg.slots.filter((s) => s.days.includes(weekday));
-const slot = todaySlots.find((s) => s.hour === now.h);
-const bsIndex = slot ? todaySlots.filter((s) => s.corridor === "BS").findIndex((s) => s.hour === slot.hour) : -1;
+const slot0 = todaySlots.find((s) => s.hour === now.h);
+const slot = slot0 ? { ...slot0, corridor: slot0.corridorByDay?.[weekday] ?? slot0.corridor } : undefined; // corridor del día (la tarde cambia según el día)
+const bsIndex = slot ? todaySlots.filter((s) => (s.corridorByDay?.[weekday] ?? s.corridor) === "CLVE").findIndex((s) => s.hour === slot.hour) : -1;
 
 const BS_ORDER = ["s", "g", "t", "q"]; // las 5 historias Chile→Venezuela del día recorren las 4 plantillas de la familia (la 5.ª repite la 1.ª con otra foto)
 function pickPhoto(fam, key, code, idx = 0) {
@@ -60,9 +61,9 @@ async function buildContext() {
   };
   checkFresh(data, cor.label);
   const fam = FAMILY_FOR_WEEKDAY[weekday];
-  const tplKey = slot.corridor === "BS" ? BS_ORDER[bsIndex % 4] : "corridor";
-  const photo = pickPhoto(fam, tplKey, slot.corridor, slot.corridor === "BS" ? bsIndex / 4 : 0);
-  const x = { ...data, cor, set: fam, photo: photo.file, pos: photo.pos, tip: tipFor(dayOfYear, bsIndex < 0 ? 0 : bsIndex), note: hoursNote(weekday, slot.hour, ov.closing), disclaimer: disclaimer(data.hh) };
+  const tplKey = slot.corridor === "CLVE" ? BS_ORDER[bsIndex % 4] : "corridor";
+  const photo = pickPhoto(fam, tplKey, slot.corridor, slot.corridor === "CLVE" ? bsIndex / 4 : 0);
+  const x = { ...data, cor, set: fam, disc: cfg.showDisclaimer === true, second: slot.corridor === "CLVE" && bsIndex >= 4, photo: photo.file, pos: photo.pos, tip: tipFor(dayOfYear, bsIndex < 0 ? 0 : bsIndex), note: hoursNote(weekday, slot.hour, ov.closing), disclaimer: disclaimer(data.hh) };
   let feed = null;
   if (slot.alsoFeed) {
     const fk = feedForWeekday[weekday], plan = FEED_PLAN[fk];

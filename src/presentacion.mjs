@@ -3,7 +3,7 @@ import fs from "node:fs";
 import { getSeries } from "./data.mjs";
 import { hoursNote, tipFor, disclaimer } from "./info.mjs";
 import { CORRIDORS } from "./common.mjs";
-import { FAMILIES, FAMILY_FOR_WEEKDAY, wrapStory } from "./templates.mjs";
+import { FAMILIES, FAMILY_FOR_WEEKDAY, AFTERNOON, wrapStory } from "./templates.mjs";
 import { FEED_PLAN, buildFeed } from "./feed.mjs";
 import { PHOTOS, FEED_PHOTOS } from "./photos.mjs";
 import { renderPage, closeBrowser } from "./render.mjs";
@@ -21,16 +21,16 @@ const only = process.argv[2];
 for (const wd of [1, 2, 3, 4, 5, 6]) {
   if (only && String(wd) !== only) continue;
   const fam = FAMILY_FOR_WEEKDAY[wd], F = FAMILIES[fam], P = PHOTOS[fam];
-  const ctx = async (code, photo) => { const cor = CORRIDORS[code], d = await get(cor); return { ...d, cor, set: fam, photo: photo.file, pos: photo.pos, tip: tipFor(5, 0), note: hoursNote(wd, 10), disclaimer: disclaimer(d.hh) }; };
-  const hrsPeCo = wd === 6 ? [13, 14] : [15, 16];
+  const ctx = async (code, photo, second = false) => { const cor = CORRIDORS[code], d = await get(cor); return { ...d, cor, set: fam, second, disc: false, photo: photo.file, pos: photo.pos, tip: tipFor(5, 0), note: hoursNote(wd, 10), disclaimer: disclaimer(d.hh) }; };
+  const hrsPeCo = wd === 6 ? [13, 14] : [15, 16], [c1, c2] = AFTERNOON[wd];
   const items = [
-    ["8:00 · Chile → Venezuela", "s", "BS", P.s[0]], ["9:00 · Chile → Venezuela", "g", "BS", P.g[0]], ["10:00 · Chile → Venezuela", "t", "BS", P.t[0]], ["11:00 · Chile → Venezuela", "q", "BS", P.q[0]],
-    ["12:00 · Chile → Venezuela", "s", "BS", P.s[1]], [`${hrsPeCo[0]}:00 · Perú → Venezuela`, "corridor", "PE", P.corridor.PE[0]], [`${hrsPeCo[1]}:00 · Colombia → Venezuela`, "corridor", "CO", P.corridor.CO[0]],
+    ["8:00 · Chile → Venezuela", "s", "CLVE", P.s[0], false], ["9:00 · Chile → Venezuela", "g", "CLVE", P.g[0], false], ["10:00 · Chile → Venezuela", "t", "CLVE", P.t[0], false], ["11:00 · Chile → Venezuela", "q", "CLVE", P.q[0], false],
+    ["12:00 · Chile → Venezuela", "s", "CLVE", P.s[1], true], [`${hrsPeCo[0]}:00 · ${CORRIDORS[c1].label}`, "corridor", c1, P.corridor[c1][0], false], [`${hrsPeCo[1]}:00 · ${CORRIDORS[c2].label}`, "corridor", c2, P.corridor[c2][0], false],
   ];
   const files = [];
-  for (const [i, [label, key, code, photo]] of items.entries()) {
+  for (const [i, [label, key, code, photo, second]] of items.entries()) {
     const out = `pres/${wd}_s${i}.jpg`;
-    await renderPage(wrapStory(F[key](await ctx(code, photo))), { width: 1080, height: 1920, out });
+    await renderPage(wrapStory(F[key](await ctx(code, photo, second))), { width: 1080, height: 1920, out });
     files.push([label, out]);
   }
   const fk = `f${wd}`, plan = FEED_PLAN[fk], d = await get(plan.main);

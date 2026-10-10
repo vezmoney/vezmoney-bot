@@ -526,5 +526,126 @@
   "expression": "sonrisa orgullosa, cielo azul",
   "pos": "50% 31%",
   "notes": "polera negra sin mangas, cielo azul"
+ },
+ {
+  "file": "ec01.jpg",
+  "source": "pexels",
+  "id": "18506935",
+  "author": "Diego F. Parra",
+  "page": "https://www.pexels.com/photo/neo-gothic-basilica-of-the-national-vow-in-quito-18506935/",
+  "gender": "none",
+  "expression": "Basílica del Voto Nacional, Quito",
+  "pos": "50% 50%",
+  "notes": ""
+ },
+ {
+  "file": "ec02.jpg",
+  "source": "pexels",
+  "id": "33598990",
+  "author": "Marx Ramirez",
+  "page": "https://www.pexels.com/photo/scenic-view-of-santa-ana-hill-guayaquil-33598990/",
+  "gender": "none",
+  "expression": "Cerro Santa Ana y Las Peñas, Guayaquil",
+  "pos": "50% 50%",
+  "notes": ""
+ },
+ {
+  "file": "ec03.jpg",
+  "source": "pexels",
+  "id": "27939461",
+  "author": "Jim Morris",
+  "page": "https://www.pexels.com/photo/el-nevado-mas-alto-del-mundo-chimborazo-27939461/",
+  "gender": "none",
+  "expression": "Volcán Cotopaxi y carretera andina",
+  "pos": "50% 50%",
+  "notes": ""
+ },
+ {
+  "file": "ar01.jpg",
+  "source": "pexels",
+  "id": "13546769",
+  "author": "Jenny  Ochoa",
+  "page": "https://www.pexels.com/photo/motor-vehicles-on-the-road-13546769/",
+  "gender": "none",
+  "expression": "Obelisco, Buenos Aires",
+  "pos": "50% 50%",
+  "notes": ""
+ },
+ {
+  "file": "ar02.jpg",
+  "source": "pexels",
+  "id": "8242966",
+  "author": "Ana Benet",
+  "page": "https://www.pexels.com/photo/colorful-houses-8242966/",
+  "gender": "none",
+  "expression": "Caminito, La Boca, Buenos Aires",
+  "pos": "50% 50%",
+  "notes": ""
+ },
+ {
+  "file": "ar03.jpg",
+  "source": "pexels",
+  "id": "30116780",
+  "author": "Rafael Arroyo",
+  "page": "https://www.pexels.com/photo/spectacular-view-of-perito-moreno-glacier-in-argentina-30116780/",
+  "gender": "none",
+  "expression": "Glaciar Perito Moreno, Patagonia",
+  "pos": "50% 50%",
+  "notes": ""
+ },
+ {
+  "file": "us01.jpg",
+  "source": "pexels",
+  "id": "16022149",
+  "author": "Fatih Turan",
+  "page": "https://www.pexels.com/photo/yacht-sailing-under-bridge-in-city-river-16022149/",
+  "gender": "none",
+  "expression": "Puente de Brooklyn y One World Trade, Nueva York",
+  "pos": "50% 50%",
+  "notes": ""
+ },
+ {
+  "file": "us02.jpg",
+  "source": "pexels",
+  "id": "29580357",
+  "author": "Matteo Roman",
+  "page": "https://www.pexels.com/photo/statue-of-liberty-against-clear-blue-sky-29580357/",
+  "gender": "none",
+  "expression": "Estatua de la Libertad, Nueva York",
+  "pos": "50% 50%",
+  "notes": ""
+ },
+ {
+  "file": "us03.jpg",
+  "source": "pexels",
+  "id": "35076230",
+  "author": "Stephen Leonardi",
+  "page": "https://www.pexels.com/photo/golden-gate-bridge-at-dusk-san-francisco-35076230/",
+  "gender": "none",
+  "expression": "Puente Golden Gate, San Francisco",
+  "pos": "50% 50%",
+  "notes": ""
+ },
+ {
+  "file": "pe07.jpg",
+  "source": "pexels",
+  "id": "33463023",
+  "author": "Marcelo Mora",
+  "page": "https://www.pexels.com/photo/vibrant-plaza-de-armas-in-cusco-peru-33463023/",
+  "gender": "none",
+  "expression": "Plaza de Armas de Cusco",
+  "pos": "50% 50%",
+  "notes": "hay turistas pequeños y banderas"
+ },
+ {
+  "file": "co07.jpg",
+  "source": "pexels",
+  "id": "36759090",
+  "author": "Enzo Renz",
+  "page": "https://www.pexels.com/photo/majestic-wax-palms-in-quindio-colombia-landscape-36759090/",
+  "gender": "none",
+  "expression": "Valle de Cocora, palmas de cera, Eje Cafetero",
+  "pos": "50% 50%",
+  "notes": ""
  }
 ]

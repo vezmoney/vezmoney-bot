@@ -47,24 +47,23 @@ function f1(x) {
   ${foot(x, C.azul, C.gris)}`;
 }
 
-// ---------- martes · Chile→Venezuela + Chile→otros países en el mismo creativo ----------
+// ---------- martes · Chile→Venezuela + Chile→otros países en el mismo creativo (minimalista, sin foto) ----------
 function f2(x) {
   const c = x.cor, amt = FEED_PLAN.f2.others[0].amounts[FEED_PLAN.f2.amt];
-  const rows = x.list.map((r) => `<div style="display:flex;align-items:center;gap:20px;padding:11px 0;border-top:3px solid rgba(0,28,112,.1)">${flag(r.o.toFlag, 58)}<div style="flex:1"><div style="font-weight:800;font-size:34px;color:${C.azul}">${COUNTRY[r.o.toCode].name}</div><div style="font-weight:600;font-size:22px;color:${C.gris}">${listRate(r.o, r.cur)}</div></div><span class="m" style="font-weight:900;font-size:42px;color:${C.vez}">${recv(r.o, r.cur, amt)}</span></div>`).join("");
+  const rows = x.list.map((r, i) => `<div style="display:flex;align-items:center;gap:22px;padding:11px 0;${i ? "border-top:3px solid rgba(0,28,112,.1)" : ""}">${flag(r.o.toFlag, 62)}<span style="flex:1;font-weight:800;font-size:38px;color:${C.azul}">${COUNTRY[r.o.toCode].name}</span><span class="m" style="font-weight:900;font-size:46px;color:${C.vez}">${recv(r.o, r.cur, amt)}</span></div>`).join("");
   return `${bgAzul}${wing("right:-240px;top:-200px;width:720px;height:720px")}${wing("left:-280px;bottom:100px;width:700px;height:700px", "c")}
   ${logoW(60, "left:64px;top:52px")}
-  ${frame(x, { l: 760, t: 100, w: 260, h: 260, shape: "circle", bw: 10 })}
-  <div class="abs" style="left:64px;top:140px;width:660px;color:#fff">
-    <div style="display:flex;align-items:center;gap:16px">${flagsRow(c, 52, "#fff", "#fff")}${kicker(`Tasa de las ${x.hh}`, "#BFD0FF", 24)}</div>
-    <div class="m" style="font-weight:700;font-size:40px;margin-top:16px">${baseTxt(c)} ${c.fromUnit} =</div>
-    <div class="m" style="font-weight:900;font-size:108px;letter-spacing:-.05em;line-height:1;margin-top:0;white-space:nowrap">${rateFmt(c, x.cur)} <span style="color:#9FBBFF;font-size:64px">${c.unit}</span></div>
-    <div style="font-weight:600;font-size:30px;margin-top:10px">Con <b class="m">${money(c, c.amounts[0])}</b> recibe <b class="m" style="color:#9FBBFF">${conv(x, c.amounts[0])} ${c.unit}</b></div>
+  <div class="abs" style="right:64px;top:62px">${flagsRow(c, 54, "#fff", "#fff")}</div>
+  <div class="abs" style="left:64px;right:64px;top:170px;color:#fff">
+    <div class="m" style="font-weight:700;font-size:44px">${baseTxt(c)} ${c.fromUnit} =</div>
+    <div class="m" style="font-weight:900;font-size:150px;letter-spacing:-.05em;line-height:1;white-space:nowrap">${rateFmt(c, x.cur)} <span style="color:#9FBBFF;font-size:84px">${c.unit}</span></div>
+    <div style="font-weight:600;font-size:34px;margin-top:12px">Con <b class="m">${money(c, c.amounts[0])}</b> recibe <b class="m" style="color:#9FBBFF">${conv(x, c.amounts[0])} ${c.unit}</b></div>
   </div>
-  <div class="abs" style="left:56px;right:56px;top:520px;background:#fff;border-radius:44px;padding:26px 40px 14px;box-shadow:0 24px 60px rgba(0,0,0,.35)">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px"><span class="m" style="font-weight:900;font-size:36px;color:${C.azul}">Desde Chile, también a</span><span class="m" style="background:${C.azul};color:#fff;font-weight:800;font-size:25px;padding:8px 20px;border-radius:999px">Envías ${f(amt)} CLP</span></div>
+  <div class="abs" style="left:56px;right:56px;top:560px;background:#fff;border-radius:48px;padding:30px 44px 16px;box-shadow:0 24px 60px rgba(0,0,0,.35)">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px"><span class="m" style="font-weight:900;font-size:40px;color:${C.azul}">Desde Chile, también a</span><span class="m" style="background:${C.azul};color:#fff;font-weight:800;font-size:26px;padding:9px 22px;border-radius:999px">Envías ${f(amt)} CLP</span></div>
     ${rows}
   </div>
-  <div class="abs" style="left:70px;right:70px;top:1130px;text-align:center">${cta("COTIZA EN VEZMONEY.COM", "#fff", C.azul, { size: 30 })}</div>
+  <div class="abs" style="left:70px;right:70px;top:1118px;text-align:center">${cta("COTIZA EN VEZMONEY.COM", "#fff", C.azul, { size: 30 })}</div>
   ${foot(x, "#fff", "rgba(255,255,255,.82)")}`;
 }
 
@@ -104,19 +103,14 @@ function f4(x) {
   ${foot(x, C.azul, C.gris)}`;
 }
 
-// ---------- viernes · cotizador sobre azul ----------
+// ---------- viernes · cotizador sobre azul (minimalista, sin foto) ----------
 function f5(x) {
   const c = x.cor;
   return `${bgAzul}${wing("left:-240px;bottom:-120px;width:700px;height:700px", "c")}${wing("right:-260px;top:-220px;width:760px;height:760px")}
   ${logoW(60, "left:64px;top:52px")}
-  ${frame(x, { l: 720, t: 80, w: 290, h: 290, shape: "circle", bw: 12 })}
-  <div class="abs" style="left:64px;top:150px;width:620px;color:#fff">
-    <div>${flagsRow(c, 50, "#fff", "#fff")}</div>
-    <div style="margin-top:10px">${kicker(`${dot("#fff")}Tasa de las ${x.hh}`, "#BFD0FF", 25)}</div>
-    <div class="m" style="font-weight:900;font-size:70px;line-height:1.05;letter-spacing:-.04em;margin-top:14px">Cotiza y mira<br>lo que <span style="color:#9FBBFF">recibe</span><br>tu contacto</div>
-  </div>
-  ${quote(x, { bg: "#fff", ink: C.azul, boxBg: C.nube, boxInk: C.azul, numInk: C.vez, arrowBg: C.rosa, rateBg: C.azul, rateInk: "#fff", amt: 2, style: "left:56px;right:56px;top:500px" })}
-  <div class="abs" style="left:70px;right:70px;top:1130px;text-align:center;color:#fff">${badgeHTML(x.badge, "rgba(255,255,255,.14)", "#fff", "rgba(255,255,255,.7)", "font-size:25px")}</div>
+  <div class="abs" style="right:64px;top:62px">${flagsRow(c, 54, "#fff", "#fff")}</div>
+  <div class="abs" style="left:64px;right:64px;top:190px;color:#fff"><div class="m" style="font-weight:900;font-size:96px;line-height:1.04;letter-spacing:-.04em">Cotiza y mira<br>lo que <span style="color:#9FBBFF">recibe</span><br>tu contacto</div></div>
+  ${quote(x, { bg: "#fff", ink: C.azul, boxBg: C.nube, boxInk: C.azul, numInk: C.vez, arrowBg: C.rosa, rateBg: C.azul, rateInk: "#fff", amt: 2, style: "left:56px;right:56px;top:560px" })}
   ${foot(x, "#fff", "rgba(255,255,255,.85)")}`;
 }
 

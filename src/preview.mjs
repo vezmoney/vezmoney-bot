@@ -5,7 +5,7 @@ import fs from "node:fs";
 import { getSeries } from "./data.mjs";
 import { hoursNote, tipFor, disclaimer } from "./info.mjs";
 import { CORRIDORS } from "./common.mjs";
-import { FAMILIES, FAMILY_FOR_WEEKDAY, wrapStory } from "./templates.mjs";
+import { FAMILIES, FAMILY_FOR_WEEKDAY, AFTERNOON, wrapStory } from "./templates.mjs";
 import { FEED_PLAN, FEED_KEYS, buildFeed } from "./feed.mjs";
 import { PHOTOS, FEED_PHOTOS } from "./photos.mjs";
 import { renderPage, closeBrowser } from "./render.mjs";
@@ -19,13 +19,14 @@ const wdOf = (fam) => Number(Object.entries(FAMILY_FOR_WEEKDAY).find(([, v]) => 
 if (!only || only.length === 1) {
   for (const fam of Object.keys(FAMILIES)) {
     if (only && only !== fam.toLowerCase()) continue;
-    for (const k of ["s", "g", "t", "q", "cPE", "cCO"]) {
-      const code = k === "cPE" ? "PE" : k === "cCO" ? "CO" : "BS";
+    const wd = wdOf(fam), [c1, c2] = AFTERNOON[wd];
+    for (const k of ["s", "g", "t", "q", "s2", c1, c2]) {
+      const code = ["s", "g", "t", "q", "s2"].includes(k) ? "CLVE" : k;
       const cor = CORRIDORS[code], d = await get(cor);
-      const key = k.startsWith("c") ? "corridor" : k;
+      const key = code === "CLVE" ? k.replace("s2", "s") : "corridor";
       const pool = key === "corridor" ? PHOTOS[fam].corridor[code] : PHOTOS[fam][key];
-      const p = pool[0];
-      const x = { ...d, cor, set: fam, photo: p.file, pos: p.pos, tip: tipFor(5, 0), note: hoursNote(wdOf(fam), 10), disclaimer: disclaimer(d.hh) };
+      const p = pool[k === "s2" ? 1 : 0];
+      const x = { ...d, cor, set: fam, second: k === "s2", disc: false, photo: p.file, pos: p.pos, tip: tipFor(5, 0), note: hoursNote(wd, 10), disclaimer: disclaimer(d.hh) };
       await renderPage(wrapStory(FAMILIES[fam][key](x)), { width: 1080, height: 1920, out: `preview/story_${fam}_${k}.jpg` });
       console.log("ok", fam, k);
     }

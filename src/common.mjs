@@ -13,18 +13,19 @@ export const COUNTRY = {
   PE: { name: "Perú", api: "PEN", unit: "PEN", flag: "PE" },
   CO: { name: "Colombia", api: "COP", unit: "COP", flag: "CO" },
   AR: { name: "Argentina", api: "ARS", unit: "ARS", flag: "AR" },
-  EC: { name: "Ecuador", api: "USD", unit: "USD", flag: "EC" },
+  EC: { name: "Ecuador", api: "USDE", unit: "USDE", flag: "EC" },
   US: { name: "EE. UU.", api: "USD", unit: "USD", flag: "US" },
   BR: { name: "Brasil", api: "BRL", unit: "BRL", flag: "BR" },
 };
-// monto de ejemplo y base de la tasa unitaria según el país de ORIGEN
-const ORIGIN = { CL: { base: 1, amounts: [10000, 50000, 100000] }, PE: { base: 1, amounts: [50, 100, 500] }, CO: { base: 1000, amounts: [50000, 100000, 500000] } };
+// monto de ejemplo según el país de ORIGEN; la tasa unitaria se muestra por 1 unidad (Chile→Venezuela y Perú→todos) o por 1.000 (Chile→otros y Colombia→todos)
+const ORIGIN = { CL: { amounts: [10000, 50000, 100000] }, PE: { amounts: [50, 100, 500] }, CO: { amounts: [50000, 100000, 500000] } };
 export const pair = (from, to) => {
   const a = COUNTRY[from], b = COUNTRY[to], o = ORIGIN[from];
-  return { key: `${from}${to}`, from: a.api, to: b.api, fromCode: from, toCode: to, unit: b.unit, fromUnit: a.unit, fromFlag: a.flag, toFlag: b.flag, label: `${a.name} → ${b.name}`, short: a.name, toName: b.name, base: o.base, amounts: o.amounts };
+  const base = from === "PE" || (from === "CL" && to === "VE") ? 1 : 1000;
+  return { key: `${from}${to}`, from: a.api, to: b.api, fromCode: from, toCode: to, unit: b.unit, fromUnit: a.unit, fromFlag: a.flag, toFlag: b.flag, label: `${a.name} → ${b.name}`, short: a.name, toName: b.name, base, amounts: o.amounts };
 };
-// corredores de las historias (siempre hacia Venezuela, como Karduto y Giros del Sur)
-export const CORRIDORS = { BS: pair("CL", "VE"), PE: pair("PE", "VE"), CO: pair("CO", "VE") };
+// corredores de las historias: 5 Chile→Venezuela en la mañana y 2 corredores por la tarde que cambian según el día (ver config.json)
+export const CORRIDORS = Object.fromEntries([["CL", "VE"], ["CL", "PE"], ["CL", "CO"], ["CL", "EC"], ["CL", "AR"], ["CL", "US"], ["PE", "VE"], ["CO", "VE"]].map(([a, b]) => [a + b, pair(a, b)]));
 
 // ---------- banderas circulares vectoriales ----------
 let _fid = 0;
@@ -189,3 +190,19 @@ export const quote = (x, { bg = "#fff", ink = C.azul, boxBg = C.nube, boxInk = C
 };
 
 export const chip = (x, bg, color, style, size = 56) => `<div class="m abs" style="${style};background:${bg};color:${color};font-weight:800;font-size:${size}px;padding:20px 44px;border-radius:999px;white-space:nowrap;box-shadow:0 16px 40px rgba(0,22,80,.32)">${unitRate(x.cor, x.cur)}</div>`;
+
+// ---------- piezas del rediseño minimalista ----------
+// marca: "full" = logo horizontal · "iso" = solo el colibrí · "none" = sin logo. tone: "dark" = sobre fondo azul/foto (blanco) · "light" = sobre claro
+export const mark = (kind, tone = "light", style = "left:50%;top:104px;transform:translateX(-50%)", h = 64) => {
+  if (kind === "none") return "";
+  if (kind === "iso") return logo(tone === "dark" ? "isotipo_blanco" : "isotipo_azul_vez", Math.round(h * 1.1), style);
+  return logo(tone === "dark" ? "reversa_horizontal" : "principal_horizontal", h, style);
+};
+// el aviso largo de tasa solo sale si x.disc = true (prueba pedida por el usuario: por defecto, sin aviso)
+export const footer = (x, o) => (x.disc ? bottom(x, o) : "");
+// pastilla compacta: banderas + "Tasa de las HH:MM"
+export const pillInfo = (x, { bg = "#fff", color = C.azul, ring = "#fff", size = 44, border = "none" } = {}) =>
+  `<span style="display:inline-flex;align-items:center;gap:14px;background:${bg};color:${color};border:${border};border-radius:999px;padding:10px 28px 10px 12px;box-shadow:0 10px 26px rgba(0,22,80,.18)">${flagsRow(x.cor, size, ring, color)}<span class="m" style="font-weight:800;font-size:26px">Tasa de las ${x.hh}</span></span>`;
+// dos banderas grandes con flecha (reemplaza la foto de persona)
+export const bigFlags = (c, size = 130, ring = "#fff", color = "#fff") =>
+  `<div style="display:flex;justify-content:center;align-items:center;gap:${Math.round(size * 0.3)}px">${flag(c.fromFlag, size, ring)}<span style="color:${color}">${arrowSvg(Math.round(size * 0.5), 3)}</span>${flag(c.toFlag, size, ring)}</div>`;
