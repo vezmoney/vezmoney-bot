@@ -78,6 +78,7 @@ async function buildContext() {
 
 const sh = (c) => execSync(c, { stdio: "inherit" });
 function gitPush(message) {
+  fs.mkdirSync("out", { recursive: true }); fs.mkdirSync("state", { recursive: true });
   sh("git add -A out state");
   try { execSync("git diff --cached --quiet"); return false; } catch { /* hay cambios */ }
   sh(`git commit -m "${message}"`);
