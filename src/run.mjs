@@ -121,6 +121,7 @@ async function main() {
   }
 
   if (cfg.paused && process.env.EVENT !== "workflow_dispatch" && !DRY && !DRAFT) { summary("⏸️ El bot está en pausa (config.json → paused): no publica nada."); return; }
+  if (cfg.startDate && now.date < cfg.startDate && !FORCE_DATE && process.env.EVENT !== "workflow_dispatch") { summary(`⏳ El bot empieza el ${cfg.startDate}: todavía no publica.`); return; }
   if ((cfg.closedDates ?? []).includes(now.date) && !FORCE_DATE) { summary(`🚫 ${now.date} es un día cerrado (config.json → closedDates): no se publica la tasa.`); return; }
   if (!slot) { summary(`ℹ️ Hora de Chile ${now.date} ${pad(now.h)}:${pad(now.mi)} (día ${weekday}): no hay publicación programada. No se hizo nada.`); return; }
   if (!forced && now.mi > cfg.maxLateMinutes) { summary(`⏭️ Llegué tarde (minuto ${now.mi}). Salto esta hora para no desordenar.`); return; }

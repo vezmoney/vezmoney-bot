@@ -126,8 +126,42 @@
       "tiktok"
     ]
   },
-  "closedDates": [],
-  "dayOverrides": {},
-  "paused": true,
-  "showDisclaimer": false
+  "closedDates": [
+    "2026-12-25",
+    "2027-01-01",
+    "2027-01-02"
+  ],
+  "dayOverrides": {
+    "2026-12-24": {
+      "closing": "19:00"
+    },
+    "2026-12-31": {
+      "closing": "19:00"
+    },
+    "2026-12-26": {
+      "closing": "12:00",
+      "slots": [
+        {
+          "hour": 8,
+          "corridor": "CLVE"
+        },
+        {
+          "hour": 9,
+          "corridor": "CLVE",
+          "alsoFeed": true
+        },
+        {
+          "hour": 10,
+          "corridor": "CLPE"
+        },
+        {
+          "hour": 11,
+          "corridor": "CLCO"
+        }
+      ]
+    }
+  },
+  "paused": false,
+  "showDisclaimer": false,
+  "startDate": "2026-10-12"
 }

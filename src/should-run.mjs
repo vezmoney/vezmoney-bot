@@ -14,6 +14,7 @@ const state = fs.existsSync("state/published.json") ? JSON.parse(fs.readFileSync
 let go = true, why = "";
 if (!manual) {
   if (cfg.paused) { go = false; why = "el bot está en pausa (config.json → paused)"; }
+  else if (cfg.startDate && date < cfg.startDate) { go = false; why = `el bot empieza el ${cfg.startDate}`; }
   else if ((cfg.closedDates ?? []).includes(date)) { go = false; why = `${date} es un día cerrado`; }
   else if (!slot) { go = false; why = `no hay publicación a las ${h}:00 (día ${weekday})`; }
   else if (mi > cfg.maxLateMinutes) { go = false; why = `llegué tarde (minuto ${mi})`; }
