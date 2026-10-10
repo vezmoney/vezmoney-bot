@@ -1,13 +1,23 @@
 // data.mjs — lee la API pública de tasas de api.vezmoney.com y calcula estadísticas de las últimas 24 h
+const UA = "Mozilla/5.0 (compatible; vezmoney-bot/1.0; +https://vezmoney.com)";
+async function getPage(url, intentos = 4) {
+  let err;
+  for (let i = 1; i <= intentos; i++) {
+    try {
+      const r = await fetch(url, { headers: { "user-agent": UA, accept: "application/json" }, signal: AbortSignal.timeout(30000) });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return await r.json();
+    } catch (e) {
+      err = e;
+      await new Promise((ok) => setTimeout(ok, 1500 * i));
+    }
+  }
+  throw new Error(`${url}: ${err?.cause?.code ?? err?.message ?? err}`);
+}
+
 export async function getSeries(from, to) {
   const base = `https://api.vezmoney.com/api/tasa/listaiden/${from}/${to}`;
-  const pages = await Promise.all(
-    [1, 2].map(async (p) => {
-      const r = await fetch(`${base}?page=${p}`, { signal: AbortSignal.timeout(20000) });
-      if (!r.ok) throw new Error(`API de tasas ${from}/${to} página ${p}: HTTP ${r.status}`);
-      return r.json();
-    })
-  );
+  const pages = [await getPage(`${base}?page=1`), await getPage(`${base}?page=2`)];
   const rows = pages
     .flatMap((p) => p.data)
     .sort((a, b) => a.fecha.localeCompare(b.fecha))

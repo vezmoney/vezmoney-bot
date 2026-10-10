@@ -10,6 +10,7 @@ import { FEED_PLAN, FEED_KEYS, buildFeed } from "./feed.mjs";
 import { PHOTOS, FEED_PHOTOS } from "./photos.mjs";
 import { renderPage, closeBrowser } from "./render.mjs";
 
+try {
 const only = (process.argv[2] || "").toLowerCase();
 const series = {};
 const get = async (p) => (series[p.key] ??= await getSeries(p.from, p.to));
@@ -43,3 +44,11 @@ if (!only || only === "feed") {
   }
 }
 await closeBrowser();
+}
+catch (e) {
+  const msg = `Vista previa falló: ${e?.message ?? e}`;
+  console.error(msg, e?.stack);
+  if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `❌ ${msg}\n\n`);
+  await closeBrowser().catch(() => {});
+  process.exit(1);
+}
