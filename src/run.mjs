@@ -12,6 +12,7 @@ import { FEED_PLAN, buildFeed, feedForWeekday, feedCaption } from "./feed.mjs";
 import { PHOTOS, FEED_PHOTOS } from "./photos.mjs";
 import { renderPage, closeBrowser } from "./render.mjs";
 import { createPost, deletePost, whoami } from "./metricool.mjs";
+import { piezaDeHora, piezaFeed } from "./juegos-bot.mjs";
 
 const cfg = JSON.parse(fs.readFileSync("config.json", "utf8"));
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
@@ -39,8 +40,10 @@ const weekday = new Date(Date.UTC(now.y, now.mo - 1, now.d)).getUTCDay(); // 0=d
 const dayOfYear = Math.floor((Date.UTC(now.y, now.mo - 1, now.d) - Date.UTC(now.y, 0, 0)) / 86400000);
 
 // slots del día (por día de la semana) y su posición entre las historias Chile→Venezuela
-const ov = cfg.dayOverrides?.[now.date] ?? {}; // horarios especiales por fecha (cierre temprano, menos historias)
-const todaySlots = ov.slots ?? cfg.slots.filter((s) => s.days.includes(weekday));
+// desde cfg.juegosDesde se usan los 6 juegos diarios nuevos (10 historias + feed de las 10:00); antes, el sistema anterior
+const JUEGOS = !!cfg.juegosDesde && now.date >= cfg.juegosDesde;
+const ov = (JUEGOS ? cfg.dayOverridesJuegos : cfg.dayOverrides)?.[now.date] ?? {}; // horarios especiales por fecha (cierre temprano, menos historias)
+const todaySlots = ov.slots ?? (JUEGOS ? cfg.slotsJuegos : cfg.slots).filter((s) => s.days.includes(weekday));
 const slot0 = todaySlots.find((s) => s.hour === now.h);
 const slot = slot0 ? { ...slot0, corridor: slot0.corridorByDay?.[weekday] ?? slot0.corridor } : undefined; // corridor del día (la tarde cambia según el día)
 const bsIndex = slot ? todaySlots.filter((s) => (s.corridorByDay?.[weekday] ?? s.corridor) === "CLVE").findIndex((s) => s.hour === slot.hour) : -1;
@@ -132,14 +135,24 @@ async function main() {
   const state = fs.existsSync(statePath) ? JSON.parse(fs.readFileSync(statePath, "utf8")) : {};
   if (state[key] && !DRY && !DRAFT) { console.log("Ya publicado:", key); return; }
 
-  const { x, fam, tplKey, feed } = await buildContext();
+  let x, fam, tplKey, feed, files;
+  if (JUEGOS) {
+    const checkFresh = (d) => { if (forced) return; const age = ageMinutes(d.fecha, now.ms); if (age > cfg.maxRateAgeMinutes) throw new Error(`La tasa ${d.cor.label} tiene ${Math.round(age)} min de antigüedad (límite ${cfg.maxRateAgeMinutes}). No publico para no mostrar una tasa vieja.`); };
+    const p = await piezaDeHora(weekday, slot.hour); p.datas.forEach(checkFresh);
+    const storyFile = `${key}_${p.id}_story.jpg`;
+    await renderPage(p.html, { width: 1080, height: 1920, out: path.join("out", storyFile) });
+    files = [{ kind: "STORY", file: storyFile }]; x = p.datas[0]; fam = "juego"; tplKey = p.id;
+    if (slot.alsoFeed) { const pf = await piezaFeed(weekday); pf.datas.forEach(checkFresh); const feedFile = `${key}_feed.jpg`; await renderPage(pf.html, { width: 1080, height: 1350, out: path.join("out", feedFile) }); files.push({ kind: "POST", file: feedFile, text: pf.caption }); }
+  } else {
+  ({ x, fam, tplKey, feed } = await buildContext());
   const storyFile = `${key}_${slot.corridor}_story.jpg`;
   await renderPage(wrapStory(FAMILIES[fam][tplKey](x)), { width: 1080, height: 1920, out: path.join("out", storyFile) });
-  const files = [{ kind: "STORY", file: storyFile }];
+  files = [{ kind: "STORY", file: storyFile }];
   if (feed) {
     const feedFile = `${key}_${slot.corridor}_feed.jpg`;
     await renderPage(buildFeed(feed.key, feed.x), { width: 1080, height: 1350, out: path.join("out", feedFile) });
     files.push({ kind: "POST", file: feedFile, text: feedCaption(feed.x, feed.key) });
+  }
   }
   console.log("Generado:", files.map((f) => f.file).join(", "), "· familia", fam, "plantilla", tplKey, "· tasa", x.cur, "de las", x.hh);
   if (DRY) { console.log("Modo prueba (--dry): no publico nada."); return; }
@@ -158,7 +171,7 @@ async function main() {
         const p = await createPost({ imageUrl: url, type: f.kind, when, timezone: TZ, text: f.text || "", network, draft: DRAFT });
         result[`${f.kind.toLowerCase()}_${network}`] = p.id ?? "ok";
         if (DRAFT && p.id) drafts.push(p.id);
-        summary(`${DRAFT ? "🧪 BORRADOR de prueba" : "✅ Programado"} ${f.kind} en ${network} (${slot.corridor}, tasa de las ${x.hh}: ${x.cur}) para ${when} · id Metricool ${p.id}`);
+        summary(`${DRAFT ? "🧪 BORRADOR de prueba" : "✅ Programado"} ${f.kind} en ${network} (${slot.corridor ?? tplKey}, tasa de las ${x.hh}: ${x.cur}) para ${when} · id Metricool ${p.id}`);
       } catch (e) {
         if (network === "instagram") throw e;
         summary(`⚠️ ${f.kind} en ${network} no se pudo programar: ${e.message.slice(0, 300)}`);

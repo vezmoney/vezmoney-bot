@@ -28,7 +28,7 @@ export const DIAS = {
 };
 export const HORAS = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
 
-function viejo(fam, key, x, hour, weekday) {
+export function viejo(fam, key, x, hour, weekday) {
   const second = key === "s2", k = second ? "s" : key, p = PHOTOS[fam][k][second ? 1 : 0];
   const xx = { ...x, set: fam, second, disc: false, photo: p.file, pos: p.pos, tip: tipFor(5, 0), note: hoursNote(weekday, hour), disclaimer: disclaimer(x.hh) };
   return wrapStory(FAMILIES[fam][k](xx));

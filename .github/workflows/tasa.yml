@@ -5,10 +5,10 @@ on:
     # Varios intentos por hora (minutos 2, 12, 24 y 36 UTC): GitHub atrasa los cron entre 10 y 25 min, y el primero que llegue publica;
     # los demás salen en 1 segundo sin hacer nada. El script decide por la HORA Y EL DÍA DE CHILE si toca publicar,
     # así que no importa el cambio de horario de verano/invierno (UTC 11–20 cubre las 8–16 h de Chile en ambos).
-    - cron: "2 11-20 * * *"
-    - cron: "12 11-20 * * *"
-    - cron: "24 11-20 * * *"
-    - cron: "36 11-20 * * *"
+    - cron: "2 11-21 * * *"
+    - cron: "12 11-21 * * *"
+    - cron: "24 11-21 * * *"
+    - cron: "36 11-21 * * *"
   workflow_dispatch:
     inputs:
       modo:
