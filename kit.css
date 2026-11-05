@@ -16,3 +16,15 @@ body.story,body.story #root{width:1080px;height:1920px}
 body.feed,body.feed #root{width:1080px;height:1350px}
 .abs{position:absolute}
 .m{font-family:"Inter","Arial",sans-serif;letter-spacing:-.02em}
+
+/* fuentes libres (OFL) para las líneas de diseño de las historias; se empaquetan para que GitHub las vea igual que tu PC */
+@font-face{font-family:"SerifV";src:url("assets/fonts/SourceSerif4_opsz-wght.ttf");font-weight:200 900;font-style:normal}
+@font-face{font-family:"SerifV";src:url("assets/fonts/SourceSerif4-Italic_opsz-wght.ttf");font-weight:200 900;font-style:italic}
+@font-face{font-family:"MonoV";src:url("assets/fonts/JetBrainsMono_wght.ttf");font-weight:100 800}
+@font-face{font-family:"CondV";src:url("assets/fonts/BarlowCondensed-Medium.ttf");font-weight:500}
+@font-face{font-family:"CondV";src:url("assets/fonts/BarlowCondensed-SemiBold.ttf");font-weight:600}
+@font-face{font-family:"CondV";src:url("assets/fonts/BarlowCondensed-Bold.ttf");font-weight:700}
+@font-face{font-family:"ScriptV";src:url("assets/fonts/Caveat_wght.ttf");font-weight:400 700}
+@font-face{font-family:"DisplayV";src:url("assets/fonts/Anton-Regular.ttf");font-weight:400}
+@font-face{font-family:"CourierV";src:url("assets/fonts/CourierPrime-Regular.ttf");font-weight:400}
+@font-face{font-family:"CourierV";src:url("assets/fonts/CourierPrime-Bold.ttf");font-weight:700}
