@@ -55,7 +55,7 @@ export const flagsRow = (c, size, ring, color = "currentColor") =>
   `<span style="display:inline-flex;align-items:center;gap:${Math.round(size * 0.22)}px;vertical-align:middle;color:${color}">${flag(c.fromFlag, size, ring)}${arrowSvg(Math.round(size * 0.5))}${flag(c.toFlag, size, ring)}</span>`;
 
 // ---------- formatos ----------
-export const rateFmt = (c, v) => f(v * c.base, 2, 6);
+export const rateFmt = (c, v) => f(v * c.base, 3, 8); // la tasa nunca se redondea: tal cual viene de la API, con 3 decimales como mínimo
 export const baseTxt = (c) => (c.base === 1000 ? "1.000" : "1");
 export const unitRate = (c, cur) => `${baseTxt(c)} ${c.fromUnit} = ${rateFmt(c, cur)} ${c.unit}`;
 export const conv = (x, amt) => f(amt * x.cur, 2);
