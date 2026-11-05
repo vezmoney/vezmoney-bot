@@ -18,7 +18,7 @@ const shadow = (sid, dy = 10, blur = 9, op = 0.32) => `<filter id="${sid}" x="-3
 const wrap = (size, body, style = "") => `<svg viewBox="0 0 200 200" width="${size}" height="${size}" style="display:block;overflow:visible;${style}">${body}</svg>`;
 const rot = (deg, inner) => `<g transform="rotate(${deg} 100 100)">${inner}</g>`;
 
-export const ico = {
+const raw = {
   // moneda: canto con grosor, cara con relieve y símbolo
   coin(size, { tone = "cielo", sym = "$", rotate = 0, style = "" } = {}) {
     const t = TONES[tone], g = id("g"), s = id("s"), e = id("e");
@@ -98,3 +98,6 @@ export const ico = {
     return wrap(size, `<defs>${grad(g, t)}${shadow(s, 10, 8, 0.3)}</defs><g filter="url(#${s})"><path d="M100 18l66 24v50c0 40-28 66-66 86-38-20-66-46-66-86V42z" fill="url(#${g})"/></g><path d="M68 100l24 24 42-48" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M56 48 L100 32" stroke="#fff" stroke-opacity=".6" stroke-width="6" stroke-linecap="round"/>`, style);
   },
 };
+
+// Criterio de gusto: ningún ícono decorativo. Un ícono solo aparece si se pide expresamente con { keep: true } (cuando cumple una función).
+export const ico = new Proxy(raw, { get: (t, k) => (size, o = {}) => (o.keep ? t[k](size, o) : "") });

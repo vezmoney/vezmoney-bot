@@ -6,7 +6,7 @@ export const page = (inner, bg = "#fff") => `<!doctype html><html lang="es"><hea
 export const pageFeed = (inner, bg = "#fff") => `<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=1080,height=1350"><link rel="stylesheet" href="kit.css"></head><body class="feed"><div id="root" style="background:${bg}">${inner}</div></body></html>`;
 export const A = (style, inner = "") => `<div class="abs" style="${style}">${inner}</div>`;
 export const ph = (file, pos, style) => `<img src="assets/photos/${file}" style="position:absolute;object-fit:cover;object-position:${pos};${style}">`;
-export const ic = (name, size, style = "") => `<img src="assets/icons3d/${name}.png" style="display:block;width:${size}px;height:${size}px;filter:drop-shadow(0 14px 18px rgba(0,16,80,.28));${style}">`;
+export const ic = (name, size, style = "", keep = false) => !keep ? "" : `<img src="assets/icons3d/${name}.png" style="display:block;width:${size}px;height:${size}px;filter:drop-shadow(0 14px 18px rgba(0,16,80,.28));${style}">`;
 export const logo = (v, h, style) => `<img src="assets/logos/${v}.png" style="position:absolute;height:${h}px;${style}">`;
 // la tasa NUNCA se redondea: se muestra tal cual la entrega la API (mínimo 3 decimales)
 export const rt = (c, v) => rateFmt(c, v);
