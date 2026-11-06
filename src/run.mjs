@@ -142,7 +142,7 @@ async function main() {
     const storyFile = `${key}_${p.id}_story.jpg`;
     await renderPage(p.html, { width: 1080, height: 1920, out: path.join("out", storyFile) });
     files = [{ kind: "STORY", file: storyFile }]; x = p.datas[0]; fam = "juego"; tplKey = p.id;
-    if (slot.alsoFeed) { const pf = await piezaFeed(weekday); pf.datas.forEach(checkFresh); const feedFile = `${key}_feed.jpg`; await renderPage(pf.html, { width: 1080, height: 1350, out: path.join("out", feedFile) }); files.push({ kind: "POST", file: feedFile, text: pf.caption }); }
+    if (slot.alsoFeed) { const pf = await piezaFeed(weekday, now.date, cfg.feedsMes); pf.datas.forEach(checkFresh); const feedFile = `${key}_feed.jpg`; await renderPage(pf.html, { width: 1080, height: 1350, out: path.join("out", feedFile) }); files.push({ kind: "POST", file: feedFile, text: pf.caption }); }
   } else {
   ({ x, fam, tplKey, feed } = await buildContext());
   const storyFile = `${key}_${slot.corridor}_story.jpg`;

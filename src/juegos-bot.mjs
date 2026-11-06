@@ -3,6 +3,7 @@ import { CORRIDORS, pair, rateFmt, f as fmt, COUNTRY } from "./common.mjs";
 import { getSeries } from "./data.mjs";
 import { PHOTOS_DEST } from "./skins/fotos.mjs";
 import { DIAS, viejo } from "./juegos.mjs";
+import { FEEDS_MES } from "./skins/feeds-mes.mjs";
 
 const getCor = async (k) => ({ ...(await getSeries(CORRIDORS[k].from, CORRIDORS[k].to)), cor: CORRIDORS[k] });
 const fotoDestino = (dia) => ({ PE: PHOTOS_DEST.PE[(dia - 1) % 6], CO: PHOTOS_DEST.CO[(dia - 1) % 6] });
@@ -23,8 +24,25 @@ export async function piezaDeHora(dia, hora) {
   return { id: k, datas: [x], html: sk[k](x) };
 }
 
-// feed de las 10:00 del día
-export async function piezaFeed(dia) {
+// Feeds del mes: ciclo de 4 semanas que se repite (semana 1 = feeds de cada línea; semanas 2-4 = diseños de feeds-mes.mjs).
+// La semana se cuenta por lunes desde una fecha ancla (un lunes), así la rotación es continua y no depende del día del mes.
+const ELEGIDOS = { "2-6": "s2-sab-rutas-claro", "4-5": "s4-vie-ventana-venezuela" }; // opciones A/B ya decididas por el usuario
+export function semanaCiclo(fecha, ancla) {
+  const [y, m, d] = fecha.split("-").map(Number), [ya, ma, da] = ancla.split("-").map(Number);
+  const dias = Math.round((Date.UTC(y, m - 1, d) - Date.UTC(ya, ma - 1, da)) / 86400000);
+  return (((Math.floor(dias / 7) % 4) + 4) % 4) + 1;
+}
+export function disenoFeed(sem, dia) {
+  const sk = DIAS[dia].skin;
+  if (!sem) return { id: "feed", render: sk.feed };
+  if (sem === 1) return { id: "feed_s1", render: dia === 1 ? sk.feed : (sk.feed2 ?? sk.feed) };
+  const c = FEEDS_MES.filter((x) => x.sem === sem && x.dia === dia), e = c.find((x) => x.id === ELEGIDOS[sem + "-" + dia]) ?? c[0];
+  if (!e) throw new Error(`No hay diseño de feed para la semana ${sem}, día ${dia}`);
+  return { id: e.id, render: e.render };
+}
+
+// feed de las 10:00 del día (fecha y cfg.feedsMes activan la rotación; sin ellos se usa el feed de siempre)
+export async function piezaFeed(dia, fecha, feedsMes) {
   const D = DIAS[dia], t = D.feed.tipo;
   let d, otros = null;
   if (t === "uno" || t === "tres") {
@@ -35,7 +53,8 @@ export async function piezaFeed(dia) {
     d = await mk(o, "VE"); otros = [];
     for (const to of ["CL", o === "PE" ? "CO" : "PE", "AR", "EC", "US"]) otros.push(await mk(o, to));
   }
-  return { id: "feed", datas: [d, ...(otros ?? [])], html: D.skin.feed(d, otros), caption: feedCaption(d, otros) };
+  const sem = feedsMes && fecha && fecha >= feedsMes.desde ? semanaCiclo(fecha, feedsMes.ancla) : 0, dis = disenoFeed(sem, dia);
+  return { id: dis.id, datas: [d, ...(otros ?? [])], html: dis.render(d, otros), caption: feedCaption(d, otros) };
 }
 
 // texto que acompaña al post de las 10:00 (la tasa nunca se redondea; los montos se truncan)
