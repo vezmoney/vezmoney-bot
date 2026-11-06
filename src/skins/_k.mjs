@@ -26,3 +26,13 @@ export async function loadCtx() {
   for (const k of keys) all[k] = await get(k);
   return { x: all.CLVE, pe: all.CLPE, co: all.CLCO, all, keys };
 }
+// gráficas de las últimas 24 h: curva suave por los puntos REALES (no se altera ningún valor).
+// El eje deja más aire debajo de la línea (bottom) para que la gráfica viva en la parte alta del recuadro.
+export function trend(d, W, H, { top = 0.12, bottom = 0.6 } = {}) {
+  const r = d.rates, hi = Math.max(...r), lo = Math.min(...r), rg = hi - lo || 0.001, y0 = lo - rg * bottom, y1 = hi + rg * top;
+  const X = (i) => (i / (r.length - 1)) * W, Y = (v) => H - ((v - y0) / (y1 - y0)) * H, pts = r.map((v, i) => [X(i), Y(v)]), n = (v) => v.toFixed(1), k = 0.16;
+  let path = `M${n(pts[0][0])} ${n(pts[0][1])}`;
+  for (let i = 0; i < pts.length - 1; i++) { const p0 = pts[i - 1] ?? pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] ?? p2; path += ` C${n(p1[0] + (p2[0] - p0[0]) * k)} ${n(p1[1] + (p2[1] - p0[1]) * k)} ${n(p2[0] - (p3[0] - p1[0]) * k)} ${n(p2[1] - (p3[1] - p1[1]) * k)} ${n(p2[0])} ${n(p2[1])}`; }
+  const last = pts[pts.length - 1];
+  return { r, hi, lo, X, Y, path, area: `${path} L${W} ${H} L0 ${H} Z`, cx: last[0], cy: last[1], yHi: Y(hi) };
+}
