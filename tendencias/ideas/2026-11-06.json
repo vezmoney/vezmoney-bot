@@ -1,0 +1,141 @@
+[
+  {
+    "id": "2026-11-06-1",
+    "fecha": "2026-11-06",
+    "tipo": "tendencia",
+    "sensibilidad": "baja",
+    "titulo": "Colombia vs. Chile: el partido de noviembre",
+    "publico": "colombianos y chilenos (y todos los demás) en Chile",
+    "senal": { "texto": "Convocatoria de la Selección Colombia para los amistosos contra Chile en noviembre", "pais": "CL", "url": "https://news.google.com (Noticias Caracol, Futbolred)" },
+    "porque": "En Chile conviven miles de colombianos con chilenos: el partido es tema de conversación y de bromas sanas en el trabajo y en casa.",
+    "gancho_envio": "Gane quien gane en la cancha, lo que no se discute es cuidar el envío a tu familia.",
+    "pieza_a": {
+      "plantilla": "pregunta",
+      "pregunta": "¿Quién gana el Colombia vs. Chile?",
+      "opciones": ["Colombia", "Chile", "Empate y todos felices"],
+      "remate": "Gane quien gane, el envío a casa se cuida con VezMoney",
+      "caption": "Se viene Colombia vs. Chile y en el trabajo ya hay apuestas. ⚽\n\n¿Con quién vas tú? Cuéntanos en los comentarios y etiqueta al colega que no te deja en paz con el tema.\n\nGane quien gane, a tu familia le llega tu cariño. Cotiza y envía en vezmoney.com 💙",
+      "hashtags": ["#VezMoney", "#ColombiaVsChile", "#SeleccionColombia", "#LaRoja", "#ColombianosEnChile", "#MigrantesEnChile", "#Remesas", "#EnviarDinero"]
+    },
+    "pieza_b": {
+      "plantilla": "meme",
+      "foto": "s07.jpg",
+      "arriba": "CUANDO SALE EL GOL",
+      "abajo": "Así de emocionante es cuando tu familia recibe tu envío",
+      "caption": "Ese grito que se escucha en todo el edificio. ⚽🎉\n\nHay emociones que valen igual: el gol de tu selección y el mensaje de tu mamá diciendo «ya me llegó».\n\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": ["#VezMoney", "#Gol", "#Futbol", "#MigrantesEnChile", "#Familia", "#EnviarDinero", "#Remesas", "#Venezuela", "#Colombia", "#Peru"]
+    }
+  },
+  {
+    "id": "2026-11-06-2",
+    "fecha": "2026-11-06",
+    "tipo": "tendencia",
+    "sensibilidad": "baja",
+    "titulo": "El mariachi playero de Lima: S/10 por canción",
+    "publico": "peruanos en Chile y venezolanos en Perú",
+    "senal": { "texto": "Mariachi playero cobra S/10 por canción y alegra las playas de Lima", "pais": "PE", "url": "Trome.com" },
+    "porque": "Es una escena simpática y muy limeña que se está compartiendo; los peruanos lejos de casa se identifican al instante.",
+    "gancho_envio": "Aquí cada canción tiene su precio claro; con VezMoney también ves todo antes de enviar.",
+    "pieza_a": {
+      "plantilla": "meme",
+      "foto": "pe02.jpg",
+      "arriba": "S/10 POR CANCIÓN EN LAS PLAYAS DE LIMA",
+      "abajo": "Y tú, ¿ya cotizaste tu envío antes de mandarlo?",
+      "caption": "Mariachi en la playa, cevichito y sol: así se vive Lima. 🇵🇪🎶\n\n¿Qué canción le pedirías tú? Cuéntanos.\n\nLo bueno, claro: cotizas antes de enviar. Hazlo en vezmoney.com 💙",
+      "hashtags": ["#VezMoney", "#Lima", "#Peru", "#PeruanosEnChile", "#MariachiPlayero", "#MigrantesEnChile", "#EnviarDinero", "#Remesas"]
+    },
+    "pieza_b": {
+      "plantilla": "versus",
+      "izquierda": { "titulo": "En la playa", "items": ["Eliges la canción", "Sabes cuánto cuesta", "Se arma la fiesta"] },
+      "derecha": { "titulo": "Con VezMoney", "items": ["Eliges cuánto enviar", "Cotizas antes de enviar", "Tu familia lo celebra"] },
+      "remate": "Todo claro desde el principio, así debe ser enviar a casa",
+      "caption": "Dos planes donde lo bueno es que todo está claro desde el principio. 😉\n\nEnvía a Perú, Venezuela o Colombia con VezMoney. Cotiza en vezmoney.com 💙",
+      "hashtags": ["#VezMoney", "#Peru", "#Lima", "#PeruanosEnChile", "#EnviarDineroAPeru", "#MigrantesEnChile", "#Remesas", "#Cotiza"]
+    }
+  },
+  {
+    "id": "2026-11-06-3",
+    "fecha": "2026-11-06",
+    "tipo": "noticia",
+    "sensibilidad": "baja",
+    "titulo": "Orgullo venezolano: la U23 de béisbol blanqueó a Sudáfrica",
+    "publico": "venezolanos en Chile, Perú y Colombia",
+    "senal": { "texto": "Selección venezolana U23 de béisbol blanqueó a Sudáfrica en el Campeonato Mundial", "pais": "CL", "url": "Radio Miraflores" },
+    "porque": "Una buena noticia deportiva que los venezolanos fuera del país comparten con orgullo y nostalgia.",
+    "gancho_envio": "Se celebra a la distancia y se llega a casa con un envío.",
+    "pieza_a": {
+      "plantilla": "titular",
+      "etiqueta": "ORGULLO VENEZOLANO",
+      "titular": "La U23 de béisbol blanqueó a Sudáfrica en el Mundial",
+      "bajada": "Desde Chile, Perú o Colombia, los venezolanos celebran a la distancia.",
+      "remate": "Celebra a la distancia y envía a casa con VezMoney",
+      "caption": "¡Buenas noticias desde el Mundial! ⚾🇻🇪\n\nLa selección U23 de béisbol blanqueó a Sudáfrica y se siente el orgullo desde donde estés.\n\n¿Dónde lo viste tú? Cuéntanos en los comentarios.\n\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": ["#VezMoney", "#Venezuela", "#Beisbol", "#VenezolanosEnChile", "#VenezolanosEnPeru", "#VenezolanosEnColombia", "#OrgulloVenezolano", "#EnviarDinero"]
+    },
+    "pieza_b": {
+      "plantilla": "meme",
+      "foto": "s09.jpg",
+      "arriba": "NOS GANAMOS UNA BUENA NOTICIA",
+      "abajo": "Compártela con tu familia y envíales un abrazo con VezMoney",
+      "caption": "Esa alegría que no cabe en el pecho. 💛💙❤️\n\nCompártela con quien está lejos y mándales también tu cariño.\n\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": ["#VezMoney", "#Venezuela", "#OrgulloVenezolano", "#BuenasNoticias", "#Familia", "#Migrantes", "#EnviarDinero", "#Remesas"]
+    }
+  },
+  {
+    "id": "2026-11-06-4",
+    "fecha": "2026-11-06",
+    "tipo": "evergreen",
+    "sensibilidad": "baja",
+    "titulo": "El dólar se mueve a diario: cotiza el día que envías",
+    "publico": "migrantes que envían dinero desde Chile",
+    "senal": { "texto": "El dólar en Chile cierra la semana con movimientos diarios (Diario Financiero, Infobae, FXStreet)", "pais": "CL", "url": "Diario Financiero" },
+    "porque": "Los titulares sobre el dólar hacen que muchos se pregunten cuándo conviene enviar; el dato útil es que la tasa cambia.",
+    "gancho_envio": "Cotiza justo antes de enviar, con la tasa del momento.",
+    "pieza_a": {
+      "plantilla": "titular",
+      "etiqueta": "¿SABÍAS QUE?",
+      "titular": "La tasa de tu envío puede cambiar todos los días",
+      "bajada": "Por eso conviene mirarla justo antes de enviar, no días antes.",
+      "remate": "Cotiza hoy con la tasa del momento en vezmoney.com",
+      "caption": "Si los titulares hablan del dólar, tu bolsillo también lo siente. 📈📉\n\nLa tasa se actualiza y por eso lo mejor es cotizar el mismo día que vas a enviar.\n\nHazlo en vezmoney.com 💙",
+      "hashtags": ["#VezMoney", "#Dolar", "#TasaDeCambio", "#MigrantesEnChile", "#EnviarDinero", "#Remesas", "#Cotiza"]
+    },
+    "pieza_b": {
+      "plantilla": "pregunta",
+      "pregunta": "¿Cada cuánto miras la tasa antes de enviar?",
+      "opciones": ["Todos los días", "El día que envío", "No la miro (¡error!)"],
+      "remate": "Cotizar toma poco: hazlo antes de cada envío",
+      "caption": "Confesión sin juicio: ¿cada cuánto revisas la tasa? 👀\n\nResponde en los comentarios y cotiza hoy en vezmoney.com 💙",
+      "hashtags": ["#VezMoney", "#TasaDeCambio", "#Dolar", "#MigrantesEnChile", "#EnviarDinero", "#Remesas", "#Cotiza"]
+    }
+  },
+  {
+    "id": "2026-11-06-5",
+    "fecha": "2026-11-06",
+    "tipo": "noticia",
+    "sensibilidad": "media",
+    "nota_revision": "Tema diplomático: se redactó neutral y sin opinión política. Revisar el tono antes de aprobar.",
+    "titulo": "Chile y Venezuela retoman la relación consular",
+    "publico": "venezolanos en Chile",
+    "senal": { "texto": "Chile y Venezuela reactivan su agenda bilateral; cancilleres hablan de cooperación consular", "pais": "CL", "url": "ADN Radio / Noticias Venevisión" },
+    "porque": "Una relación consular activa interesa a casi 700.000 venezolanos que viven en Chile: documentos, trámites y acercamiento.",
+    "gancho_envio": "Más puentes entre los dos países; tu envío ya cruza uno todos los días.",
+    "pieza_a": {
+      "plantilla": "titular",
+      "etiqueta": "NOTICIA",
+      "titular": "Chile y Venezuela retoman la relación consular",
+      "bajada": "Una noticia que se sigue de cerca: más puentes entre ambos países.",
+      "remate": "Tu envío a casa ya cruza ese puente cada día",
+      "caption": "Una noticia que interesa a muchas familias: Chile y Venezuela conversan para retomar su relación consular. 🌉\n\nMás puentes entre dos países. Y el tuyo, para enviar a casa, está en vezmoney.com 💙",
+      "hashtags": ["#VezMoney", "#VenezolanosEnChile", "#ChileVenezuela", "#Consulado", "#Migrantes", "#EnviarDinero", "#Remesas"]
+    },
+    "pieza_b": {
+      "plantilla": "pregunta",
+      "pregunta": "¿Qué trámite te gustaría resolver más fácil desde Chile?",
+      "opciones": ["Documentos", "Enviar dinero a casa", "Hablar con mi familia"],
+      "remate": "Enviar a casa, al menos, se resuelve en vezmoney.com",
+      "caption": "Cuéntanos: ¿qué trámite se te hace más difícil estando lejos? 👇\n\nUno lo podemos facilitar: enviar dinero a tu familia. Cotiza en vezmoney.com 💙",
+      "hashtags": ["#VezMoney", "#VenezolanosEnChile", "#Tramites", "#MigrantesEnChile", "#EnviarDinero", "#Remesas"]
+    }
+  }
+]

@@ -1,0 +1,52 @@
+name: Tendencias · diseñar piezas (2.ª aprobación)
+
+# Lo dispara el bot de Cloudflare cuando Francisco aprueba una idea en Telegram (repository_dispatch "idea_aprobada").
+# Diseña las dos piezas (A = publicación normal, B = alcance), las sube y las manda a Telegram con botones.
+on:
+  repository_dispatch:
+    types: [idea_aprobada]
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Id de la idea (ej. 2026-11-06-1)"
+        required: true
+
+concurrency:
+  group: vezmoney-tendencias
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  disenar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      IDEA: ${{ github.event.client_payload.id || inputs.id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('package-lock.json') }}
+      - run: npx playwright install --with-deps chromium
+      - name: Diseñar las 2 piezas
+        run: node src/tendencias/disenar.mjs "$IDEA"
+      - name: Subir las imágenes
+        run: |
+          git config user.name "vezmoney-bot"
+          git config user.email "vezmoney-bot@users.noreply.github.com"
+          git add tendencias out/tendencias
+          git diff --cached --quiet || git commit -m "Tendencias: piezas de $IDEA"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break || sleep 6; done
+      - name: Enviar a Telegram
+        env:
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          ADMIN_KEY: ${{ secrets.ADMIN_KEY }}
+        run: node src/tendencias/enviar.mjs

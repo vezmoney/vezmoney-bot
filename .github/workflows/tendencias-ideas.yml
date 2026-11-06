@@ -1,0 +1,68 @@
+name: Tendencias · ideas del día (1.ª aprobación)
+
+# Cada mañana (8:30 de Chile) busca tendencias y noticias, Claude propone ideas con sus 2 piezas y llegan a Telegram para aprobar.
+# También se dispara cuando alguien escribe /idea en Telegram (repository_dispatch "idea_manual").
+on:
+  schedule:
+    # 11:30 y 12:30 UTC: una de las dos cae a las 8:30 de Chile según horario de verano o invierno; el paso "hora" descarta la otra.
+    - cron: "30 11 * * 1-6"
+    - cron: "30 12 * * 1-6"
+  workflow_dispatch:
+    inputs:
+      manual:
+        description: "(opcional) texto o link a convertir en idea; vacío = ideas del día"
+        required: false
+      n:
+        description: "(opcional) cuántas ideas"
+        required: false
+  repository_dispatch:
+    types: [idea_manual]
+
+concurrency:
+  group: vezmoney-tendencias
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  ideas:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: ¿Toca correr? (8 de la mañana en Chile y secretos cargados)
+        id: hora
+        env:
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$WORKER_URL" ] || [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then echo "Faltan los secretos WORKER_URL o CLAUDE_CODE_OAUTH_TOKEN: el bot de tendencias aún no está activado."; echo "go=false" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "schedule" ] && [ "$(TZ=America/Santiago date +%H)" != "08" ]; then echo "go=false" >> "$GITHUB_OUTPUT"
+          else echo "go=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-node@v4
+        if: steps.hora.outputs.go == 'true'
+        with:
+          node-version: 22
+      - run: npm install -g @anthropic-ai/claude-code
+        if: steps.hora.outputs.go == 'true'
+      - name: Ideas con Claude
+        if: steps.hora.outputs.go == 'true'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          ADMIN_KEY: ${{ secrets.ADMIN_KEY }}
+          MANUAL: ${{ github.event.client_payload.texto || inputs.manual }}
+          N: ${{ inputs.n }}
+        run: |
+          EXTRA=""
+          if [ -n "$N" ]; then EXTRA="--n=$N"; fi
+          if [ -n "$MANUAL" ]; then node src/tendencias/ideas.mjs --manual="$MANUAL"; else node src/tendencias/ideas.mjs $EXTRA; fi
+      - name: Guardar en el repo
+        if: steps.hora.outputs.go == 'true'
+        run: |
+          git config user.name "vezmoney-bot"
+          git config user.email "vezmoney-bot@users.noreply.github.com"
+          git add tendencias
+          git diff --cached --quiet || git commit -m "Tendencias: ideas $(date -u +%F)"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break || sleep 6; done
