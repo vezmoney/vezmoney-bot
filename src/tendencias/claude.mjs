@@ -1,4 +1,4 @@
-// claude.mjs — llama a Claude Code en modo no interactivo (en GitHub Actions usa CLAUDE_CODE_OAUTH_TOKEN, la clave del plan; en el PC, tu sesión).
+// claude.mjs — llama a Claude Code en modo no interactivo (en GitHub Actions usa ANTHROPIC_API_KEY, una clave de la API de Anthropic propia de VezMoney; en el PC, tu sesión).
 import { spawnSync } from "node:child_process";
 
 export function claude(prompt, { maxTurns = 4, tools = [], timeoutMin = 12 } = {}) {
