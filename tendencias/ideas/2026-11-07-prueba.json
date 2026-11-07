@@ -1,0 +1,51 @@
+[
+  {
+    "id": "2026-11-07-test-reel",
+    "fecha": "2026-11-07",
+    "tipo": "evergreen",
+    "sensibilidad": "baja",
+    "titulo": "PRUEBA TÉCNICA (no aprobar): reel con video real",
+    "publico": "solo prueba del sistema",
+    "porque": "Verifica que el reel se arma bien en la nube. NO PUBLICAR.",
+    "gancho_envio": "prueba técnica",
+    "senal": {
+      "texto": "prueba técnica",
+      "pais": "CL",
+      "url": ""
+    },
+    "pieza_a": {
+      "plantilla": "meme",
+      "foto": "s17.jpg",
+      "arriba": "PRUEBA TÉCNICA",
+      "abajo": "No aprobar: solo verifica el sistema",
+      "caption": "PRUEBA TÉCNICA, no publicar.",
+      "hashtags": [
+        "#VezMoney",
+        "#Prueba",
+        "#NoPublicar",
+        "#Sistema"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "reel",
+      "video": {
+        "url": "https://www.tiktok.com/@yadhiravera/video/7704093238856011015",
+        "autor": "yadhiravera",
+        "plataforma": "TikTok",
+        "mensaje_permiso": "Hola, nos encantó tu video. ¿Podemos compartirlo en VezMoney dándote el crédito?"
+      },
+      "gancho": "PRUEBA TÉCNICA: no publicar",
+      "remate": "Así quedaría un reel de VezMoney",
+      "inicio": 0,
+      "duracion": 8,
+      "audio": "original",
+      "caption": "PRUEBA TÉCNICA, no publicar. Video de @yadhiravera en TikTok.",
+      "hashtags": [
+        "#VezMoney",
+        "#Prueba",
+        "#NoPublicar",
+        "#Sistema"
+      ]
+    }
+  }
+]
