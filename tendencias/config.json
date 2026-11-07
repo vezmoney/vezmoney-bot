@@ -88,6 +88,18 @@
     "maxDias": 6,
     "maxDuracionS": 60,
     "minVistas": 800,
-    "top": 10
+    "top": 10,
+    "instagram": {
+      "hashtags": [
+        "venezolanosenchile",
+        "peruanosenchile",
+        "colombianosenchile",
+        "venezolanosenperu"
+      ],
+      "porHashtag": 10,
+      "maxDias": 14,
+      "top": 4,
+      "cuentas": []
+    }
   }
 }

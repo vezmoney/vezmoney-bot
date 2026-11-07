@@ -16,7 +16,7 @@ export const LIMITES = {
 };
 const PROHIBIDAS = [/sin comisi[oó]n/i, /sin costo/i, /el m[aá]s barato/i, /la mejor tasa/i, /garantizad/i, /100\s?%\s?seguro/i, /24\s?\/\s?7/i, /\ben \d+ (min|minutos|horas|segundos)\b/i, /al instante/i, /brasil/i];
 
-const okTikTok = (u) => { try { const x = new URL(u); return (x.hostname === "tiktok.com" || x.hostname.endsWith(".tiktok.com")) && x.pathname.includes("/video/"); } catch { return false; } };
+const okVideoUrl = (u) => { try { const x = new URL(u), h = x.hostname; return ((h === "tiktok.com" || h.endsWith(".tiktok.com")) && x.pathname.includes("/video/")) || ((h === "instagram.com" || h.endsWith(".instagram.com")) && /^\/(p|reel|reels|tv)\//.test(x.pathname)); } catch { return false; } };
 export function validar(p) {
   const errs = [];
   if (!LIMITES[p?.plantilla]) return [`plantilla desconocida: ${p?.plantilla}`];
@@ -27,7 +27,7 @@ export function validar(p) {
   const enImagen = [...Object.keys(LIMITES[p.plantilla]).map((k) => p[k]), ...(p.opciones || []), ...(p.izquierda?.items || []), ...(p.derecha?.items || []), p.izquierda?.titulo, p.derecha?.titulo].filter(Boolean).join(" ");
   if (new RegExp(EMOJI.source, "u").test(enImagen)) errs.push("no uses emojis en el texto de la imagen (solo en el caption)");
   if (p.plantilla === "reel") {
-    if (!okTikTok(p.video?.url)) errs.push("reel: falta video.url de TikTok");
+    if (!okVideoUrl(p.video?.url)) errs.push("reel: falta video.url de TikTok o Instagram");
     if (!p.video?.autor) errs.push("reel: falta video.autor (se le da crédito)");
     else if (!String(p.caption || "").toLowerCase().includes("@" + String(p.video.autor).toLowerCase().replace(/^@/, ""))) errs.push("reel: el caption debe dar crédito al autor (@" + p.video.autor + ")");
     if (!(p.duracion >= 3 && p.duracion <= 20)) errs.push("reel: duracion debe estar entre 3 y 20 segundos");
@@ -87,7 +87,7 @@ export function overlaysReel(p) {
   const autor = String(p.video.autor).replace(/^@/, "");
   const a = capa(`${A("left:0;right:0;top:0;height:620px;background:linear-gradient(180deg,rgba(0,10,50,.7),transparent)")}${logo("reversa_horizontal", 50, "left:50px;top:90px")}
     ${A(`left:50px;right:50px;top:180px;font-family:${I};font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1.06;font-size:${tam(p.gancho, 980, 330, { ratio: 0.55, lh: 1.06, max: 92, min: 44 })}px;text-shadow:0 4px 18px rgba(0,0,0,.6)`, esc(p.gancho))}
-    ${A(`left:50px;top:1430px;background:rgba(0,0,0,.55);color:#fff;font-family:${I};font-weight:700;font-size:30px;padding:12px 24px;border-radius:999px`, "Video de @" + esc(autor) + " en TikTok")}`);
+    ${A(`left:50px;top:1430px;background:rgba(0,0,0,.55);color:#fff;font-family:${I};font-weight:700;font-size:30px;padding:12px 24px;border-radius:999px`, "Video de @" + esc(autor) + " en " + esc(p.video.plataforma || "TikTok"))}`);
   const b = capa(`${A("left:0;right:0;top:1050px;height:870px;background:linear-gradient(180deg,transparent,rgba(0,16,80,.88))")}
     ${A(`left:50px;right:50px;top:1230px;background:#fff;border-radius:34px;padding:30px 38px;box-shadow:0 20px 50px rgba(0,0,40,.45)`, `<div style="font-family:${I};font-weight:900;color:${AZ2};letter-spacing:-.02em;line-height:1.1;font-size:${tam(p.remate, 900, 130, { ratio: 0.55, lh: 1.1, max: 58, min: 34 })}px">${esc(p.remate)}</div>`)}
     ${A("left:50px;top:1440px", btn("COTIZA EN VEZMONEY.COM", { bg: AZ2, size: 32 }))}`);
