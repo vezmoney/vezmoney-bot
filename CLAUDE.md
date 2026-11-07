@@ -45,6 +45,7 @@ Cada pieza usa UNA plantilla y sus campos (todo texto corto, se ve en el celular
 - `versus`: `izquierda` y `derecha` = `{ titulo (≤ 18), items: [3 textos ≤ 30] }`, `remate` (≤ 60).
 Además cada pieza lleva `caption` (texto de la publicación: gancho, 2–4 líneas, cierre con «Cotiza y envía en vezmoney.com 💙») y `hashtags` (6 a 10, siempre #VezMoney).
 La pieza B debe usar **otra plantilla y otro ángulo** que la A.
+**Sin emojis dentro de la imagen** (arriba, abajo, titular, bajada, remate, opciones, items): el servidor no los dibuja bien. Los emojis van solo en el `caption`.
 
 ## Formato de salida de ideas
 Cuando se te pida ideas, responde SOLO un objeto JSON válido (sin texto antes ni después):

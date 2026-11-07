@@ -22,6 +22,8 @@ export function validar(p) {
   if (p.plantilla === "meme" && !p.foto) errs.push("falta foto");
   if (p.plantilla === "pregunta" && !(p.opciones?.length >= 2 && p.opciones.length <= 3)) errs.push("pregunta necesita 2 o 3 opciones");
   if (p.plantilla === "versus") for (const l of ["izquierda", "derecha"]) { if (!p[l]?.titulo || !(p[l]?.items?.length >= 2)) errs.push(`versus.${l} incompleto`); }
+  const enImagen = [...Object.keys(LIMITES[p.plantilla]).map((k) => p[k]), ...(p.opciones || []), ...(p.izquierda?.items || []), ...(p.derecha?.items || []), p.izquierda?.titulo, p.derecha?.titulo].filter(Boolean).join(" ");
+  if (new RegExp(EMOJI.source, "u").test(enImagen)) errs.push("no uses emojis en el texto de la imagen (solo en el caption)");
   if (!p.caption) errs.push("falta caption");
   if (!(p.hashtags?.length >= 4)) errs.push("faltan hashtags");
   const todo = JSON.stringify(p);
@@ -36,7 +38,8 @@ const tam = (txt, ancho, alto, { ratio = 0.52, lh = 1.1, max = 120, min = 26 } =
 };
 const pie = (claro = false) => `${A("left:50px;bottom:44px;right:50px;display:flex;align-items:center;justify-content:space-between", `<span style="display:inline-block">${btn("COTIZA EN VEZMONEY.COM", { bg: claro ? AZ2 : "#fff", color: claro ? "#fff" : AZ2, size: 28 })}</span>`)}`;
 const lg = (v = "reversa_horizontal", style = "left:50px;top:46px") => logo(v, 52, style);
-const esc = (t) => String(t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const EMOJI = /[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\u{FE0F}\u{200D}]/gu;
+const esc = (t) => String(t ?? "").replace(EMOJI, "").replace(/\s+/g, " ").trim().replace(/&/g, "&amp;").replace(/</g, "&lt;");
 
 const PLANTILLAS = {
   meme: (p) => pageFeed(`${ph(p.foto, "50% 30%", "left:0;top:0;width:100%;height:100%")}${A("inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,transparent 28%,transparent 52%,rgba(0,16,80,.92) 82%)")}
