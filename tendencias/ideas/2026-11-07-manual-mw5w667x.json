@@ -1,0 +1,53 @@
+[
+  {
+    "id": "2026-11-07-m667x",
+    "fecha": "2026-11-07",
+    "titulo": "Palabras chilenas que ya usas sin darte cuenta",
+    "tipo": "tendencia",
+    "publico": "Venezolanos, peruanos y colombianos que viven en Chile",
+    "senal": {
+      "texto": "Video de humor de un venezolano en Santiago (TikTok de @soyarmas26), pedido por Francisco",
+      "pais": "Chile",
+      "url": "https://www.tiktok.com/@soyarmas26/video/7705041084958788871"
+    },
+    "porque": "No pude ver los fotogramas del video elegido y las reglas piden revisarlos antes de usar un reel, así que no lo uso y paso a plantillas de imagen. Se mantiene el humor de un migrante en Santiago, con el que se identifica quien vive en Chile.",
+    "gancho_envio": "Así como te acostumbras a la vida en Chile sin darte cuenta, enviar dinero a tu familia se vuelve algo natural y fácil.",
+    "pieza_a": {
+      "plantilla": "meme",
+      "foto": "s28.jpg",
+      "arriba": "Cuando ya dices «cachái» sin darte cuenta",
+      "abajo": "Así de natural se vuelve enviar a casa con VezMoney",
+      "caption": "Llegaste a Chile y, sin darte cuenta, ya hablas un poquito chileno 😄 ¿Cuál fue la primera palabra que se te pegó? Cuéntanos en los comentarios 👇 Cotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#MigrantesEnChile",
+        "#Santiago",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile",
+        "#ColombianosEnChile",
+        "#HumorMigrante"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "pregunta",
+      "pregunta": "¿Qué palabra chilena ya usas como si fuera tuya?",
+      "opciones": [
+        "Cachái",
+        "Al tiro",
+        "Po"
+      ],
+      "remate": "Así de fácil: cotiza y envía a tu familia",
+      "caption": "Los migrantes en Chile terminamos hablando un poco de todo 😅 Vota y cuéntanos cuál es tu favorita. Cotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#MigrantesEnChile",
+        "#Santiago",
+        "#HablaChilena",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile",
+        "#ColombianosEnChile",
+        "#Comunidad"
+      ]
+    }
+  }
+]
