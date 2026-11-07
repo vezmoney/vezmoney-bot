@@ -49,6 +49,7 @@ if (TOKEN && cfg.videos) {
     for (const [n, v] of videos.slice(0, 4).entries()) { try { await prepararVideo(v, n + 1); } catch (e) { fallos.push(`video ${v.url}: ${e.message}`); } }
   } catch (e) { fallos.push("videos: " + e.message); }
 }
+console.log(`Videos candidatos: ${videos.length} (con fotogramas: ${videos.filter((v) => v.fotogramas?.length).length})`);
 const proximas = fechas.fechas.filter((f) => { const d = diasHasta(f.fecha); return d >= 0 && d <= cfg.horizonteFechasDias; }).map((f) => ({ ...f, en_dias: diasHasta(f.fecha) }));
 
 // ── prompt ──────────────────────────────────────────────────────────────
@@ -56,7 +57,7 @@ const linea = (s) => `- [${s.tipo}${s.pais ? " " + s.pais : ""}] ${s.titulo}${s.
 const catalogo = Object.entries({ ...fotos.personas, ...fotos.lugares_y_cosas }).map(([k, v]) => `${k}: ${v}`).join("\n");
 const prompt = `Hoy es ${hoy} (hora de Chile). Lee CLAUDE.md y sigue SUS reglas al pie de la letra.
 
-${args.manual ? `Francisco (el usuario) te pasó por Telegram esto para convertirlo en contenido:\n${linea(senales[0])}\n\nPropón exactamente 1 idea basada en eso.` : `Estas son las señales de HOY (tendencias de búsqueda y noticias de las últimas ${cfg.ventanaNoticiasDias} días). Muchas NO sirven (son sensibles o irrelevantes): descártalas sin comentar.\n${senales.map(linea).join("\n")}\n\nFechas especiales próximas:\n${proximas.length ? proximas.map((f) => `- ${f.fecha} (en ${f.en_dias} días): ${f.nombre}${f.nota ? " — " + f.nota : ""}${f.cierre ? " · " + f.cierre : ""}`).join("\n") : "- ninguna en los próximos días"}\n\nRecurrente: fin de mes y quincena son días de pago, cuando más gente envía dinero a casa.\n\nPropón ${N} ideas, mezcladas (tendencia/cultura/humor, noticia útil, fecha especial si hay una cerca, y un evergreen si hace falta). Si hay menos señales buenas que ${N}, propón menos: nunca rellenes con ideas flojas o forzadas.`}
+${args.manual ? `Francisco (el usuario) te pasó por Telegram esto para convertirlo en contenido:\n${linea(senales[0])}\n\nPropón exactamente 1 idea basada en eso.${videos.length ? " Francisco ELIGIÓ ese video de TikTok: úsalo como REEL en la pieza_b (mira sus fotogramas antes). Solo si lo ves claramente inapropiado según las reglas, usa otra plantilla y explica el motivo en «porque»." : ""}` : `Estas son las señales de HOY (tendencias de búsqueda y noticias de las últimas ${cfg.ventanaNoticiasDias} días). Muchas NO sirven (son sensibles o irrelevantes): descártalas sin comentar.\n${senales.map(linea).join("\n")}\n\nFechas especiales próximas:\n${proximas.length ? proximas.map((f) => `- ${f.fecha} (en ${f.en_dias} días): ${f.nombre}${f.nota ? " — " + f.nota : ""}${f.cierre ? " · " + f.cierre : ""}`).join("\n") : "- ninguna en los próximos días"}\n\nRecurrente: fin de mes y quincena son días de pago, cuando más gente envía dinero a casa.\n\nPropón ${N} ideas, mezcladas (tendencia/cultura/humor, noticia útil, fecha especial si hay una cerca, y un evergreen si hace falta). Si hay menos señales buenas que ${N}, propón menos: nunca rellenes con ideas flojas o forzadas.`}
 
 ${videos.length ? `VIDEOS REALES EN TENDENCIA (TikTok, últimos días). Los que tienen "fotogramas" se bajaron: ABRE esos archivos con la herramienta Read ANTES de decidir y juzga por lo que VES, no por el título (a veces el título no coincide con el video).
 ${videos.map((v, n) => `- #${n + 1} @${v.autor} · ${v.vistas} vistas · ${v.duracion}s · ${v.fecha ?? "hoy"} · "${v.titulo}" · ${v.url}\n  fotogramas: ${(v.fotogramas || []).join(", ") || "(no disponibles: no lo uses)"}`).join("\n")}
@@ -92,6 +93,11 @@ fs.writeFileSync(histFile, JSON.stringify([...historial, ...salida.map((i) => `$
 console.log(`Señales: ${senales.length} (fallos: ${fallos.length}) · ideas nuevas: ${salida.length} → ${archivo}`);
 for (const i of salida) console.log(`\n[${i.id}] ${i.tipo} · ${i.titulo}\n  por qué: ${i.porque}\n  gancho: ${i.gancho_envio}\n  A (${i.pieza_a.plantilla}): ${JSON.stringify(i.pieza_a).slice(0, 220)}\n  B (${i.pieza_b.plantilla}): ${JSON.stringify(i.pieza_b).slice(0, 220)}`);
 
+if (!args.dry && !args.manual && videos.length && process.env.WORKER_URL && process.env.ADMIN_KEY) {
+  const lista = videos.map((v, n) => `${n + 1}. @${v.autor} · ${v.vistas.toLocaleString("es-CL")} vistas · ${v.duracion}s · ${v.fecha}\n   ${v.titulo.slice(0, 80)}\n   ${v.url}`).join("\n");
+  const r = await fetch(process.env.WORKER_URL.replace(/\/$/, "") + "/admin/aviso", { method: "POST", headers: { "X-Admin-Key": process.env.ADMIN_KEY, "content-type": "application/json" }, body: JSON.stringify({ texto: `🎬 VIDEOS EN TENDENCIA de hoy (TikTok, últimos días)\n\n${lista}\n\nSi alguno te sirve, responde aquí con:\n/idea <enlace del video>\ny te armo la idea con el reel (gancho arriba, crédito al autor y remate de VezMoney).` }) });
+  console.log("Aviso de videos", r.status);
+}
 if (!args.dry && process.env.WORKER_URL && process.env.ADMIN_KEY) {
   for (const i of salida) {
     const r = await fetch(process.env.WORKER_URL.replace(/\/$/, "") + "/admin/idea", { method: "POST", headers: { "X-Admin-Key": process.env.ADMIN_KEY, "content-type": "application/json" }, body: JSON.stringify({ id: i.id, idea: i }) });
