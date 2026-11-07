@@ -1,0 +1,218 @@
+[
+  {
+    "id": "2026-11-07-1",
+    "fecha": "2026-11-07",
+    "titulo": "Feriado del 16 en Colombia: Independencia de Cartagena",
+    "tipo": "fecha",
+    "publico": "Colombianos en Chile y sus familias en Colombia",
+    "senal": {
+      "texto": "Feriado en Colombia el lunes 16 de noviembre (Independencia de Cartagena)",
+      "pais": "CO",
+      "url": ""
+    },
+    "porque": "Un fin de semana largo en casa hace que se piense en la familia y en lo que se quiere mandar.",
+    "gancho_envio": "Así de tranquilo se envía, hasta en feriado: tú descansas y tu envío sigue su camino.",
+    "pieza_a": {
+      "plantilla": "meme",
+      "foto": "co01.jpg",
+      "arriba": "Lunes 16: feriado en Colombia 🇨🇴",
+      "abajo": "Tú descansas y tu envío sigue su camino a casa",
+      "caption": "Se viene el puente festivo en Colombia 🇨🇴 y Cartagena se lleva los aplausos.\nLejos o cerca, el feriado se siente en el corazón.\nQue se note el cariño: deja listo el envío para los tuyos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Colombia",
+        "#Cartagena",
+        "#Feriado",
+        "#ColombianosEnChile",
+        "#EnvioDeDinero",
+        "#Remesas",
+        "#Migrantes"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "pregunta",
+      "pregunta": "¿Cómo pasas el feriado del 16 lejos de casa?",
+      "opciones": [
+        "Arepas y música",
+        "Videollamada con la familia",
+        "Durmiendo todo el día"
+      ],
+      "remate": "Y si hay envío pendiente, cotiza antes",
+      "caption": "Feriado en Colombia el lunes 16 🇨🇴\nCuéntanos en los comentarios cómo lo vas a vivir.\nNosotros apostamos por la videollamada con la familia 😉\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Colombia",
+        "#Cartagena",
+        "#Feriado",
+        "#Colombianos",
+        "#Comunidad",
+        "#Migrantes",
+        "#FamiliaUnida"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-07-2",
+    "fecha": "2026-11-07",
+    "titulo": "Alerta por noticias falsas y estafas en redes",
+    "tipo": "noticia",
+    "publico": "Migrantes venezolanos, peruanos y colombianos en Chile",
+    "senal": {
+      "texto": "Denuncian noticias falsas y nuevos intentos de estafa que circulan por redes sociales",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Muchos migrantes usan redes y WhatsApp para todo, y un mensaje falso puede costar caro.",
+    "gancho_envio": "Así de importante es verificar antes de enviar: entra siempre al sitio oficial.",
+    "pieza_a": {
+      "plantilla": "titular",
+      "etiqueta": "NOTICIA",
+      "titular": "Alertan por falsas noticias y estafas en redes",
+      "bajada": "Antes de creer o compartir un mensaje, revisa la fuente. Con tu dinero, más todavía.",
+      "remate": "Envía solo desde vezmoney.com",
+      "caption": "Circulan falsas noticias y mensajes engañosos en redes 📱\nSi algo te suena a «urgente» o «increíble», frena y verifica.\nPara enviar dinero a casa, entra siempre a nuestro sitio oficial.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Alerta",
+        "#NoticiasFalsas",
+        "#Estafas",
+        "#Migrantes",
+        "#Chile",
+        "#EnvioDeDinero",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "meme",
+      "foto": "s19.jpg",
+      "arriba": "Te llega un mensaje «urgente» con un link raro",
+      "abajo": "Respira, verifica y envía solo en vezmoney.com",
+      "caption": "¿Te ha llegado un mensaje con un link sospechoso? 👀\nNo lo abras ni lo reenvíes: respira y verifica primero.\nTu plata merece cuidado.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Humor",
+        "#Estafas",
+        "#CuidadoConElLink",
+        "#Migrantes",
+        "#Chile",
+        "#Comunidad",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-07-3",
+    "fecha": "2026-11-07",
+    "titulo": "Quincena: organiza tu envío antes del día de pago",
+    "tipo": "evergreen",
+    "publico": "Migrantes que envían dinero a su familia cada quincena",
+    "senal": {
+      "texto": "Se acerca la quincena del 15, día de pago recurrente",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "El día de pago todo corre; planear el envío evita apuros.",
+    "gancho_envio": "Así de fácil es ordenar tu quincena: cotizas con calma y envías.",
+    "pieza_a": {
+      "plantilla": "pregunta",
+      "pregunta": "¿Ya sabes cuánto enviarás esta quincena?",
+      "opciones": [
+        "Ya lo planeé",
+        "Lo decido ese día",
+        "Lo que alcance"
+      ],
+      "remate": "Cotiza antes y envía con calma",
+      "caption": "Se acerca la quincena 💸\nEl día de pago siempre hay mil cosas por hacer.\n¿Tú ya tienes claro el envío para tu familia? Cuéntanos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Quincena",
+        "#DiaDePago",
+        "#EnvioDeDinero",
+        "#Remesas",
+        "#Migrantes",
+        "#Chile",
+        "#FamiliaUnida"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "versus",
+      "izquierda": {
+        "titulo": "Sin organizarte",
+        "items": [
+          "Corriendo el día de pago",
+          "Dudas de última hora",
+          "Cotizas a último minuto"
+        ]
+      },
+      "derecha": {
+        "titulo": "Organizándote",
+        "items": [
+          "Cotizas con calma",
+          "Ves el detalle antes",
+          "Envías con tranquilidad"
+        ]
+      },
+      "remate": "Así de fácil es ordenar tu quincena",
+      "caption": "Dos formas de vivir el día de pago 😅\n¿Con cuál te identificas más?\nUn poquito de orden y el envío a casa se vuelve mucho más tranquilo.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Quincena",
+        "#Versus",
+        "#Humor",
+        "#Migrantes",
+        "#Remesas",
+        "#EnvioDeDinero",
+        "#Comunidad"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-07-4",
+    "fecha": "2026-11-07",
+    "titulo": "Black Friday: date un gusto y no olvides a tu familia",
+    "tipo": "fecha",
+    "publico": "Migrantes en Chile con familia en origen",
+    "senal": {
+      "texto": "Black Friday es el viernes 27 de noviembre, con ofertas desde ya",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Es época de ofertas y de regalos para la familia, y muchos quieren mandar algo a casa.",
+    "gancho_envio": "Así de fácil como armar el carrito, dejas listo el envío para tu familia.",
+    "pieza_a": {
+      "plantilla": "meme",
+      "foto": "s11.jpg",
+      "arriba": "Black Friday ya viene y tu carrito lo sabe",
+      "abajo": "Date un gusto, y no olvides el envío a casa 💙",
+      "caption": "Se acerca el Black Friday 🛍️\nTu carrito ya está listo, ¿y el envío para tu familia?\nEntre ofertas y regalos, deja un espacio para los tuyos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#BlackFriday",
+        "#Ofertas",
+        "#Migrantes",
+        "#Chile",
+        "#EnvioDeDinero",
+        "#Remesas",
+        "#FamiliaUnida"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "titular",
+      "etiqueta": "FECHA",
+      "titular": "Black Friday: viernes 27 de noviembre",
+      "bajada": "Mientras buscas ofertas, deja listo también el envío para tu familia en casa.",
+      "remate": "Cotiza antes y envía con calma",
+      "caption": "Anota la fecha: Black Friday, viernes 27 de noviembre 🗓️\nHaz tu lista de ofertas… y suma a tu familia.\nUn envío a tiempo también es un regalo.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#BlackFriday",
+        "#Fecha",
+        "#Ofertas",
+        "#Migrantes",
+        "#Remesas",
+        "#EnvioDeDinero",
+        "#Comunidad"
+      ]
+    }
+  }
+]
