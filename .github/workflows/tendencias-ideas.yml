@@ -36,8 +36,9 @@ jobs:
         env:
           WORKER_URL: ${{ secrets.WORKER_URL }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: |
-          if [ -z "$WORKER_URL" ] || [ -z "$ANTHROPIC_API_KEY" ]; then echo "Faltan los secretos WORKER_URL o ANTHROPIC_API_KEY: el bot de tendencias aún no está activado."; echo "go=false" >> "$GITHUB_OUTPUT"
+          if [ -z "$WORKER_URL" ] || { [ -z "$ANTHROPIC_API_KEY" ] && [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; }; then echo "Faltan los secretos WORKER_URL o la clave de Claude (CLAUDE_CODE_OAUTH_TOKEN o ANTHROPIC_API_KEY): el bot de tendencias aún no está activado."; echo "go=false" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event_name }}" = "schedule" ] && [ "$(TZ=America/Santiago date +%H)" != "08" ]; then echo "go=false" >> "$GITHUB_OUTPUT"
           else echo "go=true" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/setup-node@v4
@@ -50,11 +51,13 @@ jobs:
         if: steps.hora.outputs.go == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           ADMIN_KEY: ${{ secrets.ADMIN_KEY }}
           MANUAL: ${{ github.event.client_payload.texto || inputs.manual }}
           N: ${{ inputs.n }}
         run: |
+          [ -n "$ANTHROPIC_API_KEY" ] || unset ANTHROPIC_API_KEY; [ -n "$CLAUDE_CODE_OAUTH_TOKEN" ] || unset CLAUDE_CODE_OAUTH_TOKEN
           EXTRA=""
           if [ -n "$N" ]; then EXTRA="--n=$N"; fi
           if [ -n "$MANUAL" ]; then node src/tendencias/ideas.mjs --manual="$MANUAL"; else node src/tendencias/ideas.mjs $EXTRA; fi
