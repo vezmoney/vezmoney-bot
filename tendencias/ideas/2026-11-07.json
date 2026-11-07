@@ -214,5 +214,211 @@
         "#Comunidad"
       ]
     }
+  },
+  {
+    "id": "2026-11-07-5",
+    "fecha": "2026-11-07",
+    "titulo": "Pagos entre Colombia y Venezuela, en el radar",
+    "tipo": "noticia",
+    "publico": "Venezolanos en Colombia y Chile con familia en Venezuela y Colombia",
+    "senal": {
+      "texto": "Una mina de oro: el potencial de los pagos transfronterizos entre Colombia y Venezuela",
+      "pais": "CO",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSTZGSXAydVBGMzJSYk9SZG1qTmpuN3ZfYlc0RUk5dWVYRWVLcWZJbWxBN01QYm5KU25kMkprQWVzY1BEcGNveUdYdlJxNWlyV1dPUVVLYlFsU0RKMUNFVWl5c2xnYTcyWThrNjYzUThzWkxBVmxlTWZzbXNoVU9rd2JDckk?oc=5"
+    },
+    "porque": "Si tienes familia al otro lado de la frontera, cualquier novedad sobre cómo se mueve el dinero entre países te toca de cerca.",
+    "gancho_envio": "Así de fácil se acerca tu familia: el dinero cruza fronteras y tú lo haces con calma.",
+    "pieza_a": {
+      "plantilla": "titular",
+      "etiqueta": "NOTICIA",
+      "titular": "Colombia y Venezuela: los pagos entre ambos países, en el radar",
+      "bajada": "Medios destacan el potencial de los pagos transfronterizos entre las dos naciones.",
+      "remate": "Así de fácil se acerca tu familia",
+      "caption": "Se habla mucho de cómo se mueve el dinero entre Colombia y Venezuela 🌎\nPara quienes tienen a su gente al otro lado, enviar es parte del día a día.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#VenezolanosEnColombia",
+        "#VenezolanosEnChile",
+        "#EnviarDinero",
+        "#Remesas",
+        "#Migrantes",
+        "#Colombia",
+        "#Venezuela"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "meme",
+      "foto": "s17.jpg",
+      "arriba": "Tu familia está en otro país",
+      "abajo": "Pero tu envío también sabe cruzar fronteras",
+      "caption": "La distancia no cambia lo que sientes por tu gente 💛\nLas fronteras se cruzan con un envío bien hecho.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Migrantes",
+        "#FamiliaEnLaDistancia",
+        "#EnviarDinero",
+        "#VenezolanosEnColombia",
+        "#VenezolanosEnChile",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-07-6",
+    "fecha": "2026-11-07",
+    "titulo": "¿Qué plato extrañas más?",
+    "tipo": "evergreen",
+    "publico": "Venezolanos, peruanos y colombianos en Chile",
+    "senal": {
+      "texto": "Cultura y nostalgia de la comida de casa",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "La comida de casa es lo que más se extraña y todos quieren contar cuál es la suya.",
+    "gancho_envio": "Los sabores se extrañan, pero el apoyo a tu familia se envía fácil.",
+    "pieza_a": {
+      "plantilla": "pregunta",
+      "pregunta": "¿Qué plato extrañas más cuando estás lejos de casa?",
+      "opciones": [
+        "Arepa rellena",
+        "Ceviche",
+        "Bandeja paisa"
+      ],
+      "remate": "Los sabores se extrañan; el apoyo se envía",
+      "caption": "Hay platos que huelen a casa 🏡\nCuéntanos en los comentarios cuál extrañas más.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#ComidaDeCasa",
+        "#Arepa",
+        "#Ceviche",
+        "#BandejaPaisa",
+        "#MigrantesEnChile",
+        "#Nostalgia",
+        "#Orgullo"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "meme",
+      "foto": "ln_arepa.jpg",
+      "arriba": "Cuando huele a casa y estás lejos",
+      "abajo": "Así de fácil es mandarle una mano a tu familia",
+      "caption": "Una arepa y media vida de recuerdos 🫓\nEl cariño a la distancia también se manda.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Arepa",
+        "#VenezolanosEnChile",
+        "#Nostalgia",
+        "#FamiliaEnLaDistancia",
+        "#Migrantes",
+        "#EnviarDinero"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-07-7",
+    "fecha": "2026-11-07",
+    "titulo": "Sábado: atendemos hasta las 16:00",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile que envían dinero a su familia",
+    "senal": {
+      "texto": "Horario de atención de VezMoney",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Saber hasta qué hora te atienden el sábado evita dejar el envío para después.",
+    "gancho_envio": "Así de fácil es organizarte: ya sabes el horario y envías con calma.",
+    "pieza_a": {
+      "plantilla": "dato",
+      "numero": "16:00",
+      "texto": "Los sábados te atendemos hasta las 16:00, hora de Chile. De lunes a viernes, de 8:30 a 20:00.",
+      "remate": "Cotiza hoy y envía con calma",
+      "caption": "¿Pendiente por resolver? 📌\nLos sábados te atendemos hasta las 16:00 (hora de Chile) y de lunes a viernes de 8:30 a 20:00. Domingo cerrado.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Sabado",
+        "#Horario",
+        "#EnviarDinero",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#Chile"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "meme",
+      "foto": "s15.jpg",
+      "arriba": "Sábado: último tramo para resolver pendientes",
+      "abajo": "Cotiza en vezmoney.com y envía con calma",
+      "caption": "El sábado también rinde 💪\nCotiza con tranquilidad y deja listo el envío a tu familia. Te atendemos hasta las 16:00 (hora de Chile).\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Sabado",
+        "#Migrantes",
+        "#EnviarDinero",
+        "#Chile",
+        "#Remesas",
+        "#Organizate"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-07-8",
+    "fecha": "2026-11-07",
+    "titulo": "Domingo de videollamada con la familia",
+    "tipo": "evergreen",
+    "publico": "Migrantes con padres y abuelos en el país de origen",
+    "senal": {
+      "texto": "Ritual de videollamada dominical con la familia",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "La videollamada del domingo es el momento en que más se siente la distancia y más se quiere acompañar.",
+    "gancho_envio": "Así de cerca como una videollamada: un envío también acerca a tu gente.",
+    "pieza_a": {
+      "plantilla": "meme",
+      "foto": "s23.jpg",
+      "arriba": "Domingo: videollamada con los abuelos",
+      "abajo": "Y si hace falta, el apoyo llega junto al cariño",
+      "caption": "Domingo, café y videollamada con la familia ☕💛\nLa distancia se siente menos cuando están cerca de corazón.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Domingo",
+        "#Videollamada",
+        "#FamiliaEnLaDistancia",
+        "#Migrantes",
+        "#Abuelos",
+        "#EnviarDinero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "versus",
+      "izquierda": {
+        "titulo": "Videollamada",
+        "items": [
+          "Se ve la sonrisa",
+          "Se escucha la risa",
+          "Se siente el cariño"
+        ]
+      },
+      "derecha": {
+        "titulo": "Envío VezMoney",
+        "items": [
+          "Se cotiza con calma",
+          "Se envía fácil",
+          "Se apoya a la familia"
+        ]
+      },
+      "remate": "Las dos acercan a tu gente",
+      "caption": "Dos formas de estar cerca aunque haya kilómetros de por medio 💙\n¿Cuál usas tú más?\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Videollamada",
+        "#FamiliaUnida",
+        "#Migrantes",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile",
+        "#ColombianosEnChile",
+        "#EnviarDinero"
+      ]
+    }
   }
 ]
