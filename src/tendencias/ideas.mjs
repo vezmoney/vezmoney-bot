@@ -38,7 +38,9 @@ async function prepararVideo(v, n) {
   fs.writeFileSync(f, (await descargarVideo(v.url, TOKEN)).buffer);
   const dur = Number(spawnSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f], { encoding: "utf8" }).stdout) || v.duracion || 10;
   v.duracion = Math.round(dur); v.fotogramas = [];
+  const sonda = spawnSync("ffmpeg", ["-version"], { encoding: "utf8" }); if (sonda.error) throw new Error("ffmpeg no está instalado en este equipo");
   for (const [k, t] of [0.15, 0.5, 0.85].entries()) { const out = `out/tendencias/tmp/frames/v${n}_${k + 1}.jpg`; spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-ss", String(Math.max(0, dur * t)), "-i", f, "-frames:v", "1", "-vf", "scale=360:-1", "-q:v", "4", out]); if (fs.existsSync(out)) v.fotogramas.push(out); }
+  if (!v.fotogramas.length) throw new Error("no pude sacar fotogramas del video");
 }
 let videos = [];
 if (TOKEN && cfg.videos) {

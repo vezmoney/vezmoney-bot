@@ -49,6 +49,8 @@ jobs:
           key: playwright-${{ hashFiles('package-lock.json') }}
       - run: npx playwright install --with-deps chromium
       - run: npm install -g @anthropic-ai/claude-code
+      - name: ffmpeg (para los videos)
+        run: command -v ffmpeg >/dev/null && command -v ffprobe >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
       - name: Claude aplica el cambio
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
