@@ -1,0 +1,54 @@
+[
+  {
+    "id": "2026-11-07-mtd44",
+    "fecha": "2026-11-07",
+    "titulo": "Los primos que siempre llaman: estar presente a la distancia",
+    "tipo": "evergreen",
+    "publico": "Migrantes venezolanos, peruanos y colombianos en Chile; venezolanos en Perú y Colombia",
+    "senal": {
+      "texto": "TikTok de @soyarmas26 («Make Your Day») sobre la llamada del primo de Venezuela. No se usó como reel porque el chiste se burla de un familiar venezolano que «no trabaja», lo que va contra la regla de no burlarse de ningún país ni comunidad. Solo se tomó la idea general de la llamada familiar, con otro enfoque.",
+      "pais": "Venezuela",
+      "url": "https://www.tiktok.com/@soyarmas26/video/7705041084958788871"
+    },
+    "porque": "No usé el video como reel porque se burla de un primo venezolano que no trabaja, un estereotipo que las reglas prohíben. Dejé solo lo positivo: la familia que llama y el cariño de apoyarla a la distancia, con humor suave.",
+    "gancho_envio": "Así de fácil es estar presente para tu familia: una llamada se acompaña con un envío.",
+    "pieza_a": {
+      "plantilla": "meme",
+      "foto": "s28.jpg",
+      "arriba": "Cuando el primo te llama solo para saludar... ¿o no?",
+      "abajo": "Tú siempre listo para apoyar: enviar con VezMoney es fácil",
+      "caption": "Los primos siempre aparecen en el mejor momento 😄 Y cuando toca apoyar a la familia a la distancia, hacerlo debe ser fácil y con calma. Cotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Migrantes",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile",
+        "#ColombianosEnChile",
+        "#Familia",
+        "#EnviarDinero",
+        "#HumorMigrante"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "pregunta",
+      "pregunta": "¿Cómo apoyas a tu familia a la distancia?",
+      "opciones": [
+        "Con una llamada",
+        "Con un envío",
+        "Con las dos"
+      ],
+      "remate": "Así de fácil es estar presente: envía con VezMoney",
+      "caption": "Cuéntanos en los comentarios 👇 ¿Cómo haces sentir cerca a tu gente aunque estén lejos? Una llamada, un mensaje o un envío, todo suma. Cotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Migrantes",
+        "#Familia",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile",
+        "#ColombianosEnChile",
+        "#EnviarDinero",
+        "#Comunidad"
+      ]
+    }
+  }
+]
