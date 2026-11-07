@@ -1,0 +1,54 @@
+[
+  {
+    "id": "2026-11-07-m8zt6",
+    "fecha": "2026-11-07",
+    "titulo": "Cuando te llama la familia desde casa",
+    "tipo": "evergreen",
+    "publico": "Venezolanos, peruanos y colombianos en Chile; venezolanos en Perú y Colombia",
+    "senal": {
+      "texto": "Video de humor elegido por Francisco (@soyarmas26 en TikTok) sobre la llamada de un primo de Venezuela. No se usa como reel.",
+      "pais": "Venezuela",
+      "url": "https://www.tiktok.com/@soyarmas26/video/7705041084958788871"
+    },
+    "porque": "No usé el video como reel. El texto en pantalla dice «el primo de Venezuela que no trabaja», que retrata a los venezolanos con un estereotipo y se acerca a una burla a una comunidad, algo que las reglas descartan. Por eso tomo solo la idea cálida de la llamada de la familia y uso otras plantillas, con humor suave y sin burla.",
+    "gancho_envio": "Así de cerca se siente la familia cuando llama, y así de fácil es enviarle apoyo con VezMoney.",
+    "pieza_a": {
+      "plantilla": "meme",
+      "foto": "s17.jpg",
+      "arriba": "Cuando te llama el primo desde casa",
+      "abajo": "Atiendes con cariño y envías fácil con VezMoney",
+      "caption": "Suena el celular y es alguien de casa 📞 Siempre es un gusto escuchar a la familia, aunque estemos lejos. Y cuando toca apoyar, que enviar sea así de fácil. Cotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Migrantes",
+        "#Venezolanosenchile",
+        "#Peruanosenchile",
+        "#Colombianosenchile",
+        "#Familia",
+        "#Remesas",
+        "#HumorMigrante"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "pregunta",
+      "pregunta": "¿Por qué te llama la familia desde casa?",
+      "opciones": [
+        "Saber cómo estás",
+        "Contarte el chisme",
+        "Pedirte la receta"
+      ],
+      "remate": "Así de cerca se siente enviar a casa",
+      "caption": "Las llamadas de casa nunca fallan 😄 ¿Cuál es la razón que más se repite en tu familia? Cuéntanos en los comentarios y comparte con ese primo que siempre llama. Cotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Migrantes",
+        "#Familia",
+        "#Venezolanos",
+        "#Peruanos",
+        "#Colombianos",
+        "#VidaDeMigrante",
+        "#Comunidad"
+      ]
+    }
+  }
+]
