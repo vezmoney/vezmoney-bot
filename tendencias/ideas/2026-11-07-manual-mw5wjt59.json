@@ -1,0 +1,55 @@
+[
+  {
+    "id": "2026-11-07-mjt59",
+    "fecha": "2026-11-07",
+    "titulo": "Make your day: alegrarle el día a tu familia",
+    "tipo": "evergreen",
+    "publico": "Migrantes venezolanos, peruanos y colombianos en Chile, y venezolanos en Perú y Colombia",
+    "senal": {
+      "texto": "TikTok «Make Your Day» (@soyarmas26). No pude ver sus fotogramas y el único video descargado (@yesidcastanocl) es un anuncio de abogados sobre trámites de nacionalidad, así que no usé ninguno como reel.",
+      "pais": "Chile",
+      "url": "https://www.tiktok.com/@soyarmas26/video/7705041084958788871"
+    },
+    "porque": "No usé reel: no vi los fotogramas del video elegido y el único descargado es publicidad legal sobre nacionalidad, que no es humor ni cultura y no se conecta con un envío. Se rescata la idea de «alegrar el día»: a un migrante le importa dar una alegría a los suyos en casa.",
+    "gancho_envio": "Así de fácil es alegrarle el día a tu familia: con un envío en VezMoney.",
+    "pieza_a": {
+      "plantilla": "meme",
+      "foto": "s14.jpg",
+      "arriba": "Hoy alguien en casa puede tener un muy buen día",
+      "abajo": "Así de fácil es alegrárselo: envía con VezMoney",
+      "caption": "A veces un día cualquiera cambia con una buena noticia 😊 Tu familia en casa también merece uno, y tú puedes dárselo.\nAsí de fácil es alegrarle el día a quien más quieres.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Migrantes",
+        "#Venezolanosenchile",
+        "#Peruanosenchile",
+        "#Colombianosenchile",
+        "#Familia",
+        "#EnviarDinero",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "pregunta",
+      "pregunta": "¿Qué es lo que más te alegra el día?",
+      "opciones": [
+        "Una llamada de casa",
+        "Un plato de tu tierra",
+        "Ayudar a tu familia"
+      ],
+      "remate": "Así de fácil: alegra su día con tu envío",
+      "caption": "Cuéntanos en los comentarios: ¿qué es lo que más te alegra el día? 👇😄\nA nosotros nos encanta ayudarte a alegrar el día de tu familia.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Migrantes",
+        "#Comunidad",
+        "#Venezolanos",
+        "#Peruanos",
+        "#Colombianos",
+        "#Chile",
+        "#Familia",
+        "#EnviarDinero"
+      ]
+    }
+  }
+]
