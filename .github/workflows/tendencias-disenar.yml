@@ -37,6 +37,8 @@ jobs:
           key: playwright-${{ hashFiles('package-lock.json') }}
       - run: npx playwright install --with-deps chromium
       - name: Diseñar las 2 piezas
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
         run: node src/tendencias/disenar.mjs "$IDEA"
       - name: Subir las imágenes
         run: |

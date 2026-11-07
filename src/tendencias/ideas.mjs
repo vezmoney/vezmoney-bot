@@ -5,6 +5,8 @@ import fs from "node:fs";
 import { recolectar } from "./fuentes.mjs";
 import { claude, extraerJSON } from "./claude.mjs";
 import { validar } from "./disenos.mjs";
+import { videosEnTendencia, descargarVideo } from "./fuentes-video.mjs";
+import { spawnSync } from "node:child_process";
 
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, ...v] = a.replace(/^--/, "").split("="); return [k, v.length ? v.join("=") : true]; }));
 const cfg = JSON.parse(fs.readFileSync("tendencias/config.json", "utf8"));
@@ -28,6 +30,25 @@ if (args.manual) {
 } else {
   ({ senales, fallos } = await recolectar(cfg));
 }
+// ── videos reales en tendencia: se bajan los mejores y se sacan 3 fotogramas para que Claude VEA lo que hay en el video ──
+const TOKEN = process.env.APIFY_TOKEN;
+async function prepararVideo(v, n) {
+  const f = `out/tendencias/tmp/v${n}.mp4`;
+  fs.mkdirSync("out/tendencias/tmp/frames", { recursive: true });
+  fs.writeFileSync(f, (await descargarVideo(v.url, TOKEN)).buffer);
+  const dur = Number(spawnSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f], { encoding: "utf8" }).stdout) || v.duracion || 10;
+  v.duracion = Math.round(dur); v.fotogramas = [];
+  for (const [k, t] of [0.15, 0.5, 0.85].entries()) { const out = `out/tendencias/tmp/frames/v${n}_${k + 1}.jpg`; spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-ss", String(Math.max(0, dur * t)), "-i", f, "-frames:v", "1", "-vf", "scale=360:-1", "-q:v", "4", out]); if (fs.existsSync(out)) v.fotogramas.push(out); }
+}
+let videos = [];
+if (TOKEN && cfg.videos) {
+  try {
+    const tt = args.manual ? String(args.manual).match(/https:\/\/(?:www\.|vm\.|vt\.)?tiktok\.com\/\S+/)?.[0] : null;
+    if (args.manual) { if (tt) videos = [{ tipo: "video_tiktok", url: tt, autor: tt.match(/@([^/?]+)/)?.[1] ?? "", titulo: String(args.manual).slice(0, 160), vistas: "—", duracion: 0 }]; }
+    else videos = await videosEnTendencia(cfg, TOKEN);
+    for (const [n, v] of videos.slice(0, 4).entries()) { try { await prepararVideo(v, n + 1); } catch (e) { fallos.push(`video ${v.url}: ${e.message}`); } }
+  } catch (e) { fallos.push("videos: " + e.message); }
+}
 const proximas = fechas.fechas.filter((f) => { const d = diasHasta(f.fecha); return d >= 0 && d <= cfg.horizonteFechasDias; }).map((f) => ({ ...f, en_dias: diasHasta(f.fecha) }));
 
 // ── prompt ──────────────────────────────────────────────────────────────
@@ -37,7 +58,10 @@ const prompt = `Hoy es ${hoy} (hora de Chile). Lee CLAUDE.md y sigue SUS reglas 
 
 ${args.manual ? `Francisco (el usuario) te pasó por Telegram esto para convertirlo en contenido:\n${linea(senales[0])}\n\nPropón exactamente 1 idea basada en eso.` : `Estas son las señales de HOY (tendencias de búsqueda y noticias de las últimas ${cfg.ventanaNoticiasDias} días). Muchas NO sirven (son sensibles o irrelevantes): descártalas sin comentar.\n${senales.map(linea).join("\n")}\n\nFechas especiales próximas:\n${proximas.length ? proximas.map((f) => `- ${f.fecha} (en ${f.en_dias} días): ${f.nombre}${f.nota ? " — " + f.nota : ""}${f.cierre ? " · " + f.cierre : ""}`).join("\n") : "- ninguna en los próximos días"}\n\nRecurrente: fin de mes y quincena son días de pago, cuando más gente envía dinero a casa.\n\nPropón ${N} ideas, mezcladas (tendencia/cultura/humor, noticia útil, fecha especial si hay una cerca, y un evergreen si hace falta). Si hay menos señales buenas que ${N}, propón menos: nunca rellenes con ideas flojas o forzadas.`}
 
-Ideas ya propuestas en los últimos días (NO las repitas ni uses el mismo ángulo):
+${videos.length ? `VIDEOS REALES EN TENDENCIA (TikTok, últimos días). Los que tienen "fotogramas" se bajaron: ABRE esos archivos con la herramienta Read ANTES de decidir y juzga por lo que VES, no por el título (a veces el título no coincide con el video).
+${videos.map((v, n) => `- #${n + 1} @${v.autor} · ${v.vistas} vistas · ${v.duracion}s · ${v.fecha ?? "hoy"} · "${v.titulo}" · ${v.url}\n  fotogramas: ${(v.fotogramas || []).join(", ") || "(no disponibles: no lo uses)"}`).join("\n")}
+
+Puedes usar UN video como REEL en la pieza_b de una idea (máximo 2 ideas con reel hoy), SOLO si lo que ves es sano, claro y se conecta de forma natural con enviar dinero: humor cotidiano, vida de migrante, cultura, celebración, sorpresa, rapidez, seguridad. NO uses videos con menores identificables, violencia, delitos, política, discusiones, cuerpos expuestos, enfermedades, personas vulnerables o alguien siendo burlado. Si ninguno sirve, no uses ninguno. El reel: {"plantilla":"reel","video":{"url","autor","plataforma":"TikTok","mensaje_permiso":"mensaje corto y amable para pedirle permiso al autor por DM"},"gancho","remate","inicio","duracion","audio":"original","caption","hashtags"}; el caption DEBE dar crédito («Video de @autor en TikTok»). El gancho va arriba del video y el remate al final; no repitas lo que el video ya dice en pantalla. La pieza_a de esa idea sigue siendo una imagen.\n\n` : ""}Ideas ya propuestas en los últimos días (NO las repitas ni uses el mismo ángulo):
 ${historial.slice(-30).map((h) => "- " + h).join("\n") || "- (ninguna)"}
 
 Fotos disponibles para la plantilla "meme" (usa solo estos nombres de archivo):
@@ -47,10 +71,12 @@ Responde SOLO con el JSON {"ideas":[...]} descrito en CLAUDE.md, sin texto adici
 
 // ── Claude + validación (un reintento si algo no cumple) ────────────────
 async function pedir(extra = "") {
-  const txt = claude(prompt + extra, { maxTurns: 3 });
+  const conFotos = videos.some((v) => v.fotogramas?.length);
+  const txt = claude(prompt + extra, { maxTurns: conFotos ? 14 : 3, tools: conFotos ? ["Read"] : [] });
   const { ideas } = extraerJSON(txt);
   const malas = [];
   for (const i of ideas) for (const L of ["pieza_a", "pieza_b"]) { const e = validar(i[L]); if (e.length) malas.push(`«${i.titulo}» ${L}: ${e.join("; ")}`); if (i[L]?.plantilla === "meme" && i[L].foto && !{ ...fotos.personas, ...fotos.lugares_y_cosas }[i[L].foto]) malas.push(`«${i.titulo}» ${L}: la foto ${i[L].foto} no existe en el catálogo`); }
+  for (const i of ideas) { const p = i.pieza_b; if (p?.plantilla === "reel" && !videos.some((v) => v.url === p.video?.url)) malas.push(`«${i.titulo}» pieza_b: el video no está en la lista de candidatos`); if (i.pieza_a?.plantilla === "reel") malas.push(`«${i.titulo}» pieza_a: el reel va solo en la pieza_b`); if (p?.plantilla === "reel") { const v = videos.find((x) => x.url === p.video?.url); if (v) p.video = { ...p.video, vistas: v.vistas, duracion_original: v.duracion }; } }
   return { ideas, malas };
 }
 let { ideas, malas } = await pedir();

@@ -43,6 +43,7 @@ Cada pieza usa UNA plantilla y sus campos (todo texto corto, se ve en el celular
 - `pregunta`: `pregunta` (≤ 80), `opciones` (2 o 3, ≤ 28 c/u), `remate` (≤ 60).
 - `dato`: `numero` (≤ 10, ej. «3 de 4», «2026», «#1»), `texto` (≤ 110), `remate` (≤ 60). Solo datos verificables de la señal.
 - `versus`: `izquierda` y `derecha` = `{ titulo (≤ 18), items: [3 textos ≤ 30] }`, `remate` (≤ 60).
+- `reel` (solo en la **pieza B**, con un video real de TikTok de la lista del día): `video` = `{ url, autor, plataforma: "TikTok", mensaje_permiso }`, `gancho` (≤ 60, va arriba del video), `remate` (≤ 60, final hacia VezMoney), `inicio` (segundo donde parte, 0 por defecto), `duracion` (3 a 15 s), `audio` (`original` o `silencio`). El `caption` debe dar crédito: «Video de @autor en TikTok». Solo humor sano, vida cotidiana, cultura o celebración; nunca menores identificables, violencia, delitos, política ni gente siendo burlada. Antes de elegir, MIRA los fotogramas (Read): el título puede no coincidir con el video.
 Además cada pieza lleva `caption` (texto de la publicación: gancho, 2–4 líneas, cierre con «Cotiza y envía en vezmoney.com 💙») y `hashtags` (6 a 10, siempre #VezMoney).
 La pieza B debe usar **otra plantilla y otro ángulo** que la A.
 **Sin emojis dentro de la imagen** (arriba, abajo, titular, bajada, remate, opciones, items): el servidor no los dibuja bien. Los emojis van solo en el `caption`.

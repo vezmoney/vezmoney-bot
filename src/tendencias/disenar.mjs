@@ -5,6 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { renderPage, closeBrowser } from "../render.mjs";
 import { html, validar } from "./disenos.mjs";
+import { crearReel } from "./reel.mjs";
 
 const args = Object.fromEntries(process.argv.slice(2).filter((a) => a.startsWith("--")).map((a) => { const [k, ...v] = a.replace(/^--/, "").split("="); return [k, v.length ? v.join("=") : true]; }));
 const pos = process.argv.slice(2).filter((a) => !a.startsWith("--"));
@@ -21,6 +22,7 @@ async function renderPieza(id) {
   const pieza = JSON.parse(fs.readFileSync(`tendencias/piezas/${id}.json`, "utf8"));
   const errs = validar(pieza);
   if (errs.length) throw new Error(`La pieza ${id} no cumple: ${errs.join("; ")}`);
+  if (pieza.plantilla === "reel") { const r = await crearReel(pieza, id, { token: process.env.APIFY_TOKEN }); console.log(`Reel ${id}: ${r.segundos}s, ${r.mb} MB`); return { id, archivo: r.archivo, video: r.archivo, miniatura: r.miniatura, pieza }; }
   const version = Date.now().toString(36); // el nombre cambia con cada versión (evita la caché de GitHub y de Telegram)
   const archivo = `out/tendencias/${id}_${version}.jpg`;
   await renderPage(html(pieza), { width: 1080, height: 1350, out: archivo });
@@ -39,5 +41,5 @@ else {
 }
 await closeBrowser();
 // manifiesto: lo lee enviar.mjs después de que el flujo suba las imágenes a GitHub
-fs.writeFileSync("out/tendencias/_manifiesto.json", JSON.stringify(hechas.map(({ id, archivo, pieza }) => ({ id, archivo, idea: pieza._idea, letra: pieza._letra, titulo: pieza._titulo, caption: pieza.caption, hashtags: pieza.hashtags })), null, 2));
+fs.writeFileSync("out/tendencias/_manifiesto.json", JSON.stringify(hechas.map(({ id, archivo, pieza, video, miniatura }) => ({ id, archivo, video, miniatura, idea: pieza._idea, letra: pieza._letra, titulo: pieza._titulo, caption: pieza.caption, hashtags: pieza.hashtags })), null, 2));
 console.log("Listo:", hechas.map((h) => h.archivo).join(", "));

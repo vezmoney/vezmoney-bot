@@ -12,9 +12,11 @@ export const LIMITES = {
   pregunta: { pregunta: 80, remate: 60 },
   dato: { numero: 10, texto: 110, remate: 60 },
   versus: { remate: 60 },
+  reel: { gancho: 60, remate: 60 }, // video real de tendencia con texto encima (ver reel.mjs)
 };
 const PROHIBIDAS = [/sin comisi[oó]n/i, /sin costo/i, /el m[aá]s barato/i, /la mejor tasa/i, /garantizad/i, /100\s?%\s?seguro/i, /24\s?\/\s?7/i, /\ben \d+ (min|minutos|horas|segundos)\b/i, /al instante/i, /brasil/i];
 
+const okTikTok = (u) => { try { const x = new URL(u); return (x.hostname === "tiktok.com" || x.hostname.endsWith(".tiktok.com")) && x.pathname.includes("/video/"); } catch { return false; } };
 export function validar(p) {
   const errs = [];
   if (!LIMITES[p?.plantilla]) return [`plantilla desconocida: ${p?.plantilla}`];
@@ -24,6 +26,12 @@ export function validar(p) {
   if (p.plantilla === "versus") for (const l of ["izquierda", "derecha"]) { if (!p[l]?.titulo || !(p[l]?.items?.length >= 2)) errs.push(`versus.${l} incompleto`); }
   const enImagen = [...Object.keys(LIMITES[p.plantilla]).map((k) => p[k]), ...(p.opciones || []), ...(p.izquierda?.items || []), ...(p.derecha?.items || []), p.izquierda?.titulo, p.derecha?.titulo].filter(Boolean).join(" ");
   if (new RegExp(EMOJI.source, "u").test(enImagen)) errs.push("no uses emojis en el texto de la imagen (solo en el caption)");
+  if (p.plantilla === "reel") {
+    if (!okTikTok(p.video?.url)) errs.push("reel: falta video.url de TikTok");
+    if (!p.video?.autor) errs.push("reel: falta video.autor (se le da crédito)");
+    else if (!String(p.caption || "").toLowerCase().includes("@" + String(p.video.autor).toLowerCase().replace(/^@/, ""))) errs.push("reel: el caption debe dar crédito al autor (@" + p.video.autor + ")");
+    if (!(p.duracion >= 3 && p.duracion <= 20)) errs.push("reel: duracion debe estar entre 3 y 20 segundos");
+  }
   if (!p.caption) errs.push("falta caption");
   if (!(p.hashtags?.length >= 4)) errs.push("faltan hashtags");
   const todo = JSON.stringify(p);
@@ -72,3 +80,16 @@ const PLANTILLAS = {
 };
 
 export const html = (pieza) => { const f = PLANTILLAS[pieza.plantilla]; if (!f) throw new Error("plantilla desconocida: " + pieza.plantilla); return f(pieza); };
+
+// capas para el reel: a) logo + gancho + crédito (todo el video) y b) remate + botón (últimos 3 s). Zona segura: nada pegado al borde inferior (interfaz de IG/TikTok).
+const capa = (inner) => `<!doctype html><html><head><meta charset="UTF-8"><link rel="stylesheet" href="kit.css"><style>html,body{background:transparent!important;margin:0}</style></head><body><div style="position:relative;width:1080px;height:1920px;overflow:hidden">${inner}</div></body></html>`;
+export function overlaysReel(p) {
+  const autor = String(p.video.autor).replace(/^@/, "");
+  const a = capa(`${A("left:0;right:0;top:0;height:620px;background:linear-gradient(180deg,rgba(0,10,50,.7),transparent)")}${logo("reversa_horizontal", 50, "left:50px;top:90px")}
+    ${A(`left:50px;right:50px;top:180px;font-family:${I};font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1.06;font-size:${tam(p.gancho, 980, 330, { ratio: 0.55, lh: 1.06, max: 92, min: 44 })}px;text-shadow:0 4px 18px rgba(0,0,0,.6)`, esc(p.gancho))}
+    ${A(`left:50px;top:1430px;background:rgba(0,0,0,.55);color:#fff;font-family:${I};font-weight:700;font-size:30px;padding:12px 24px;border-radius:999px`, "Video de @" + esc(autor) + " en TikTok")}`);
+  const b = capa(`${A("left:0;right:0;top:1050px;height:870px;background:linear-gradient(180deg,transparent,rgba(0,16,80,.88))")}
+    ${A(`left:50px;right:50px;top:1230px;background:#fff;border-radius:34px;padding:30px 38px;box-shadow:0 20px 50px rgba(0,0,40,.45)`, `<div style="font-family:${I};font-weight:900;color:${AZ2};letter-spacing:-.02em;line-height:1.1;font-size:${tam(p.remate, 900, 130, { ratio: 0.55, lh: 1.1, max: 58, min: 34 })}px">${esc(p.remate)}</div>`)}
+    ${A("left:50px;top:1440px", btn("COTIZA EN VEZMONEY.COM", { bg: AZ2, size: 32 }))}`);
+  return { a, b };
+}

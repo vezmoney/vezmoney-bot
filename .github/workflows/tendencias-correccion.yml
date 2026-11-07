@@ -51,6 +51,7 @@ jobs:
       - run: npm install -g @anthropic-ai/claude-code
       - name: Claude aplica el cambio
         env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           WORKER_URL: ${{ secrets.WORKER_URL }}

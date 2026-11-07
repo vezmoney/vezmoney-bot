@@ -9,6 +9,7 @@ const cards = [];
 for (const i of ideas) for (const L of ["a", "b"]) {
   const p = i[`pieza_${L}`], e = validar(p);
   if (e.length) console.log(`✗ ${i.id} ${L.toUpperCase()}: ${e.join("; ")}`);
+  if (p.plantilla === "reel") { console.log(`(reel omitido en la muestra: ${i.id} ${L.toUpperCase()})`); continue; }
   const file = `juegos/tendencias/${i.id}-${L.toUpperCase()}.jpg`;
   await renderPage(html(p), { width: 1080, height: 1350, out: file });
   cards.push({ file, t: `${i.id} · ${L.toUpperCase()} · ${p.plantilla} — ${i.titulo.slice(0, 48)}` });

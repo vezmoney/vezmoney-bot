@@ -20,6 +20,18 @@ export async function renderPage(html, { width, height, out }) {
   await page.close();
 }
 
+export async function renderPng(html, { width, height, out }) {
+  fs.writeFileSync("page.html", html);
+  browser ??= await chromium.launch();
+  const page = await browser.newPage({ viewport: { width, height }, deviceScaleFactor: 1 });
+  await page.goto(pathToFileURL(path.resolve("page.html")).href, { waitUntil: "load" });
+  await page.evaluate(() => document.fonts.ready);
+  await page.evaluate(() => Promise.all([...document.images].map((i) => (i.complete ? null : new Promise((r) => { i.onload = i.onerror = r; })))));
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  await page.screenshot({ path: out, type: "png", omitBackground: true });
+  await page.close();
+}
+
 export async function closeBrowser() {
   if (browser) await browser.close();
 }

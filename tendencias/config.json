@@ -5,18 +5,89 @@
   "maxDiasFrescura": 3,
   "horizonteFechasDias": 10,
   "repo": "vezmoney/vezmoney-bot",
-  "geosTendencias": ["CL", "PE", "CO"],
-  "consultasNoticias": [
-    { "q": "venezolanos en Chile", "gl": "CL" },
-    { "q": "peruanos en Chile", "gl": "CL" },
-    { "q": "colombianos en Chile", "gl": "CL" },
-    { "q": "migrantes Chile remesas", "gl": "CL" },
-    { "q": "venezolanos en Perú", "gl": "PE" },
-    { "q": "venezolanos en Colombia", "gl": "CO" },
-    { "q": "remesas Venezuela dólar BCV", "gl": "CL" },
-    { "q": "Vinotinto selección venezolana", "gl": "CL" },
-    { "q": "dólar peso chileno hoy", "gl": "CL" }
+  "geosTendencias": [
+    "CL",
+    "PE",
+    "CO"
   ],
-  "horarios": { "A": ["12:30", "19:00"], "B": ["19:00", "12:30"] },
-  "redes": { "A": ["instagram", "facebook"], "B": ["instagram", "facebook", "tiktok"] }
+  "consultasNoticias": [
+    {
+      "q": "venezolanos en Chile",
+      "gl": "CL"
+    },
+    {
+      "q": "peruanos en Chile",
+      "gl": "CL"
+    },
+    {
+      "q": "colombianos en Chile",
+      "gl": "CL"
+    },
+    {
+      "q": "migrantes Chile remesas",
+      "gl": "CL"
+    },
+    {
+      "q": "venezolanos en Perú",
+      "gl": "PE"
+    },
+    {
+      "q": "venezolanos en Colombia",
+      "gl": "CO"
+    },
+    {
+      "q": "remesas Venezuela dólar BCV",
+      "gl": "CL"
+    },
+    {
+      "q": "Vinotinto selección venezolana",
+      "gl": "CL"
+    },
+    {
+      "q": "dólar peso chileno hoy",
+      "gl": "CL"
+    }
+  ],
+  "horarios": {
+    "A": [
+      "12:30",
+      "19:00"
+    ],
+    "B": [
+      "19:00",
+      "12:30"
+    ]
+  },
+  "redes": {
+    "A": [
+      "instagram",
+      "facebook"
+    ],
+    "B": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "reel": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ]
+  },
+  "videos": {
+    "hashtags": [
+      "venezolanosenchile",
+      "peruanosenchile",
+      "colombianosenchile",
+      "venezolanosenperu",
+      "venezolanosencolombia",
+      "humorchileno",
+      "migrantesenchile"
+    ],
+    "porHashtag": 5,
+    "maxDias": 6,
+    "maxDuracionS": 60,
+    "minVistas": 800,
+    "top": 10
+  }
 }

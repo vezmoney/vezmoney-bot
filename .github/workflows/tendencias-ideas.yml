@@ -50,6 +50,7 @@ jobs:
       - name: Ideas con Claude
         if: steps.hora.outputs.go == 'true'
         env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
