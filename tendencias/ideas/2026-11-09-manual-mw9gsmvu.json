@@ -1,0 +1,65 @@
+[
+  {
+    "id": "2026-11-09-msmvu",
+    "fecha": "2026-11-09",
+    "titulo": "Viernes de rumba: disfruta el finde, el envío va tranquilo",
+    "tipo": "tendencia",
+    "publico": "Migrantes venezolanos, peruanos y colombianos en Chile; sus familias",
+    "senal": {
+      "texto": "Video de @paqleo.cl en Instagram: ambiente de viernes de rumba con #TeamLeo, publicado el 7 de noviembre de 2026",
+      "pais": "Chile",
+      "url": "https://www.instagram.com/p/DfcKcq0z6xh/"
+    },
+    "porque": "Después de la semana de trabajo, el viernes de rumba es el momento de comunidad y alegría que todo migrante reconoce.",
+    "gancho_envio": "Así de bien se disfruta el viernes cuando tu envío a la familia ya quedó resuelto de forma fácil.",
+    "pieza_a": {
+      "plantilla": "meme",
+      "foto": "s07.jpg",
+      "arriba": "Llegó el viernes y se nota en el ánimo",
+      "abajo": "Así de fácil envías a tu familia y sigues la fiesta",
+      "caption": "Llegó el viernes y la alegría se contagia 🎉 Disfruta con tu gente, que enviar dinero a tu familia también puede ser fácil. Cotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#ViernesDeRumba",
+        "#MigrantesEnChile",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile",
+        "#ColombianosEnChile",
+        "#EnviarDinero",
+        "#ComunidadMigrante"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "reel",
+      "video": {
+        "url": "https://www.instagram.com/p/DfcKcq0z6xh/",
+        "autor": "paqleo.cl",
+        "plataforma": "Instagram",
+        "mensaje_permiso": "¡Hola! Nos encantó la vibra de tu video del viernes de rumba 🎉 Somos VezMoney, una remesadora digital. ¿Nos permites compartirlo en nuestras redes con crédito a @paqleo.cl? ¡Gracias!",
+        "vistas": 11982,
+        "duracion_original": 20
+      },
+      "gancho": "Así se vive el viernes de rumba",
+      "remate": "Así de fácil envías con VezMoney",
+      "estilo": "marco",
+      "inicio": 0,
+      "duracion": 10,
+      "audio": "musica",
+      "musica": "latino_alegre",
+      "caption": "Viernes de rumba y mucha energía 🎶 Tú disfrutas con tu gente y tu envío a la familia se hace fácil. Video de @paqleo.cl en Instagram. Cotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#ViernesDeRumba",
+        "#MigrantesEnChile",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile",
+        "#ColombianosEnChile",
+        "#EnviarDinero",
+        "#ComunidadMigrante",
+        "#Rumba"
+      ]
+    },
+    "sensibilidad": "media",
+    "nota_revision": "Elegido a mano por Francisco. El audio es desconocido y probablemente sea música comercial del local, por eso se usa pista propia con licencia (latino_alegre) en vez de original. El video tiene texto propio en pantalla («Viernes de rumba» y @coyote.real), por eso el estilo marco. Es un ambiente de bar con pistola de agua de juguete y una persona adulta; no se ve consumo de alcohol. Revisa si te acomoda el contexto de bar y confirma el permiso con @paqleo.cl. El video marca a @coyote.real, un local distinto de la cuenta que lo publicó."
+  }
+]
