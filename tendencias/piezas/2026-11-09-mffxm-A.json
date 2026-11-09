@@ -1,13 +1,27 @@
 {
-  "plantilla": "pregunta",
-  "pregunta": "Cuando el primo llama desde casa, ¿qué haces?",
-  "opciones": [
-    "Contesto con una sonrisa",
-    "Cotizo y envío con calma",
-    "Lo veo después del café"
+  "plantilla": "animado",
+  "busqueda": [
+    "woman smiling looking at phone video call",
+    "man laughing phone call at home"
   ],
-  "remate": "Tú decides cuándo y cuánto envías con VezMoney",
-  "caption": "¿Quién tiene un primo que siempre llama en el mejor momento? 😄📞\nA la familia se le contesta con cariño, y apoyarla puede ser fácil y a tu ritmo.\nCuéntanos en los comentarios: ¿qué haces tú?\nCotiza y envía en vezmoney.com 💙",
+  "escenas": [
+    {
+      "texto": "Cuando el primo llama desde casa...",
+      "resalta": "primo"
+    },
+    {
+      "texto": "A la familia se le contesta con cariño",
+      "resalta": "cariño"
+    },
+    {
+      "texto": "Y apoyarla también puede ser fácil",
+      "resalta": "fácil"
+    }
+  ],
+  "duracion": 11,
+  "musica": "latino_alegre",
+  "remate": "Así de fácil envías con VezMoney",
+  "caption": "¿Quién tiene un primo que siempre llama en el mejor momento? 😄📞\nA la familia se le contesta con cariño, y apoyarla puede ser fácil y a tu ritmo.\nCuéntanos en los comentarios: ¿qué haces tú cuando llama?\nCotiza y envía en vezmoney.com 💙",
   "hashtags": [
     "#VezMoney",
     "#Migrantes",

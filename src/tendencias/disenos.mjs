@@ -13,6 +13,7 @@ export const LIMITES = {
   dato: { numero: 10, texto: 110, remate: 60 },
   versus: { remate: 60 },
   reel: { gancho: 60, remate: 60 }, // video real de tendencia con texto encima (ver reel.mjs)
+  animado: { remate: 60 }, // video creado por nosotros: clips de stock + textos que se mueven (ver animado.mjs)
 };
 const PROHIBIDAS = [/sin comisi[oó]n/i, /sin costo/i, /el m[aá]s barato/i, /la mejor tasa/i, /garantizad/i, /100\s?%\s?seguro/i, /24\s?\/\s?7/i, /\ben \d+ (min|minutos|horas|segundos)\b/i, /al instante/i, /brasil/i];
 
@@ -34,6 +35,14 @@ export function validar(p) {
     if (p.estilo && !ESTILOS_REEL[p.estilo]) errs.push("reel: estilo debe ser " + Object.keys(ESTILOS_REEL).join(", "));
     if (p.audio && !AUDIOS_REEL.includes(p.audio)) errs.push("reel: audio debe ser " + AUDIOS_REEL.join(", "));
     if (p.audio === "musica" && p.musica && !MUSICAS_REEL.includes(p.musica)) errs.push("reel: musica debe ser " + MUSICAS_REEL.join(", "));
+  }
+  if (p.plantilla === "animado") {
+    if (!(p.busqueda?.length >= 1 && p.busqueda.length <= 3) || p.busqueda.some((q) => typeof q !== "string" || q.length < 3 || q.length > 70)) errs.push("animado: busqueda debe tener 1 a 3 consultas en inglés (3–70 caracteres)");
+    if (!(p.escenas?.length >= 2 && p.escenas.length <= 4)) errs.push("animado: escenas debe tener de 2 a 4 textos");
+    else for (const e of p.escenas) { if (!e?.texto) errs.push("animado: una escena no tiene texto"); else if (e.texto.length > 52) errs.push(`animado: la escena «${e.texto.slice(0, 20)}…» pasa de 52 caracteres`); if (e?.resalta && !String(e.texto).toLowerCase().includes(String(e.resalta).toLowerCase())) errs.push("animado: resalta debe ser una palabra que esté en el texto de la escena"); }
+    if (!(p.duracion >= 8 && p.duracion <= 16)) errs.push("animado: duracion debe estar entre 8 y 16 segundos");
+    if (p.musica && !MUSICAS_REEL.includes(p.musica)) errs.push("animado: musica debe ser " + MUSICAS_REEL.join(", "));
+    if (new RegExp(EMOJI.source, "u").test((p.escenas || []).map((e) => e?.texto).join(" "))) errs.push("no uses emojis en los textos del video (solo en el caption)");
   }
   if (!p.caption) errs.push("falta caption");
   if (!(p.hashtags?.length >= 4)) errs.push("faltan hashtags");
@@ -96,6 +105,18 @@ export const ESTILOS_REEL = {
 };
 export const AUDIOS_REEL = ["original", "musica", "silencio"];
 export const MUSICAS_REEL = ["gancho_urbano", "latino_alegre", "positivo", "emotivo", "humor"];
+
+// capas del video animado: base (logo + sombras de lectura), una capa por escena (texto grande, una palabra resaltada) y cierre de marca.
+// Zona segura: nada en los 250 px de arriba ni en los 420 de abajo (interfaz de IG/TikTok).
+export function overlaysAnimado(p) {
+  const resaltar = (txt, pal) => { const t = esc(txt); if (!pal) return t; const i = t.toLowerCase().indexOf(esc(pal).toLowerCase()); return i < 0 ? t : t.slice(0, i) + `<span style="color:${AMA}">${t.slice(i, i + esc(pal).length)}</span>` + t.slice(i + esc(pal).length); };
+  const base = capa(`${A("left:0;right:0;top:0;height:420px;background:linear-gradient(180deg,rgba(0,10,50,.55),transparent)")}${A("left:0;right:0;bottom:0;height:900px;background:linear-gradient(0deg,rgba(0,10,50,.6),transparent)")}${logo("reversa_horizontal", 44, "left:60px;top:90px")}`);
+  const escenas = p.escenas.map((e, i) => capa(A("left:60px;right:100px;top:700px;height:640px;display:flex;flex-direction:column;justify-content:center", `<div style="font-family:${I};font-weight:900;color:#fff;letter-spacing:-.035em;line-height:1.02;font-size:${tam(e.texto, 920, 600, { ratio: 0.55, lh: 1.02, max: 140, min: 64 })}px;text-shadow:0 4px 34px rgba(0,0,30,.55)">${resaltar(e.texto, e.resalta)}</div>`)));
+  const fin = capa(`${A(`inset:0;background:${AZ}`)}${A("inset:0;opacity:.14;background-image:radial-gradient(circle,#fff 2px,transparent 2.5px);background-size:46px 46px")}${logo("reversa_horizontal", 96, "left:60px;top:560px")}
+    ${A(`left:60px;right:100px;top:720px;font-family:${I};font-weight:900;color:#fff;letter-spacing:-.03em;line-height:1.05;font-size:${tam(p.remate, 920, 330, { ratio: 0.55, lh: 1.05, max: 92, min: 52 })}px`, esc(p.remate))}
+    ${A("left:60px;top:1130px", btn("COTIZA EN VEZMONEY.COM", { bg: "#fff", color: AZ2, size: 34 }))}`);
+  return { base, escenas, fin };
+}
 
 export function overlaysReel(p) {
   const autor = String(p.video.autor).replace(/^@/, ""), est = p.estilo || "clasico";

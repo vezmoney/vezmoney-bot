@@ -54,6 +54,8 @@ jobs:
       - name: Claude aplica el cambio
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           WORKER_URL: ${{ secrets.WORKER_URL }}

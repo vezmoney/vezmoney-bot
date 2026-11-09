@@ -41,6 +41,8 @@ jobs:
       - name: Diseñar las 2 piezas
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: node src/tendencias/disenar.mjs "$IDEA"
       - name: Subir las imágenes
         run: |

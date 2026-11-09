@@ -1,12 +1,26 @@
 {
-  "plantilla": "pregunta",
-  "pregunta": "¿Qué trámite te toca organizar este mes?",
-  "opciones": [
-    "Papeles y plazos",
-    "Cédula",
-    "Otro trámite"
+  "plantilla": "animado",
+  "busqueda": [
+    "person signing documents at desk close up pen",
+    "checklist notebook writing pen desk"
   ],
-  "remate": "Con todo claro, también envías a tu familia con calma",
+  "escenas": [
+    {
+      "texto": "Papeles, plazos y filas...",
+      "resalta": "plazos"
+    },
+    {
+      "texto": "Los migrantes sí sabemos organizarnos",
+      "resalta": "organizarnos"
+    },
+    {
+      "texto": "Y enviar a tu familia también se ordena",
+      "resalta": "ordena"
+    }
+  ],
+  "duracion": 11,
+  "musica": "positivo",
+  "remate": "Con todo claro, envías con calma",
   "caption": "Entre papeles, plazos y filas, ¡los migrantes sí que sabemos de organización! 📝\nCuéntanos en los comentarios qué trámite te toca ahora y comparte esto con alguien que también lo necesite.\nAsí de fácil se siente cuando todo queda ordenado.\nCotiza y envía en vezmoney.com 💙",
   "hashtags": [
     "#VezMoney",
