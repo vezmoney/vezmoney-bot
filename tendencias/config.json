@@ -84,22 +84,56 @@
       "humorchileno",
       "migrantesenchile"
     ],
-    "porHashtag": 5,
+    "porHashtag": 4,
     "maxDias": 6,
     "maxDuracionS": 60,
     "minVistas": 800,
     "top": 10,
     "instagram": {
-      "hashtags": [
+      "cuentas": [
+        "asesoriasmigratorias.cl",
+        "doblemigrante",
+        "urbanzuela",
+        "venezolanosenchile2.0",
+        "venezolanoschile2.0",
+        "elvinotintocl",
+        "capitalprensa",
+        "cronicasdechile",
+        "picantedc",
+        "canalviax",
+        "arepadigital.cl",
+        "meganoticiascl",
+        "diasporavenezolanaenchile2.0",
+        "venezolanos_en_chile",
         "venezolanosenchile",
-        "peruanosenchile",
-        "colombianosenchile",
-        "venezolanosenperu"
+        "laterceracom",
+        "infomigra",
+        "peruanosenchile2.0",
+        "peruanosenchile.cl",
+        "eventosperuanosenchile",
+        "cedrizuelaoficial",
+        "solucionesmigratoriasg",
+        "venezolanosenperu",
+        "bogo_zolanos",
+        "esreviral",
+        "venezolanos_enlima",
+        "venezolanosenperu_",
+        "diariolibertad.co",
+        "peruzolanisimoo",
+        "panachile.ve",
+        "letengoelchisme",
+        "criollosenperu",
+        "colombianoenvenezuela",
+        "vbr_vzlanoticias",
+        "rafaelinformave",
+        "raqfaelnoticias1"
       ],
-      "porHashtag": 10,
-      "maxDias": 14,
-      "top": 4,
-      "cuentas": []
-    }
+      "cuentasPorDia": 10,
+      "reelsPorCuenta": 3,
+      "maxDias": 7,
+      "minVistas": 1500,
+      "top": 6
+    },
+    "hashtagsPorDia": 4
   }
 }

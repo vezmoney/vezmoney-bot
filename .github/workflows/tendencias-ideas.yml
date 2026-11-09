@@ -6,7 +6,11 @@ on:
   schedule:
     # 11:30 y 12:30 UTC: una de las dos cae a las 8:30 de Chile según horario de verano o invierno; el paso "hora" descarta la otra.
     - cron: "30 11 * * 1-6"
+    - cron: "0 12 * * 1-6"
     - cron: "30 12 * * 1-6"
+    - cron: "0 13 * * 1-6"
+    - cron: "30 13 * * 1-6"
+    - cron: "0 14 * * 1-6"
   workflow_dispatch:
     inputs:
       manual:
@@ -39,7 +43,7 @@ jobs:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: |
           if [ -z "$WORKER_URL" ] || { [ -z "$ANTHROPIC_API_KEY" ] && [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; }; then echo "Faltan los secretos WORKER_URL o la clave de Claude (CLAUDE_CODE_OAUTH_TOKEN o ANTHROPIC_API_KEY): el bot de tendencias aún no está activado."; echo "go=false" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event_name }}" = "schedule" ] && [ "$(TZ=America/Santiago date +%H)" != "08" ]; then echo "go=false" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "schedule" ] && { [ "$(TZ=America/Santiago date +%H | sed s/^0//)" -lt 8 ] || [ "$(TZ=America/Santiago date +%H | sed s/^0//)" -gt 10 ] || [ -f "tendencias/auto/$(TZ=America/Santiago date +%F)" ]; }; then echo "go=false" >> "$GITHUB_OUTPUT"
           else echo "go=true" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/setup-node@v4
         if: steps.hora.outputs.go == 'true'
@@ -65,6 +69,9 @@ jobs:
           EXTRA=""
           if [ -n "$N" ]; then EXTRA="--n=$N"; fi
           if [ -n "$MANUAL" ]; then node src/tendencias/ideas.mjs --manual="$MANUAL"; else node src/tendencias/ideas.mjs $EXTRA; fi
+      - name: Marcar que las ideas automáticas de hoy ya salieron
+        if: steps.hora.outputs.go == 'true' && github.event_name == 'schedule'
+        run: mkdir -p tendencias/auto && touch "tendencias/auto/$(TZ=America/Santiago date +%F)"
       - name: Guardar en el repo
         if: steps.hora.outputs.go == 'true'
         run: |
