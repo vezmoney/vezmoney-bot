@@ -9,6 +9,8 @@ on:
     - cron: "12 11-21 * * *"
     - cron: "24 11-21 * * *"
     - cron: "36 11-21 * * *"
+  repository_dispatch:
+    types: [tasa]   # lo manda el reloj de Cloudflare (más confiable que el cron de GitHub)
   workflow_dispatch:
     inputs:
       modo:
