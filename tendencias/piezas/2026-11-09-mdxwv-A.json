@@ -6,22 +6,22 @@
   ],
   "escenas": [
     {
-      "texto": "Papeles, plazos y filas...",
-      "resalta": "plazos"
+      "texto": "Para la visa te organizas: papeles y plazos",
+      "resalta": "visa"
     },
     {
-      "texto": "Los migrantes sí sabemos organizarnos",
-      "resalta": "organizarnos"
+      "texto": "Haces filas, ordenas documentos...",
+      "resalta": "documentos"
     },
     {
-      "texto": "Y enviar a tu familia también se ordena",
-      "resalta": "ordena"
+      "texto": "Así mismo, organízate para enviar a tu familia",
+      "resalta": "organízate"
     }
   ],
   "duracion": 11,
   "musica": "positivo",
-  "remate": "Con todo claro, envías con calma",
-  "caption": "Entre papeles, plazos y filas, ¡los migrantes sí que sabemos de organización! 📝\nCuéntanos en los comentarios qué trámite te toca ahora y comparte esto con alguien que también lo necesite.\nAsí de fácil se siente cuando todo queda ordenado.\nCotiza y envía en vezmoney.com 💙",
+  "remate": "Con VezMoney lo puedes hacer",
+  "caption": "Para la visa te organizas: reúnes papeles, haces filas, ordenas documentos. 📝\nAsí mismo, organízate para enviar dinero a tu familia: con VezMoney lo puedes hacer.\nCuéntanos en los comentarios qué trámite te toca ahora y comparte esto con alguien que también lo necesite.\nCotiza y envía en vezmoney.com 💙",
   "hashtags": [
     "#VezMoney",
     "#MigrantesEnChile",

@@ -1,21 +1,35 @@
 {
-  "plantilla": "pregunta",
-  "pregunta": "Te llama el primo «solo para saludar». ¿Qué haces?",
-  "opciones": [
-    "Contesto: «¿quién habla?»",
-    "Digo que no hay señal",
-    "Me río y le envío igual"
+  "plantilla": "animado",
+  "busqueda": [
+    "woman suspicious doubtful looking at phone raised eyebrow",
+    "friends laughing together happy phone"
   ],
-  "remate": "Al final la familia gana: envía fácil con VezMoney",
-  "caption": "Cuando el primo llama «solo para saludar» y tú ya sabes lo que viene 😂📞\nContestas con dudas, fingiendo que no hay señal... hasta que los dos se ríen y terminas enviándole.\nCuéntanos en los comentarios: ¿cuál es tu excusa favorita?\nCotiza y envía en vezmoney.com 💙",
+  "escenas": [
+    {
+      "texto": "Suena el teléfono: es el primo...",
+      "resalta": "primo"
+    },
+    {
+      "texto": "—¿Aló? ¿Y ahora qué necesitas, primo?",
+      "resalta": "necesitas"
+    },
+    {
+      "texto": "Entre risas, claro que se le envía",
+      "resalta": "risas"
+    }
+  ],
+  "duracion": 11,
+  "musica": "humor",
+  "remate": "Así de fácil envías con VezMoney",
+  "caption": "Cuando suena el teléfono y es el primo... 😅📞\nContestas con la duda de siempre: «¿y ahora qué necesitas?». Pero entre risas, la familia es la familia y claro que se le envía.\nCuéntanos en los comentarios: ¿a ti también te pasa?\nCotiza y envía en vezmoney.com 💙",
   "hashtags": [
     "#VezMoney",
-    "#Migrantes",
-    "#Venezolanos",
+    "#HumorMigrante",
+    "#Primos",
     "#VenezolanosEnChile",
     "#FamiliaALaDistancia",
     "#EnviarDinero",
-    "#HumorMigrante",
+    "#Migrantes",
     "#Remesas"
   ],
   "_idea": "2026-11-09-mffxm",
