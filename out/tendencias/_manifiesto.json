@@ -1,32 +1,41 @@
 [
   {
-    "id": "2026-11-07-test-reel-A",
-    "archivo": "out/tendencias/2026-11-07-test-reel-A_mw5wb2wt.jpg",
-    "idea": "2026-11-07-test-reel",
+    "id": "2026-11-09-msmvu-A",
+    "archivo": "out/tendencias/2026-11-09-msmvu-A_mw9guh77.jpg",
+    "idea": "2026-11-09-msmvu",
     "letra": "A",
-    "titulo": "PRUEBA TÉCNICA (no aprobar): reel con video real",
-    "caption": "PRUEBA TÉCNICA, no publicar.",
+    "titulo": "Viernes de rumba: disfruta el finde, el envío va tranquilo",
+    "caption": "Llegó el viernes y la alegría se contagia 🎉 Disfruta con tu gente, que enviar dinero a tu familia también puede ser fácil. Cotiza y envía en vezmoney.com 💙",
     "hashtags": [
       "#VezMoney",
-      "#Prueba",
-      "#NoPublicar",
-      "#Sistema"
+      "#ViernesDeRumba",
+      "#MigrantesEnChile",
+      "#VenezolanosEnChile",
+      "#PeruanosEnChile",
+      "#ColombianosEnChile",
+      "#EnviarDinero",
+      "#ComunidadMigrante"
     ]
   },
   {
-    "id": "2026-11-07-test-reel-B",
-    "archivo": "out/tendencias/tmp/2026-11-07-test-reel-B_mw5wbbt9.mp4",
-    "video": "out/tendencias/tmp/2026-11-07-test-reel-B_mw5wbbt9.mp4",
-    "miniatura": "out/tendencias/tmp/2026-11-07-test-reel-B_mw5wbbt9.jpg",
-    "idea": "2026-11-07-test-reel",
+    "id": "2026-11-09-msmvu-B",
+    "archivo": "out/tendencias/tmp/2026-11-09-msmvu-B_mw9gupk2.mp4",
+    "video": "out/tendencias/tmp/2026-11-09-msmvu-B_mw9gupk2.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-09-msmvu-B_mw9gupk2.jpg",
+    "idea": "2026-11-09-msmvu",
     "letra": "B",
-    "titulo": "PRUEBA TÉCNICA (no aprobar): reel con video real",
-    "caption": "PRUEBA TÉCNICA, no publicar. Video de @yadhiravera en TikTok.",
+    "titulo": "Viernes de rumba: disfruta el finde, el envío va tranquilo",
+    "caption": "Viernes de rumba y mucha energía 🎶 Tú disfrutas con tu gente y tu envío a la familia se hace fácil. Video de @paqleo.cl en Instagram. Cotiza y envía en vezmoney.com 💙",
     "hashtags": [
       "#VezMoney",
-      "#Prueba",
-      "#NoPublicar",
-      "#Sistema"
+      "#ViernesDeRumba",
+      "#MigrantesEnChile",
+      "#VenezolanosEnChile",
+      "#PeruanosEnChile",
+      "#ColombianosEnChile",
+      "#EnviarDinero",
+      "#ComunidadMigrante",
+      "#Rumba"
     ]
   }
 ]
