@@ -1,0 +1,66 @@
+[
+  {
+    "id": "2026-11-09-mdxwv",
+    "fecha": "2026-11-09",
+    "titulo": "Trámites de migrante: ten el plazo claro y el envío ordenado",
+    "tipo": "evergreen",
+    "publico": "Migrantes venezolanos, peruanos y colombianos que viven en Chile",
+    "senal": {
+      "texto": "TikTok de @yesidcastanocl sobre plazos y pasos de un trámite migratorio en Chile (ventana, meses, Registro Civil y cédula)",
+      "pais": "Chile",
+      "url": "https://www.tiktok.com/@yesidcastanocl/video/7704672308316917013"
+    },
+    "porque": "A todo migrante le importa entender los plazos de sus trámites para planificar su vida y su dinero en Chile.",
+    "gancho_envio": "Así como un trámite se resuelve cuando sabes los pasos, enviar dinero es fácil cuando lo haces con calma y cotizas antes.",
+    "sensibilidad": "media",
+    "nota_revision": "El video es de un estudio de abogados (aparece «Fundador de Ulises Abogados» fijo en pantalla), así que podría contar como publicidad a un tercero. No se puede cortar la marca porque está en todos los fotogramas; usé estilo «sutil» y un tramo corto. Además es información legal que no pude verificar con el video completo: confirma que no sea desinformación y pide permiso al autor antes de publicar. Si prefieres no mostrarlo, queda la pieza A como alternativa.",
+    "pieza_a": {
+      "plantilla": "pregunta",
+      "pregunta": "¿Qué trámite te toca organizar este mes?",
+      "opciones": [
+        "Papeles y plazos",
+        "Cédula",
+        "Otro trámite"
+      ],
+      "remate": "Con todo claro, también envías a tu familia con calma",
+      "caption": "Entre papeles, plazos y filas, ¡los migrantes sí que sabemos de organización! 📝\nCuéntanos en los comentarios qué trámite te toca ahora y comparte esto con alguien que también lo necesite.\nAsí de fácil se siente cuando todo queda ordenado.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#MigrantesEnChile",
+        "#TramitesChile",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile",
+        "#ColombianosEnChile",
+        "#RemesasChile"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "reel",
+      "video": {
+        "url": "https://www.tiktok.com/@yesidcastanocl/video/7704672308316917013",
+        "autor": "yesidcastanocl",
+        "plataforma": "TikTok",
+        "mensaje_permiso": "¡Hola! Te escribimos de VezMoney, remesadora para migrantes. Nos gustó mucho tu video sobre los plazos del trámite y nos gustaría compartir un fragmento en nuestras redes, con crédito a tu cuenta. ¿Nos das tu permiso? ¡Gracias! 💙",
+        "vistas": 13200,
+        "duracion_original": 28
+      },
+      "gancho": "Los plazos importan, y mucho",
+      "remate": "Con lo importante claro, enviar es más fácil",
+      "inicio": 0,
+      "duracion": 15,
+      "estilo": "sutil",
+      "audio": "original",
+      "caption": "Cuando los plazos están claros, uno se organiza mejor, y eso incluye cuidar a los tuyos a la distancia. 📋\nGuarda este video y compártelo con quien lo necesite.\nVideo de @yesidcastanocl en TikTok\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#MigrantesEnChile",
+        "#TramitesChile",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile",
+        "#ColombianosEnChile",
+        "#VidaDeMigrante",
+        "#RemesasChile"
+      ]
+    }
+  }
+]
