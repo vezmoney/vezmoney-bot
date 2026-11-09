@@ -35,11 +35,11 @@ else {
   const idea = buscarIdea(pos[0]);
   for (const L of ["A", "B"]) {
     const id = `${idea.id}-${L}`;
-    fs.writeFileSync(`tendencias/piezas/${id}.json`, JSON.stringify({ ...idea[`pieza_${L.toLowerCase()}`], _idea: idea.id, _letra: L, _titulo: idea.titulo }, null, 2));
+    fs.writeFileSync(`tendencias/piezas/${id}.json`, JSON.stringify({ ...idea[`pieza_${L.toLowerCase()}`], ...(idea.publicar_el ? { fecha_publicacion: idea.publicar_el } : {}), _idea: idea.id, _letra: L, _titulo: idea.titulo }, null, 2));
     hechas.push(await renderPieza(id));
   }
 }
 await closeBrowser();
 // manifiesto: lo lee enviar.mjs después de que el flujo suba las imágenes a GitHub
-fs.writeFileSync("out/tendencias/_manifiesto.json", JSON.stringify(hechas.map(({ id, archivo, pieza, video, miniatura }) => ({ id, archivo, video, miniatura, idea: pieza._idea, letra: pieza._letra, titulo: pieza._titulo, caption: pieza.caption, hashtags: pieza.hashtags })), null, 2));
+fs.writeFileSync("out/tendencias/_manifiesto.json", JSON.stringify(hechas.map(({ id, archivo, pieza, video, miniatura }) => ({ id, archivo, video, miniatura, fecha: pieza.fecha_publicacion, idea: pieza._idea, letra: pieza._letra, titulo: pieza._titulo, caption: pieza.caption, hashtags: pieza.hashtags })), null, 2));
 console.log("Listo:", hechas.map((h) => h.archivo).join(", "));

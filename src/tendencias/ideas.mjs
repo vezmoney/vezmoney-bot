@@ -70,6 +70,7 @@ ${historial.slice(-30).map((h) => "- " + h).join("\n") || "- (ninguna)"}
 Fotos disponibles para la plantilla "meme" (usa solo estos nombres de archivo):
 ${catalogo}
 
+Si la idea tiene un día ideal de publicación (un meme de «viernes», una fecha especial como el Black Friday o un feriado), agrega "publicar_el": "AAAA-MM-DD" a la idea; si no, no pongas nada y se publica en el próximo horario libre.
 Responde SOLO con el JSON {"ideas":[...]} descrito en CLAUDE.md, sin texto adicional.`;
 
 // ── Claude + validación (un reintento si algo no cumple) ────────────────

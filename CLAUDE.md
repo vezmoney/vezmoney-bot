@@ -54,7 +54,7 @@ La pieza B debe usar **otra plantilla y otro ángulo** que la A.
 ## Formato de salida de ideas
 Cuando se te pida ideas, responde SOLO un objeto JSON válido (sin texto antes ni después):
 `{"ideas":[{ "titulo", "tipo": "tendencia|noticia|fecha|evergreen", "publico", "senal": {"texto","pais","url"}, "porque", "gancho_envio", "pieza_a": {…}, "pieza_b": {…} }]}`
-`porque` = por qué le importa a un migrante (1 línea). `gancho_envio` = la analogía con enviar dinero (1 línea).
+`publicar_el` (opcional) = fecha ideal de publicación AAAA-MM-DD cuando importa el día (meme de «viernes», Black Friday, feriados, fechas especiales); si falta, se publica en el próximo horario libre. `porque` = por qué le importa a un migrante (1 línea). `gancho_envio` = la analogía con enviar dinero (1 línea).
 Cada pieza = `{ "plantilla", …campos de esa plantilla…, "caption", "hashtags": [] }`.
 
 ## Cuando se te pida corregir una pieza

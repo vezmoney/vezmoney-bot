@@ -21,7 +21,7 @@ for (const m of manifiesto) {
       ...(redes.includes("instagram") && { instagramData: { type: "REEL", autoPublish: true, showReelOnFeed: true, isAiGenerated: false } }),
       ...(redes.includes("facebook") && { facebookData: { type: "REEL", title: m.titulo.slice(0, 90) } }),
       ...(redes.includes("tiktok") && { tiktokData: { privacyOption: "PUBLIC_TO_EVERYONE", title: m.titulo.slice(0, 90), autoAddMusic: false } }) };
-    const r = await fetch(W + "/admin/pieza", { method: "POST", headers: { "X-Admin-Key": ADMIN_KEY, "content-type": "application/json" }, body: JSON.stringify({ id: m.id, ideaId: m.idea, letra: m.letra, titulo: m.titulo, imagen: tUrl, video: vUrl, miniatura: tUrl, caption: text, redes, metricool, nota: args.nota || undefined }) });
+    const r = await fetch(W + "/admin/pieza", { method: "POST", headers: { "X-Admin-Key": ADMIN_KEY, "content-type": "application/json" }, body: JSON.stringify({ id: m.id, ideaId: m.idea, letra: m.letra, titulo: m.titulo, imagen: tUrl, video: vUrl, miniatura: tUrl, caption: text, redes, metricool, nota: args.nota || undefined, fecha_publicacion: m.fecha }) });
     console.log("Telegram", m.id, "(reel)", r.status, r.ok ? "" : await r.text()); if (!r.ok) process.exitCode = 1; continue;
   }
   const url = raw(m.archivo), redes = cfg.redes[m.letra];
@@ -32,7 +32,7 @@ for (const m of manifiesto) {
     ...(redes.includes("facebook") && { facebookData: { type: "POST" } }),
     ...(redes.includes("tiktok") && { tiktokData: { privacyOption: "PUBLIC_TO_EVERYONE", title: m.titulo.slice(0, 90), photoCoverIndex: 0 } }) };
   const r = await fetch(WORKER_URL.replace(/\/$/, "") + "/admin/pieza", { method: "POST", headers: { "X-Admin-Key": ADMIN_KEY, "content-type": "application/json" },
-    body: JSON.stringify({ id: m.id, ideaId: m.idea, letra: m.letra, titulo: m.titulo, imagen: url, caption: text, redes, metricool, nota: args.nota || undefined }) });
+    body: JSON.stringify({ id: m.id, ideaId: m.idea, letra: m.letra, titulo: m.titulo, imagen: url, caption: text, redes, metricool, nota: args.nota || undefined, fecha_publicacion: m.fecha }) });
   console.log("Telegram", m.id, r.status, r.ok ? "" : await r.text());
   if (!r.ok) process.exitCode = 1;
 }
