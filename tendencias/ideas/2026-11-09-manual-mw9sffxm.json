@@ -1,0 +1,67 @@
+[
+  {
+    "id": "2026-11-09-mffxm",
+    "fecha": "2026-11-09",
+    "titulo": "El primo que llama: apoyar a la familia a tu manera",
+    "tipo": "tendencia",
+    "publico": "Migrantes venezolanos, peruanos y colombianos en Chile; venezolanos en Perú y Colombia",
+    "senal": {
+      "texto": "TikTok de @soyarmas26 con humor cotidiano sobre la llamada del primo desde Venezuela",
+      "pais": "Venezuela",
+      "url": "https://www.tiktok.com/@soyarmas26/video/7705041084958788871"
+    },
+    "porque": "Casi todo migrante tiene un primo o un familiar que llama, y se ríe al verse reflejado en esa escena.",
+    "gancho_envio": "Así de fácil es apoyar a tu gente: cotizas con calma y decides cuándo y cuánto envías.",
+    "sensibilidad": "media",
+    "nota_revision": "El chiste del video juega con el estereotipo del «primo de Venezuela que no trabaja». Puede leerse como burla a una comunidad, así que conviene revisarlo antes de publicar. Lo traté con calidez, el gancho y el remate hablan de cariño y apoyo, y el caption no repite el estereotipo. En el video aparecen de pasada la camiseta de la selección de Portugal y la marca Puma, sin ser protagonistas. Es un hombre adulto que se ve identificable y hay una silla infantil vacía al fondo. Hay que pedirle permiso al autor antes de publicar. El audio es su voz en la llamada, sin música comercial.",
+    "pieza_a": {
+      "plantilla": "pregunta",
+      "pregunta": "Cuando el primo llama desde casa, ¿qué haces?",
+      "opciones": [
+        "Contesto con una sonrisa",
+        "Cotizo y envío con calma",
+        "Lo veo después del café"
+      ],
+      "remate": "Tú decides cuándo y cuánto envías con VezMoney",
+      "caption": "¿Quién tiene un primo que siempre llama en el mejor momento? 😄📞\nA la familia se le contesta con cariño, y apoyarla puede ser fácil y a tu ritmo.\nCuéntanos en los comentarios: ¿qué haces tú?\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Migrantes",
+        "#Venezolanos",
+        "#VenezolanosEnChile",
+        "#FamiliaALaDistancia",
+        "#EnviarDinero",
+        "#HumorMigrante",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "reel",
+      "video": {
+        "url": "https://www.tiktok.com/@soyarmas26/video/7705041084958788871",
+        "autor": "@soyarmas26",
+        "plataforma": "TikTok",
+        "vistas": 2657,
+        "duracion_original": 9,
+        "mensaje_aviso": "¡Hola! Somos VezMoney 💙 Nos gustó mucho tu contenido y vamos a publicarlo en nuestras redes mencionándote (@soyarmas26). Esperamos que no te moleste; si prefieres que no lo publiquemos, avísanos por aquí y lo bajamos enseguida. ¡Gracias por compartir!"
+      },
+      "gancho": "Y tú, ¿le contestas igual?",
+      "remate": "Apoyar a la familia, así de fácil con VezMoney",
+      "inicio": 0,
+      "duracion": 9,
+      "estilo": "sutil",
+      "audio": "original",
+      "caption": "Esa cara cuando suena el teléfono y es la familia 😅📞\nAl final, lo que importa es estar presente para los tuyos, a tu manera y a tu ritmo.\nVideo de @soyarmas26 en TikTok.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Migrantes",
+        "#VenezolanosEnChile",
+        "#FamiliaALaDistancia",
+        "#HumorMigrante",
+        "#Primos",
+        "#EnviarDinero",
+        "#Remesas"
+      ]
+    }
+  }
+]
