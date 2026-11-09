@@ -1,27 +1,13 @@
 {
-  "plantilla": "animado",
-  "busqueda": [
-    "woman smiling looking at phone video call",
-    "man laughing phone call at home"
+  "plantilla": "pregunta",
+  "pregunta": "Te llama el primo «solo para saludar». ¿Qué haces?",
+  "opciones": [
+    "Contesto: «¿quién habla?»",
+    "Digo que no hay señal",
+    "Me río y le envío igual"
   ],
-  "escenas": [
-    {
-      "texto": "Cuando el primo llama desde casa...",
-      "resalta": "primo"
-    },
-    {
-      "texto": "A la familia se le contesta con cariño",
-      "resalta": "cariño"
-    },
-    {
-      "texto": "Y apoyarla también puede ser fácil",
-      "resalta": "fácil"
-    }
-  ],
-  "duracion": 11,
-  "musica": "latino_alegre",
-  "remate": "Así de fácil envías con VezMoney",
-  "caption": "¿Quién tiene un primo que siempre llama en el mejor momento? 😄📞\nA la familia se le contesta con cariño, y apoyarla puede ser fácil y a tu ritmo.\nCuéntanos en los comentarios: ¿qué haces tú cuando llama?\nCotiza y envía en vezmoney.com 💙",
+  "remate": "Al final la familia gana: envía fácil con VezMoney",
+  "caption": "Cuando el primo llama «solo para saludar» y tú ya sabes lo que viene 😂📞\nContestas con dudas, fingiendo que no hay señal... hasta que los dos se ríen y terminas enviándole.\nCuéntanos en los comentarios: ¿cuál es tu excusa favorita?\nCotiza y envía en vezmoney.com 💙",
   "hashtags": [
     "#VezMoney",
     "#Migrantes",
