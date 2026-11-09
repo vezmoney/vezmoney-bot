@@ -92,6 +92,7 @@ export const ESTILOS_REEL = {
   marco: { vy: 300, vh: 1100, fondo: "0x03258C" }, // video dentro de un marco azul de marca con encabezado y pie
   meme: { vy: 0, vh: 1920, fondo: "black" },      // texto de meme (blanco con borde negro) arriba y abajo
   noticia: { vy: 0, vh: 1920, fondo: "black" },   // barra tipo noticiero con etiqueta «EN TENDENCIA»
+  sutil: { vy: 0, vh: 1920, fondo: "black" },     // lo menos invasivo: encabezado chico y barra final delgada (videos con mucho texto propio o texto ya publicable)
 };
 export const AUDIOS_REEL = ["original", "musica", "silencio"];
 export const MUSICAS_REEL = ["gancho_urbano", "latino_alegre", "positivo", "emotivo", "humor"];
@@ -125,6 +126,14 @@ export function overlaysReel(p) {
         ${A(`left:50px;right:50px;top:1045px;background:#fff;border-radius:0 24px 24px 0;border-left:16px solid ${AZ2};padding:26px 34px;box-shadow:0 16px 40px rgba(0,0,40,.4)`, `<div style="font-family:${I};font-weight:900;color:${AZ};letter-spacing:-.02em;line-height:1.08;font-size:${tam(p.gancho, 880, 200, { ratio: 0.55, lh: 1.08, max: 62, min: 36 })}px">${esc(p.gancho)}</div>`)}
         ${chip(1320)}`),
       b: capa(`${A(`left:0;right:0;top:1390px;height:190px;background:${AZ}`, `<div style="padding:26px 50px"><div style="font-family:${I};font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1.1;font-size:${tam(p.remate, 980, 100, { ratio: 0.55, lh: 1.1, max: 54, min: 32 })}px">${esc(p.remate)}</div><div style="font-family:${I};font-weight:800;color:${CIE};font-size:28px;letter-spacing:.12em;margin-top:6px">VEZMONEY.COM</div></div>`)}`),
+    };
+  }
+  if (est === "sutil") {
+    return {
+      a: capa(`${A("left:0;right:0;top:0;height:240px;background:linear-gradient(180deg,rgba(0,10,50,.45),transparent)")}${lgo(60, 38)}
+        ${p.gancho ? A(`left:50px;right:50px;top:118px;font-family:${I};font-weight:800;color:#fff;letter-spacing:-.01em;line-height:1.1;font-size:${tam(p.gancho, 980, 110, { ratio: 0.55, lh: 1.1, max: 44, min: 30 })}px;text-shadow:0 3px 12px rgba(0,0,0,.65)`, esc(p.gancho)) : ""}
+        ${A(`left:50px;top:1500px;background:rgba(0,0,0,.5);color:#fff;font-family:${I};font-weight:600;font-size:26px;padding:9px 20px;border-radius:999px`, cred)}`),
+      b: capa(`${A(`left:50px;right:50px;top:1350px;background:rgba(3,37,140,.93);border-radius:22px;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px`, `<span style="font-family:${I};font-weight:800;color:#fff;font-size:${tam(p.remate, 640, 90, { ratio: 0.55, lh: 1.1, max: 40, min: 28 })}px;line-height:1.1">${esc(p.remate)}</span><span style="font-family:${I};font-weight:900;color:${CIE};font-size:26px;letter-spacing:.1em;white-space:nowrap">VEZMONEY.COM</span>`)}`),
     };
   }
   // clasico
