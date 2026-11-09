@@ -13,6 +13,7 @@ export const LIMITES = {
   dato: { numero: 10, texto: 110, remate: 60 },
   versus: { remate: 60 },
   reel: { gancho: 60, remate: 60 }, // video real de tendencia con texto encima (ver reel.mjs)
+  tutorial: { titulo: 60, remate: 60 }, // tutorial dinámico propio (ver tutorial.mjs)
   animado: { remate: 60 }, // video creado por nosotros: clips de stock + textos que se mueven (ver animado.mjs)
 };
 const PROHIBIDAS = [/sin comisi[oó]n/i, /sin costo/i, /el m[aá]s barato/i, /la mejor tasa/i, /garantizad/i, /100\s?%\s?seguro/i, /24\s?\/\s?7/i, /\ben \d+ (min|minutos|horas|segundos)\b/i, /al instante/i, /brasil/i];
@@ -35,6 +36,23 @@ export function validar(p) {
     if (p.estilo && !ESTILOS_REEL[p.estilo]) errs.push("reel: estilo debe ser " + Object.keys(ESTILOS_REEL).join(", "));
     if (p.audio && !AUDIOS_REEL.includes(p.audio)) errs.push("reel: audio debe ser " + AUDIOS_REEL.join(", "));
     if (p.audio === "musica" && p.musica && !MUSICAS_REEL.includes(p.musica)) errs.push("reel: musica debe ser " + MUSICAS_REEL.join(", "));
+  }
+  if (p.plantilla === "tutorial") {
+    if (!["cotizar", "pasos"].includes(p.tipo)) errs.push("tutorial: tipo debe ser cotizar o pasos");
+    if (p.tipo === "cotizar" && !["Perú", "Colombia", "Venezuela", "Argentina", "Ecuador", "Estados Unidos"].includes(p.destino)) errs.push("tutorial cotizar: destino debe ser Perú, Colombia, Venezuela, Argentina, Ecuador o Estados Unidos");
+    if (p.tipo === "pasos") {
+      if (!(p.pasos?.length >= 2 && p.pasos.length <= 4)) errs.push("tutorial pasos: necesita de 2 a 4 pasos");
+      else for (const s of p.pasos) if (!s || String(s).length > 70) errs.push("tutorial pasos: cada paso debe tener texto de hasta 70 caracteres");
+      if (!p.fondo || !/^[\w-]+\.jpg$/.test(p.fondo)) errs.push("tutorial pasos: falta fondo (nombre de una foto del catálogo, p. ej. pe02.jpg)");
+    }
+    if (p.nota && String(p.nota).length > 140) errs.push("tutorial: nota pasa de 140 caracteres");
+    if (p.musica && !MUSICAS_REEL.includes(p.musica)) errs.push("tutorial: musica debe ser " + MUSICAS_REEL.join(", "));
+    if (p.tema === "migratorio") {
+      let ok = false; try { ok = new URL(p.fuente_oficial).protocol === "https:"; } catch { /* sin URL */ }
+      if (!ok) errs.push("tutorial migratorio: falta fuente_oficial (URL https oficial que confirme los datos)");
+      if (!p.nota) errs.push("tutorial migratorio: falta nota (información referencial; se confirma en el sitio oficial)");
+    }
+    if (new RegExp(EMOJI.source, "u").test([p.titulo, p.remate, p.nota, ...(p.pasos || [])].join(" "))) errs.push("no uses emojis en los textos del video (solo en el caption)");
   }
   if (p.plantilla === "animado") {
     if (!(p.busqueda?.length >= 1 && p.busqueda.length <= 3) || p.busqueda.some((q) => typeof q !== "string" || q.length < 3 || q.length > 70)) errs.push("animado: busqueda debe tener 1 a 3 consultas en inglés (3–70 caracteres)");

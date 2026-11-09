@@ -7,6 +7,7 @@ import { renderPage, closeBrowser } from "../render.mjs";
 import { html, validar } from "./disenos.mjs";
 import { crearReel } from "./reel.mjs";
 import { crearAnimado } from "./animado.mjs";
+import { crearTutorial } from "./tutorial.mjs";
 
 const args = Object.fromEntries(process.argv.slice(2).filter((a) => a.startsWith("--")).map((a) => { const [k, ...v] = a.replace(/^--/, "").split("="); return [k, v.length ? v.join("=") : true]; }));
 const pos = process.argv.slice(2).filter((a) => !a.startsWith("--"));
@@ -24,6 +25,7 @@ async function renderPieza(id) {
   const errs = validar(pieza);
   if (errs.length) throw new Error(`La pieza ${id} no cumple: ${errs.join("; ")}`);
   if (pieza.plantilla === "reel") { const r = await crearReel(pieza, id, { token: process.env.APIFY_TOKEN }); console.log(`Reel ${id}: ${r.segundos}s, ${r.mb} MB`); return { id, archivo: r.archivo, video: r.archivo, miniatura: r.miniatura, pieza }; }
+  if (pieza.plantilla === "tutorial") { const r = await crearTutorial(pieza, id); console.log(`Tutorial ${id}: ${r.segundos}s, ${r.mb} MB${r.tasa ? ", tasa mostrada " + r.tasa : ""}`); return { id, archivo: r.archivo, video: r.archivo, miniatura: r.miniatura, pieza }; }
   if (pieza.plantilla === "animado") { const r = await crearAnimado(pieza, id); console.log(`Video animado ${id}: ${r.segundos}s, ${r.mb} MB, clips: ${r.clips.join(", ")}`); return { id, archivo: r.archivo, video: r.archivo, miniatura: r.miniatura, pieza }; }
   const version = Date.now().toString(36); // el nombre cambia con cada versión (evita la caché de GitHub y de Telegram)
   const archivo = `out/tendencias/${id}_${version}.jpg`;
