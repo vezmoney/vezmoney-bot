@@ -1,1 +1,1 @@
-Hice: cambié el audio de la pieza A a `original` (el sonido del video) y quité la pista `latino_alegre`; ojo, si esa canción es comercial, la regla de marca dice que nunca va `original`, así que conviene revisarlo antes de publicar.
+Hice: cambié `audio` de `musica` a `original` en `tendencias/piezas/2026-11-10-miyw3-B.json` y quité el campo `musica`. Ojo: si el audio del heladero es una canción comercial, las reglas dicen que no va `original`, así que conviene revisarlo.
