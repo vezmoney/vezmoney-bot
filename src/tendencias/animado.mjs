@@ -18,6 +18,14 @@ async function json(url, headers) { const r = await fetch(url, { headers }); if 
 // Busca un clip vertical que sirva de fondo (mínimo 5 s). Devuelve { id, url, autor }.
 async function buscarClip(q, usados) {
   const errores = [];
+  const fijo = /^pexels:(\d+)$/.exec(q); // clip elegido a mano por su id (sirve para mostrar algo preciso que la búsqueda no encuentra)
+  if (fijo) {
+    if (!PEXELS_API_KEY) throw new Error("Falta PEXELS_API_KEY para bajar el clip " + q);
+    const v = await json("https://api.pexels.com/videos/videos/" + fijo[1], { Authorization: PEXELS_API_KEY });
+    const fl = (v.video_files || []).filter((x) => x.file_type === "video/mp4" && x.width >= 720).sort((x, y) => (y.height >= y.width) - (x.height >= x.width) || Math.abs(x.width - 1080) - Math.abs(y.width - 1080));
+    if (!fl[0]) throw new Error("El clip " + q + " no tiene un archivo mp4 usable");
+    return { id: "pexels:" + v.id, url: fl[0].link, autor: v.user?.name };
+  }
   if (PEXELS_API_KEY) {
     try {
       const d = await json(`https://api.pexels.com/videos/search?query=${encodeURIComponent(q)}&per_page=20&orientation=portrait&size=medium`, { Authorization: PEXELS_API_KEY });

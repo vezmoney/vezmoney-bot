@@ -30,7 +30,14 @@ export async function crearReel(pieza, id, { token, local } = {}) {
   if (modo === "musica") { musica = pista(pieza.musica || "positivo", id); if (!musica) modo = "silencio"; }
   if (modo === "original" && !tiene(src)) modo = "silencio";
   const entradas = ["-ss", String(inicio), "-t", d, "-i", src, "-loop", "1", "-t", d, "-i", pa, "-loop", "1", "-t", d, "-i", pb, ...(musica ? ["-stream_loop", "-1", "-i", musica] : [])];
-  let fc = `[0:v]scale=1080:${est.vh}:force_original_aspect_ratio=increase,crop=1080:${est.vh},setsar=1,fps=30[v];color=c=${est.fondo}:s=1080x1920:r=30[bg];[bg][v]overlay=0:${est.vy}:shortest=1[base];[base][1:v]overlay=0:0[x];[x][2:v]overlay=0:0:enable='gte(t,${t3})'[out]`;
+  // con el estilo «arriba» se recortan las barras negras del video original para que se vea lo más grande posible
+  let recorte = "";
+  if (est.ajuste === "caber") {
+    const r = spawnSync("ffmpeg", ["-ss", String(inicio), "-t", "5", "-i", src, "-vf", "cropdetect=limit=24:round=2:reset=0", "-f", "null", "-"], { encoding: "utf8" });
+    const m = [...(r.stderr || "").matchAll(/crop=(\d+):(\d+):(\d+):(\d+)/g)].pop();
+    if (m && +m[1] >= 200 && +m[2] >= 200) recorte = "crop=" + m[1] + ":" + m[2] + ":" + m[3] + ":" + m[4] + ",";
+  }
+  let fc = `${est.ajuste === "caber" ? `[0:v]${recorte}split=2[s1][s2];[s1]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=40:8,eq=brightness=-0.3:saturation=0.8,setsar=1,fps=30[bg];[s2]scale=1080:${est.vh}:force_original_aspect_ratio=decrease,setsar=1,fps=30[v];[bg][v]overlay=(W-w)/2:${est.vy}+(${est.vh}-h)/2:shortest=1[base]` : `[0:v]scale=1080:${est.vh}:force_original_aspect_ratio=increase,crop=1080:${est.vh},setsar=1,fps=30[v];color=c=${est.fondo}:s=1080x1920:r=30[bg];[bg][v]overlay=0:${est.vy}:shortest=1[base]`};[base][1:v]overlay=0:0[x];[x][2:v]overlay=0:0:enable='gte(t,${t3})'[out]`;
   let audio = ["-an"];
   if (modo === "original") audio = ["-map", "0:a", "-c:a", "aac", "-b:a", "128k"];
   if (modo === "musica") { fc += `;[3:a]atrim=0:${d},volume=0.9,afade=t=out:st=${Math.max(0, dur - 1.2).toFixed(2)}:d=1.2[aud]`; audio = ["-map", "[aud]", "-c:a", "aac", "-b:a", "128k"]; }

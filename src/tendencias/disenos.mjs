@@ -119,10 +119,11 @@ export const ESTILOS_REEL = {
   marco: { vy: 300, vh: 1100, fondo: "0x03258C" }, // video dentro de un marco azul de marca con encabezado y pie
   meme: { vy: 0, vh: 1920, fondo: "black" },      // texto de meme (blanco con borde negro) arriba y abajo
   noticia: { vy: 0, vh: 1920, fondo: "black" },   // barra tipo noticiero con etiqueta «EN TENDENCIA»
+  arriba: { vy: 380, vh: 1540, fondo: "0x001C70", ajuste: "caber" }, // todo el texto, el crédito y el cierre en una franja de arriba; el video completo debajo (fondo difuminado), sin tapar nada abajo
   sutil: { vy: 0, vh: 1920, fondo: "black" },     // lo menos invasivo: encabezado chico y barra final delgada (videos con mucho texto propio o texto ya publicable)
 };
 export const AUDIOS_REEL = ["original", "musica", "silencio"];
-export const MUSICAS_REEL = ["gancho_urbano", "latino_alegre", "positivo", "emotivo", "humor"];
+export const MUSICAS_REEL = ["gancho_urbano", "latino_alegre", "positivo", "emotivo", "humor", "gaita"];
 
 // capas del video animado: base (logo + sombras de lectura), una capa por escena (texto grande, una palabra resaltada) y cierre de marca.
 // Zona segura: nada en los 250 px de arriba ni en los 420 de abajo (interfaz de IG/TikTok).
@@ -144,6 +145,13 @@ export function overlaysReel(p) {
   const remateCard = (top, max = 58) => A(`left:50px;right:50px;top:${top}px;background:#fff;border-radius:34px;padding:30px 38px;box-shadow:0 20px 50px rgba(0,0,40,.45)`, `<div style="font-family:${I};font-weight:900;color:${AZ2};letter-spacing:-.02em;line-height:1.1;font-size:${tam(p.remate, 900, 130, { ratio: 0.55, lh: 1.1, max, min: 34 })}px">${esc(p.remate)}</div>`);
   const meme = (txt, top, h) => A(`left:50px;right:50px;top:${top}px;text-align:center;font-family:${D};text-transform:uppercase;color:#fff;line-height:1.05;font-size:${tam(txt, 980, h, { ratio: 0.42, lh: 1.05, max: 104, min: 48 })}px;text-shadow:-4px -4px 0 #000,4px -4px 0 #000,-4px 4px 0 #000,4px 4px 0 #000,0 8px 18px rgba(0,0,0,.5)`, esc(txt));
 
+  if (est === "arriba") {
+    const franja = (inner) => `${A(`left:0;right:0;top:0;height:380px;background:${AZ}`)}${A(`left:0;right:0;top:374px;height:6px;background:${ROS}`)}${inner}`;
+    return {
+      a: capa(franja(`${lgo(44, 40)}${p.gancho ? A(`left:50px;right:50px;top:104px;font-family:${I};font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1.06;font-size:${tam(p.gancho, 980, 170, { ratio: 0.55, lh: 1.06, max: 62, min: 36 })}px`, esc(p.gancho)) : ""}${A(`left:50px;top:306px;color:#CFE0FF;font-family:${I};font-weight:600;font-size:26px`, cred)}`)),
+      b: capa(franja(`${lgo(44, 40)}${A(`left:50px;right:50px;top:104px;font-family:${I};font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1.06;font-size:${tam(p.remate, 980, 130, { ratio: 0.55, lh: 1.06, max: 58, min: 36 })}px`, esc(p.remate))}${A("left:50px;top:268px", btn("COTIZA EN VEZMONEY.COM", { bg: "#fff", color: AZ2, size: 28 }))}`)),
+    };
+  }
   if (est === "marco") {
     return {
       a: capa(`${lgo(70, 46)}${A(`left:50px;right:50px;top:135px;font-family:${I};font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1.05;font-size:${tam(p.gancho, 980, 150, { ratio: 0.55, lh: 1.05, max: 68, min: 40 })}px`, esc(p.gancho))}
