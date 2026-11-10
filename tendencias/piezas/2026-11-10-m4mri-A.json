@@ -1,0 +1,40 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "woman boxing training gym vertical",
+    "person tying boxing gloves close up",
+    "woman using smartphone at home"
+  ],
+  "escenas": [
+    {
+      "texto": "Todo gran combate empieza con preparación",
+      "resalta": "preparación"
+    },
+    {
+      "texto": "Un envío también se prepara con calma",
+      "resalta": "calma"
+    },
+    {
+      "texto": "Así de preparado envías con VezMoney",
+      "resalta": "preparado"
+    }
+  ],
+  "duracion": 11,
+  "musica": "gancho_urbano",
+  "remate": "Cotiza antes de enviar a tu familia",
+  "caption": "Antes de subir al ring, toca prepararse 🥊\nCon un envío pasa igual: cotizar con calma antes de enviar hace la diferencia.\nAsí de preparado envías a tu familia.\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#EnviarDinero",
+    "#Migrantes",
+    "#Colombia",
+    "#Venezuela",
+    "#Chile",
+    "#Remesas",
+    "#Familia"
+  ],
+  "fecha_publicacion": "2026-11-10",
+  "_idea": "2026-11-10-m4mri",
+  "_letra": "A",
+  "_titulo": "Cinco días para el combate: la preparación lo es todo"
+}

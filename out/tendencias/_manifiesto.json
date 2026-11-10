@@ -1,21 +1,44 @@
 [
   {
-    "id": "2026-11-10-3-B",
-    "archivo": "out/tendencias/tmp/2026-11-10-3-B_mwaru3lp.mp4",
-    "video": "out/tendencias/tmp/2026-11-10-3-B_mwaru3lp.mp4",
-    "miniatura": "out/tendencias/tmp/2026-11-10-3-B_mwaru3lp.jpg",
-    "idea": "2026-11-10-3",
-    "letra": "B",
-    "titulo": "¿Tu familia está en Perú? Así se cotiza",
-    "caption": "El sabor de casa no cabe en una maleta, pero tu apoyo sí puede llegar fácil 🇵🇪💙\n\nCotiza y envía en vezmoney.com 💙",
+    "id": "2026-11-10-m4mri-A",
+    "archivo": "out/tendencias/tmp/2026-11-10-m4mri-A_mwasik35.mp4",
+    "video": "out/tendencias/tmp/2026-11-10-m4mri-A_mwasik35.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-10-m4mri-A_mwasik35.jpg",
+    "fecha": "2026-11-10",
+    "idea": "2026-11-10-m4mri",
+    "letra": "A",
+    "titulo": "Cinco días para el combate: la preparación lo es todo",
+    "caption": "Antes de subir al ring, toca prepararse 🥊\nCon un envío pasa igual: cotizar con calma antes de enviar hace la diferencia.\nAsí de preparado envías a tu familia.\nCotiza y envía en vezmoney.com 💙",
     "hashtags": [
       "#VezMoney",
-      "#PeruanosEnChile",
-      "#Nostalgia",
-      "#Peru",
-      "#Migrantes",
       "#EnviarDinero",
-      "#FamiliaPrimero"
+      "#Migrantes",
+      "#Colombia",
+      "#Venezuela",
+      "#Chile",
+      "#Remesas",
+      "#Familia"
+    ]
+  },
+  {
+    "id": "2026-11-10-m4mri-B",
+    "archivo": "out/tendencias/tmp/2026-11-10-m4mri-B_mwasj8fz.mp4",
+    "video": "out/tendencias/tmp/2026-11-10-m4mri-B_mwasj8fz.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-10-m4mri-B_mwasj8fz.jpg",
+    "fecha": "2026-11-10",
+    "idea": "2026-11-10-m4mri",
+    "letra": "B",
+    "titulo": "Cinco días para el combate: la preparación lo es todo",
+    "caption": "A pocos días del combate, el entrenamiento no para 🥊 ¿Quién crees que gana?\nAsí como ellas se preparan, tú también puedes preparar tu envío: cotiza con calma y envía a tu familia.\nVideo de @letengoelchisme en Instagram.\nCotiza y envía en vezmoney.com 💙",
+    "hashtags": [
+      "#VezMoney",
+      "#Boxeo",
+      "#Colombia",
+      "#Migrantes",
+      "#Chile",
+      "#Venezuela",
+      "#Tendencia",
+      "#EnviarDinero"
     ]
   }
 ]
