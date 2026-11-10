@@ -1,0 +1,39 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "family sharing meal at table latin home",
+    "woman smiling during video call on phone"
+  ],
+  "escenas": [
+    {
+      "texto": "Llega la Chinita y el corazón se va al Zulia",
+      "resalta": "Zulia"
+    },
+    {
+      "texto": "Se extraña la fiesta, la mesa y la familia",
+      "resalta": "familia"
+    },
+    {
+      "texto": "Así de cerca los sientes: envía a los tuyos",
+      "resalta": "cerca"
+    }
+  ],
+  "duracion": 11,
+  "musica": "emotivo",
+  "remate": "La familia siempre cerca, con VezMoney",
+  "caption": "Cada 18 de noviembre el Zulia se llena de fe y alegría, y los que estamos lejos también la sentimos 💛\n\nQue la Chinita bendiga a tu familia. Y si quieres acompañarlos, hazlo fácil.\n\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#LaChinita",
+    "#Zulia",
+    "#Maracaibo",
+    "#VenezolanosEnChile",
+    "#VenezolanosEnPeru",
+    "#VenezolanosEnColombia",
+    "#Migrantes"
+  ],
+  "fecha_publicacion": "2026-11-17",
+  "_idea": "2026-11-10-2",
+  "_letra": "A",
+  "_titulo": "Día de la Chinita: el Zulia se siente donde estés"
+}

@@ -1,44 +1,43 @@
 [
   {
-    "id": "2026-11-10-m4mri-A",
-    "archivo": "out/tendencias/tmp/2026-11-10-m4mri-A_mwasik35.mp4",
-    "video": "out/tendencias/tmp/2026-11-10-m4mri-A_mwasik35.mp4",
-    "miniatura": "out/tendencias/tmp/2026-11-10-m4mri-A_mwasik35.jpg",
-    "fecha": "2026-11-10",
-    "idea": "2026-11-10-m4mri",
+    "id": "2026-11-10-2-A",
+    "archivo": "out/tendencias/tmp/2026-11-10-2-A_mwasiwk6.mp4",
+    "video": "out/tendencias/tmp/2026-11-10-2-A_mwasiwk6.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-10-2-A_mwasiwk6.jpg",
+    "fecha": "2026-11-17",
+    "idea": "2026-11-10-2",
     "letra": "A",
-    "titulo": "Cinco días para el combate: la preparación lo es todo",
-    "caption": "Antes de subir al ring, toca prepararse 🥊\nCon un envío pasa igual: cotizar con calma antes de enviar hace la diferencia.\nAsí de preparado envías a tu familia.\nCotiza y envía en vezmoney.com 💙",
+    "titulo": "Día de la Chinita: el Zulia se siente donde estés",
+    "caption": "Cada 18 de noviembre el Zulia se llena de fe y alegría, y los que estamos lejos también la sentimos 💛\n\nQue la Chinita bendiga a tu familia. Y si quieres acompañarlos, hazlo fácil.\n\nCotiza y envía en vezmoney.com 💙",
     "hashtags": [
       "#VezMoney",
-      "#EnviarDinero",
-      "#Migrantes",
-      "#Colombia",
-      "#Venezuela",
-      "#Chile",
-      "#Remesas",
-      "#Familia"
+      "#LaChinita",
+      "#Zulia",
+      "#Maracaibo",
+      "#VenezolanosEnChile",
+      "#VenezolanosEnPeru",
+      "#VenezolanosEnColombia",
+      "#Migrantes"
     ]
   },
   {
-    "id": "2026-11-10-m4mri-B",
-    "archivo": "out/tendencias/tmp/2026-11-10-m4mri-B_mwasj8fz.mp4",
-    "video": "out/tendencias/tmp/2026-11-10-m4mri-B_mwasj8fz.mp4",
-    "miniatura": "out/tendencias/tmp/2026-11-10-m4mri-B_mwasj8fz.jpg",
-    "fecha": "2026-11-10",
-    "idea": "2026-11-10-m4mri",
+    "id": "2026-11-10-2-B",
+    "archivo": "out/tendencias/tmp/2026-11-10-2-B_mwaskmn2.mp4",
+    "video": "out/tendencias/tmp/2026-11-10-2-B_mwaskmn2.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-10-2-B_mwaskmn2.jpg",
+    "fecha": "2026-11-17",
+    "idea": "2026-11-10-2",
     "letra": "B",
-    "titulo": "Cinco días para el combate: la preparación lo es todo",
-    "caption": "A pocos días del combate, el entrenamiento no para 🥊 ¿Quién crees que gana?\nAsí como ellas se preparan, tú también puedes preparar tu envío: cotiza con calma y envía a tu familia.\nVideo de @letengoelchisme en Instagram.\nCotiza y envía en vezmoney.com 💙",
+    "titulo": "Día de la Chinita: el Zulia se siente donde estés",
+    "caption": "¿Quieres acompañar a tu familia en Venezuela? Mira lo fácil que es cotizar tu envío desde Chile 👆\n\nCotiza y envía en vezmoney.com 💙",
     "hashtags": [
       "#VezMoney",
-      "#Boxeo",
-      "#Colombia",
-      "#Migrantes",
-      "#Chile",
       "#Venezuela",
-      "#Tendencia",
-      "#EnviarDinero"
+      "#VenezolanosEnChile",
+      "#EnviarDinero",
+      "#Remesas",
+      "#Migrantes",
+      "#CotizaYEnvia"
     ]
   }
 ]
