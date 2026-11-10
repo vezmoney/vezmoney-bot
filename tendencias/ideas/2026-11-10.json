@@ -1,0 +1,282 @@
+[
+  {
+    "id": "2026-11-10-1",
+    "fecha": "2026-11-10",
+    "titulo": "¿Para qué tanta prisa, joven?",
+    "tipo": "tendencia",
+    "publico": "Migrantes venezolanos, peruanos y colombianos en Chile, y sus familias",
+    "senal": {
+      "texto": "Video viral de un joven caminando apurado, con humor cotidiano",
+      "pais": "CL",
+      "url": "https://www.tiktok.com/@augustoceballos2423/video/7706414992706358580"
+    },
+    "porque": "Todos conocemos a alguien que anda siempre apurado: se entiende en 2 segundos y se comparte.",
+    "gancho_envio": "Así de rápido va tu día, y así de fácil es enviar dinero a tu familia con VezMoney.",
+    "pieza_a": {
+      "plantilla": "reel",
+      "video": {
+        "url": "https://www.tiktok.com/@augustoceballos2423/video/7706414992706358580",
+        "autor": "augustoceballos2423",
+        "plataforma": "TikTok",
+        "mensaje_aviso": "¡Hola! Nos gustó mucho tu video y lo vamos a publicar mencionándote (@augustoceballos2423). Esperamos que no te moleste; si prefieres que lo bajemos, avísanos y lo retiramos enseguida. ¡Gracias por el buen humor! 💙",
+        "vistas": 12700,
+        "duracion_original": 38
+      },
+      "gancho": "Así anda uno cuando va con prisa",
+      "remate": "Rápido y fácil: así envías con VezMoney",
+      "inicio": 0,
+      "duracion": 12,
+      "estilo": "sutil",
+      "audio": "original",
+      "caption": "Todos tenemos un día así 😂 Pero enviar dinero a tu familia no tiene que ser una carrera: es rápido y fácil.\n\nVideo de @augustoceballos2423 en TikTok.\n\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile",
+        "#ColombianosEnChile",
+        "#Humor",
+        "#Migrantes",
+        "#EnviarDinero",
+        "#Chile"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "man walking fast on city street with phone",
+        "hands using smartphone close up"
+      ],
+      "escenas": [
+        {
+          "texto": "Hay días en que todo va con prisa",
+          "resalta": "prisa"
+        },
+        {
+          "texto": "Pero enviar dinero a casa no tiene que ser un lío",
+          "resalta": "lío"
+        },
+        {
+          "texto": "Así de rápido y fácil envías con VezMoney",
+          "resalta": "rápido"
+        }
+      ],
+      "duracion": 10,
+      "musica": "gancho_urbano",
+      "remate": "Cotiza y envía fácil con VezMoney",
+      "caption": "¿Días de mil cosas por hacer? Enviar dinero a tu familia puede ser lo más simple de tu día.\n\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Migrantes",
+        "#EnviarDinero",
+        "#VidaDeMigrante",
+        "#Chile",
+        "#Peru",
+        "#Colombia",
+        "#Venezuela"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-10-2",
+    "fecha": "2026-11-10",
+    "titulo": "Día de la Chinita: el Zulia se siente donde estés",
+    "tipo": "fecha",
+    "publico": "Venezolanos (sobre todo zulianos) en Chile, Perú y Colombia, y sus familias",
+    "senal": {
+      "texto": "18 de noviembre: Día de la Chinita, Virgen de Chiquinquirá, fiesta del Zulia",
+      "pais": "VE",
+      "url": ""
+    },
+    "porque": "Para muchos zulianos es una fecha de fe, familia y nostalgia que se vive lejos de casa.",
+    "gancho_envio": "Así de cerca sientes a los tuyos en una fecha especial, y así de fácil es acompañarlos con un envío.",
+    "publicar_el": "2026-11-17",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "family sharing meal at table latin home",
+        "woman smiling during video call on phone"
+      ],
+      "escenas": [
+        {
+          "texto": "Llega la Chinita y el corazón se va al Zulia",
+          "resalta": "Zulia"
+        },
+        {
+          "texto": "Se extraña la fiesta, la mesa y la familia",
+          "resalta": "familia"
+        },
+        {
+          "texto": "Así de cerca los sientes: envía a los tuyos",
+          "resalta": "cerca"
+        }
+      ],
+      "duracion": 11,
+      "musica": "emotivo",
+      "remate": "La familia siempre cerca, con VezMoney",
+      "caption": "Cada 18 de noviembre el Zulia se llena de fe y alegría, y los que estamos lejos también la sentimos 💛\n\nQue la Chinita bendiga a tu familia. Y si quieres acompañarlos, hazlo fácil.\n\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#LaChinita",
+        "#Zulia",
+        "#Maracaibo",
+        "#VenezolanosEnChile",
+        "#VenezolanosEnPeru",
+        "#VenezolanosEnColombia",
+        "#Migrantes"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "cotizar",
+      "destino": "Venezuela",
+      "titulo": "¿Tu familia está en Venezuela?",
+      "remate": "Cotiza Chile → Venezuela",
+      "musica": "positivo",
+      "caption": "¿Quieres acompañar a tu familia en Venezuela? Mira lo fácil que es cotizar tu envío desde Chile 👆\n\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Venezuela",
+        "#VenezolanosEnChile",
+        "#EnviarDinero",
+        "#Remesas",
+        "#Migrantes",
+        "#CotizaYEnvia"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-10-3",
+    "fecha": "2026-11-10",
+    "titulo": "¿Tu familia está en Perú? Así se cotiza",
+    "tipo": "evergreen",
+    "publico": "Peruanos en Chile y sus familias en Perú",
+    "senal": {
+      "texto": "Dato práctico recurrente para quienes envían a Perú",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Muchos peruanos en Chile envían a casa y quieren ver el proceso claro antes de hacerlo.",
+    "gancho_envio": "Así de fácil es cotizar tu envío a Perú antes de enviarlo.",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "cotizar",
+      "destino": "Perú",
+      "titulo": "¿Tu familia está en Perú?",
+      "remate": "Cotiza Chile → Perú",
+      "musica": "latino_alegre",
+      "caption": "Peruanos en Chile 🇵🇪🇨🇱 así de fácil se cotiza un envío a tu familia en Perú. Míralo paso a paso 👆\n\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#PeruanosEnChile",
+        "#Peru",
+        "#EnviarDinero",
+        "#Remesas",
+        "#Migrantes",
+        "#ChileAPeru"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "woman cooking in home kitchen",
+        "hands holding smartphone at table"
+      ],
+      "escenas": [
+        {
+          "texto": "Hay cosas de casa que no caben en una maleta",
+          "resalta": "maleta"
+        },
+        {
+          "texto": "Pero tu apoyo sí llega: cotiza y envía fácil",
+          "resalta": "apoyo"
+        }
+      ],
+      "duracion": 9,
+      "musica": "latino_alegre",
+      "remate": "Tu apoyo llega fácil con VezMoney",
+      "caption": "El sabor de casa no cabe en una maleta, pero tu apoyo sí puede llegar fácil 🇵🇪💙\n\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#PeruanosEnChile",
+        "#Nostalgia",
+        "#Peru",
+        "#Migrantes",
+        "#EnviarDinero",
+        "#FamiliaPrimero"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-10-4",
+    "fecha": "2026-11-10",
+    "titulo": "Cuando tiembla, lo primero es saber de los tuyos",
+    "tipo": "noticia",
+    "publico": "Migrantes en Chile y sus familias en el país de origen",
+    "senal": {
+      "texto": "Sismo de magnitud 5,2 percibido en Tarapacá, según el CSN",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Un temblor en Chile preocupa a la familia que está lejos: avisar y estar en contacto importa.",
+    "gancho_envio": "Así de importante es estar cerca de los tuyos: la familia primero, también a la distancia.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "person calling family on phone worried",
+        "family hugging at home"
+      ],
+      "escenas": [
+        {
+          "texto": "Cuando tiembla, lo primero es saber de los tuyos",
+          "resalta": "tuyos"
+        },
+        {
+          "texto": "Avisa que estás bien y pregunta por ellos",
+          "resalta": "bien"
+        },
+        {
+          "texto": "Cuida a tu gente, aunque estén lejos",
+          "resalta": "Cuida"
+        }
+      ],
+      "duracion": 11,
+      "musica": "emotivo",
+      "remate": "La familia primero",
+      "caption": "Un sismo se sintió en el norte de Chile. Si tu familia está lejos, un mensaje a tiempo les da tranquilidad 🙏\n\nCuídate y cuida a los tuyos.\n\nVezMoney: vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Chile",
+        "#Sismo",
+        "#FamiliaPrimero",
+        "#Migrantes",
+        "#CuidaATuFamilia",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "titulo": "Familia lejos: 3 hábitos que dan tranquilidad",
+      "pasos": [
+        "Acuerden una hora fija para hablar cada semana",
+        "Guarda los contactos de emergencia de tu comuna",
+        "Ten tu envío a casa ordenado y cotiza antes"
+      ],
+      "fondo": "s23.jpg",
+      "remate": "La familia primero",
+      "nota": "Hábitos de cuidado y prevención; no reemplazan las indicaciones de las autoridades.",
+      "musica": "emotivo",
+      "caption": "Estar lejos no significa estar ausente. Tres hábitos simples para cuidar a los tuyos 💙\n\nCotiza y envía en vezmoney.com",
+      "hashtags": [
+        "#VezMoney",
+        "#FamiliaPrimero",
+        "#Migrantes",
+        "#Chile",
+        "#CuidaATuFamilia",
+        "#VidaDeMigrante",
+        "#VenezolanosEnChile"
+      ]
+    }
+  }
+]
