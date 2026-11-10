@@ -1,35 +1,36 @@
 {
   "plantilla": "animado",
   "busqueda": [
-    "family sharing meal at table latin home",
-    "woman smiling during video call on phone"
+    "Maracaibo Venezuela lake bridge",
+    "religious procession virgin Mary statue devotees",
+    "family celebrating together latin home dinner"
   ],
   "escenas": [
     {
-      "texto": "Llega la Chinita y el corazón se va al Zulia",
-      "resalta": "Zulia"
+      "texto": "Ya viene la Chinita y el Zulia se viste de fiesta",
+      "resalta": "Chinita"
     },
     {
-      "texto": "Se extraña la fiesta, la mesa y la familia",
-      "resalta": "familia"
+      "texto": "Gaita, fe y familia: así se vive en Maracaibo",
+      "resalta": "Maracaibo"
     },
     {
       "texto": "Así de cerca los sientes: envía a los tuyos",
       "resalta": "cerca"
     }
   ],
-  "duracion": 11,
+  "duracion": 12,
   "musica": "emotivo",
   "remate": "La familia siempre cerca, con VezMoney",
-  "caption": "Cada 18 de noviembre el Zulia se llena de fe y alegría, y los que estamos lejos también la sentimos 💛\n\nQue la Chinita bendiga a tu familia. Y si quieres acompañarlos, hazlo fácil.\n\nCotiza y envía en vezmoney.com 💙",
+  "caption": "Cada noviembre el Zulia se llena de fe, gaita y alegría por la Chinita, y los que estamos lejos también la sentimos 💛\n\nQue la Virgen de Chiquinquirá bendiga a tu familia. Y si quieres acompañarlos, hazlo fácil.\n\nCotiza y envía en vezmoney.com 💙",
   "hashtags": [
     "#VezMoney",
     "#LaChinita",
+    "#FeriaDeLaChinita",
     "#Zulia",
     "#Maracaibo",
+    "#Gaita",
     "#VenezolanosEnChile",
-    "#VenezolanosEnPeru",
-    "#VenezolanosEnColombia",
     "#Migrantes"
   ],
   "fecha_publicacion": "2026-11-17",
