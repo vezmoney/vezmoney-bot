@@ -1,27 +1,35 @@
 {
-  "plantilla": "reel",
-  "video": {
-    "url": "https://www.instagram.com/p/Dffsyr7oyUb/",
-    "autor": "venezolanosenperu",
-    "plataforma": "Instagram",
-    "mensaje_aviso": "¡Hola! Nos gustó mucho tu video del heladero de Ayacucho. Lo vamos a publicar en VezMoney mencionándote (@venezolanosenperu). Esperamos que no te moleste; si prefieres que no lo publiquemos, avísanos y bajamos la publicación de inmediato. ¡Gracias por el buen contenido! 💙",
-    "vistas": 38734,
-    "duracion_original": 25
-  },
-  "gancho": "Ayacucho también tiene flow",
+  "plantilla": "animado",
+  "busqueda": [
+    "pexels:40777550",
+    "pexels:28914112",
+    "pexels:6570510"
+  ],
+  "escenas": [
+    {
+      "texto": "Un carrito, un helado y mucho flow",
+      "resalta": "flow"
+    },
+    {
+      "texto": "Así se trabaja en Perú: con ganas y buen humor",
+      "resalta": "ganas"
+    },
+    {
+      "texto": "Y así de fácil le envías a los tuyos",
+      "resalta": "fácil"
+    }
+  ],
+  "duracion": 11,
+  "musica": "latino_alegre",
   "remate": "Así de fácil se disfruta, y se envía",
-  "inicio": 0,
-  "duracion": 15,
-  "estilo": "sutil",
-  "audio": "original",
-  "caption": "Cuando el trend llega hasta el heladero 🍦🔥\n¿Ya reconociste la canción? Cuéntanos cómo se llama y compártelo con quien se apunta a todo.\nVideo de @venezolanosenperu en Instagram.\nCotiza y envía en vezmoney.com 💙",
+  "caption": "Un carrito, un helado y mucho flow 🍦\nEn Perú, en Chile o donde estés, el buen humor y las ganas de trabajar no se negocian.\nCuéntanos en los comentarios: ¿a qué te dedicas tú?\nCotiza y envía en vezmoney.com 💙",
   "hashtags": [
     "#VezMoney",
-    "#Ayacucho",
     "#Peru",
     "#Migrantes",
     "#Venezolanos",
-    "#Trend",
+    "#Colombianos",
+    "#VidaDeMigrante",
     "#CulturaLatina",
     "#EnviarDinero"
   ],
