@@ -1,1 +1,1 @@
-Hice: cambié la búsqueda del último clip (el 3.º de `busqueda`) por «latino family smiling at phone video call home», para que salga una familia latina y no gente sin relación con Latinoamérica.
+Hice: en `tendencias/piezas/2026-11-10-3-B.json` cambié la segunda búsqueda de clips, que era un celular en las manos sobre una mesa (el de pantalla verde), por «woman video calling family on smartphone at home». Ahora el celular aparece en una videollamada con la familia, y el resto de la pieza queda igual.
