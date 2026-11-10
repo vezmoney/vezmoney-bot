@@ -1,0 +1,66 @@
+[
+  {
+    "id": "2026-11-10-mjnmn",
+    "fecha": "2026-11-10",
+    "titulo": "Noticias de Venezuela: estar informado y cerca de los tuyos",
+    "tipo": "noticia",
+    "publico": "Venezolanos en Chile, Perú y Colombia, y sus familias en Venezuela",
+    "senal": {
+      "texto": "El presidente de EE. UU., Donald Trump, dijo que espera que en algún momento se realicen elecciones presidenciales en Venezuela (reportado el 9 de noviembre de 2026).",
+      "pais": "Venezuela",
+      "url": "https://www.instagram.com/p/DfiioPHxeuE/"
+    },
+    "porque": "Lo que pasa en Venezuela le importa a cada migrante venezolano, y las noticias del país generan conversación y ganas de saber de la familia.",
+    "gancho_envio": "Así de importante es estar cerca de los tuyos: te informas, hablas con tu familia y tu apoyo llega con un envío.",
+    "sensibilidad": "media",
+    "nota_revision": "Tema político (elecciones en Venezuela, declaraciones de Trump). Se usa solo como noticia, sin opinión ni postura partidista, con tono sobrio y un remate de familia. Revisa antes de aprobar: (1) que la declaración sea de hoy y no imágenes de archivo (el video parece usar una toma de la Casa Blanca con barra de Telemundo que podría ser antigua); (2) que el contenido no se lea como respaldo a ningún bando; (3) el logo de Telemundo y el logo de la cuenta aparecen en pantalla (no son promoción, pero conviene saberlo); (4) el caption no pregunta «¿qué opinas?» a propósito, para no abrir debate político.",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "cotizar",
+      "destino": "Venezuela",
+      "titulo": "¿Tu familia está en Venezuela?",
+      "remate": "Cotiza Chile → Venezuela",
+      "musica": "emotivo",
+      "caption": "Cuando piensas en los tuyos en Venezuela, lo primero es saber cómo están. 💛\nAsí de fácil es cotizar tu envío antes de enviarlo: ves todo con calma y decides tú.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Venezuela",
+        "#EnviarDinero",
+        "#Remesas",
+        "#MigrantesVenezolanos",
+        "#VenezolanosEnChile",
+        "#FamiliaPrimero",
+        "#Chile"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "reel",
+      "video": {
+        "url": "https://www.instagram.com/p/DfiioPHxeuE/",
+        "autor": "noticiasvzlaoficial_",
+        "plataforma": "Instagram",
+        "mensaje_aviso": "¡Hola! Nos gustó mucho tu contenido y lo vamos a publicar mencionándote (@noticiasvzlaoficial_). Esperamos que no te moleste; si prefieres que no lo hagamos, avísanos y bajamos la publicación de inmediato. ¡Gracias por informar a la comunidad! 💙",
+        "vistas": 29440,
+        "duracion_original": 59
+      },
+      "estilo": "sutil",
+      "audio": "original",
+      "gancho": "Venezuela en las noticias: lo que se sigue de cerca",
+      "remate": "Informado y cerca de los tuyos: la familia primero",
+      "inicio": 0,
+      "duracion": 12,
+      "caption": "Noticias que se siguen de cerca desde la distancia. 🇻🇪\nMientras te informas, no olvides lo más importante: los tuyos.\nVideo de @noticiasvzlaoficial_ en Instagram.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Venezuela",
+        "#NoticiasVenezuela",
+        "#MigrantesVenezolanos",
+        "#VenezolanosEnChile",
+        "#VenezolanosEnPeru",
+        "#VenezolanosEnColombia",
+        "#FamiliaPrimero"
+      ]
+    },
+    "publicar_el": "2026-11-10"
+  }
+]
