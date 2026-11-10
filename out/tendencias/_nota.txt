@@ -1,1 +1,1 @@
-Hice: reescribí las escenas de la pieza A (animado) para dar más contexto de visas («Si ya haces filas por tu visa» → «Ordenas tus documentos para estar al día» → «Haz lo mismo con el envío de dinero») y ajusté el caption en la misma línea, todo dentro de los límites de caracteres.
+Hice: cambié la búsqueda del último clip (el 3.º de `busqueda`) por «latino family smiling at phone video call home», para que salga una familia latina y no gente sin relación con Latinoamérica.

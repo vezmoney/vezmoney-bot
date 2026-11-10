@@ -1,10 +1,11 @@
 [
   {
-    "id": "2026-11-10-3-A",
-    "archivo": "out/tendencias/tmp/2026-11-10-3-A_mwarlr6m.mp4",
-    "video": "out/tendencias/tmp/2026-11-10-3-A_mwarlr6m.mp4",
-    "miniatura": "out/tendencias/tmp/2026-11-10-3-A_mwarlr6m.jpg",
-    "idea": "2026-11-10-3",
+    "id": "2026-11-10-m3626-A",
+    "archivo": "out/tendencias/tmp/2026-11-10-m3626-A_mwarttua.mp4",
+    "video": "out/tendencias/tmp/2026-11-10-m3626-A_mwarttua.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-10-m3626-A_mwarttua.jpg",
+    "fecha": "2026-11-11",
+    "idea": "2026-11-10-m3626",
     "letra": "A",
     "titulo": "¿Tu familia está en Perú? Así se cotiza",
     "caption": "Peruanos en Chile 🇵🇪🇨🇱 así de fácil se cotiza un envío a tu familia en Perú. Míralo paso a paso 👆\n\nCotiza y envía en vezmoney.com 💙",
@@ -16,25 +17,6 @@
       "#Remesas",
       "#Migrantes",
       "#ChileAPeru"
-    ]
-  },
-  {
-    "id": "2026-11-10-3-B",
-    "archivo": "out/tendencias/tmp/2026-11-10-3-B_mwarm9nd.mp4",
-    "video": "out/tendencias/tmp/2026-11-10-3-B_mwarm9nd.mp4",
-    "miniatura": "out/tendencias/tmp/2026-11-10-3-B_mwarm9nd.jpg",
-    "idea": "2026-11-10-3",
-    "letra": "B",
-    "titulo": "¿Tu familia está en Perú? Así se cotiza",
-    "caption": "El sabor de casa no cabe en una maleta, pero tu apoyo sí puede llegar fácil 🇵🇪💙\n\nCotiza y envía en vezmoney.com 💙",
-    "hashtags": [
-      "#VezMoney",
-      "#PeruanosEnChile",
-      "#Nostalgia",
-      "#Peru",
-      "#Migrantes",
-      "#EnviarDinero",
-      "#FamiliaPrimero"
     ]
   }
 ]
