@@ -1,0 +1,82 @@
+[
+  {
+    "id": "2026-11-10-m3626",
+    "fecha": "2026-11-10",
+    "titulo": "Todo trabajo merece su pago",
+    "tipo": "tendencia",
+    "publico": "Migrantes venezolanos en Perú y Chile que trabajan por cuenta propia o en servicios, y sus familias",
+    "senal": {
+      "texto": "Un mototaxista denuncia en redes que una pasajera se negó a pagarle tras el servicio (@venezolanosenperu, 1.795 likes y 368 comentarios).",
+      "pais": "Perú",
+      "url": "https://www.instagram.com/p/DfjN6a_xhuX/"
+    },
+    "porque": "Muchos migrantes viven de su trabajo del día a día y saben lo que cuesta que se lo reconozcan y se lo paguen.",
+    "gancho_envio": "Así de claro debe ser un pago: ves todo antes de enviar y tu familia recibe tu apoyo.",
+    "publicar_el": "2026-11-11",
+    "sensibilidad": "media",
+    "nota_revision": "Revisar antes de aprobar: (1) En el video sale una mujer identificable en una discusión por un pago, y la publicación original es una denuncia pública. Hay riesgo de que parezca burla o linchamiento: por eso se eligió el estilo «sutil», un gancho que defiende el valor del trabajo sin tomar partido y un remate sobrio. (2) No pude confirmar el audio del video (aparece como «desconocido»): si trae gritos, insultos o música comercial, cambiar a «silencio». (3) Aparece el logo de @venezolanosenperu, que es la cuenta original y se acredita. No hay locales ni marcas protagonistas. (4) Si Francisco prefiere no mostrar a la pasajera, se puede mover el inicio o descartar la pieza B y dejar solo la A.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "delivery rider on motorcycle city street vertical",
+        "hands holding smartphone confirming payment",
+        "family video call at home smartphone"
+      ],
+      "escenas": [
+        {
+          "texto": "Cada trabajo se hace con esfuerzo",
+          "resalta": "esfuerzo"
+        },
+        {
+          "texto": "Y merece que se reconozca y se pague",
+          "resalta": "pague"
+        },
+        {
+          "texto": "Así de claro es enviar con VezMoney",
+          "resalta": "claro"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "Cotiza y envía con claridad",
+      "caption": "El trabajo del migrante se hace con esfuerzo y merece respeto 💙\nCuando cada cosa es clara, todo es más tranquilo.\nAsí de claro es enviar con VezMoney: cotizas, ves el detalle y envías a tu familia.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#MigrantesEnChile",
+        "#VenezolanosEnPerú",
+        "#EnvioDeDinero",
+        "#TrabajoDigno",
+        "#FamiliaPrimero",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "reel",
+      "video": {
+        "url": "https://www.instagram.com/p/DfjN6a_xhuX/",
+        "autor": "venezolanosenperu",
+        "plataforma": "Instagram",
+        "mensaje_aviso": "¡Hola! Nos gustó mucho tu contenido y lo vamos a publicar mencionándote (@venezolanosenperu). Esperamos que no te moleste; si es así, avísanos y bajamos la publicación. ¡Gracias por informar a la comunidad! 💙",
+        "vistas": 72329,
+        "duracion_original": 27
+      },
+      "gancho": "Todo trabajo merece su pago",
+      "remate": "Así de claro, cotiza y envía",
+      "inicio": 2,
+      "duracion": 12,
+      "estilo": "sutil",
+      "audio": "original",
+      "caption": "Todo trabajo merece respeto y su pago justo.\nLos migrantes sabemos lo que cuesta ganarse cada sol, cada peso 🙏\nEn VezMoney creemos en lo claro: cotizas, ves el detalle y envías a tu familia.\nVideo de @venezolanosenperu en Instagram.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#VenezolanosEnPerú",
+        "#MigrantesEnChile",
+        "#TrabajoDigno",
+        "#EnvioDeDinero",
+        "#FamiliaPrimero",
+        "#Remesas",
+        "#Migrantes"
+      ]
+    }
+  }
+]
