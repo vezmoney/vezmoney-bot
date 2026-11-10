@@ -1,1 +1,1 @@
-Hice: alargué el reel de 10 a 15 segundos (`duracion`, el máximo de la plantilla) en `2026-11-10-miyw3-A.json`, sin tocar nada más.
+Hice: alargué el reel de 12 a 15 segundos (`duracion`, el máximo permitido) para que el video llegue más lejos en lo que dice; no vi los fotogramas, así que no sé si 15 s alcanza para que termine la frase.
