@@ -1,1 +1,1 @@
-Hice: cambié `audio` de `musica` a `original` en `tendencias/piezas/2026-11-10-miyw3-B.json` y quité el campo `musica`. Ojo: si el audio del heladero es una canción comercial, las reglas dicen que no va `original`, así que conviene revisarlo.
+Hice: alargué el reel de 10 a 15 segundos (`duracion`, el máximo que permite la plantilla); el video original dura 25 s, así que alcanza.
