@@ -13,6 +13,35 @@
     "porque": "Es humor sano y orgullo por lo cotidiano de casa: un trabajador de a pie que le pone su toque al trend se siente cercano y da ganas de compartir.",
     "gancho_envio": "Así de fácil como disfrutar un helado en la calle: enviar dinero a tu familia con VezMoney.",
     "pieza_a": {
+      "plantilla": "reel",
+      "video": {
+        "url": "https://www.instagram.com/p/Dffsyr7oyUb/",
+        "autor": "venezolanosenperu",
+        "plataforma": "Instagram",
+        "mensaje_aviso": "¡Hola! Nos gustó mucho tu video del heladero de Ayacucho. Lo vamos a publicar en VezMoney mencionándote (@venezolanosenperu). Esperamos que no te moleste; si prefieres que no lo publiquemos, avísanos y bajamos la publicación de inmediato. ¡Gracias por el buen contenido! 💙",
+        "vistas": 38734,
+        "duracion_original": 25
+      },
+      "gancho": "Ayacucho también tiene flow",
+      "remate": "Así de fácil se disfruta, y se envía",
+      "inicio": 0,
+      "duracion": 10,
+      "estilo": "sutil",
+      "audio": "musica",
+      "musica": "latino_alegre",
+      "caption": "Cuando el trend llega hasta el heladero 🍦🔥\n¿Ya reconociste la canción? Cuéntanos cómo se llama y compártelo con quien se apunta a todo.\nVideo de @venezolanosenperu en Instagram.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Ayacucho",
+        "#Peru",
+        "#Migrantes",
+        "#Venezolanos",
+        "#Trend",
+        "#CulturaLatina",
+        "#EnviarDinero"
+      ]
+    },
+    "pieza_b": {
       "plantilla": "animado",
       "busqueda": [
         "man buying ice cream from street vendor",
@@ -46,35 +75,6 @@
         "#EnviarDinero",
         "#VidaDeMigrante",
         "#Chile"
-      ]
-    },
-    "pieza_b": {
-      "plantilla": "reel",
-      "video": {
-        "url": "https://www.instagram.com/p/Dffsyr7oyUb/",
-        "autor": "venezolanosenperu",
-        "plataforma": "Instagram",
-        "mensaje_aviso": "¡Hola! Nos gustó mucho tu video del heladero de Ayacucho. Lo vamos a publicar en VezMoney mencionándote (@venezolanosenperu). Esperamos que no te moleste; si prefieres que no lo publiquemos, avísanos y bajamos la publicación de inmediato. ¡Gracias por el buen contenido! 💙",
-        "vistas": 38734,
-        "duracion_original": 25
-      },
-      "gancho": "Ayacucho también tiene flow",
-      "remate": "Así de fácil se disfruta, y se envía",
-      "inicio": 0,
-      "duracion": 10,
-      "estilo": "sutil",
-      "audio": "musica",
-      "musica": "latino_alegre",
-      "caption": "Cuando el trend llega hasta el heladero 🍦🔥\n¿Ya reconociste la canción? Cuéntanos cómo se llama y compártelo con quien se apunta a todo.\nVideo de @venezolanosenperu en Instagram.\nCotiza y envía en vezmoney.com 💙",
-      "hashtags": [
-        "#VezMoney",
-        "#Ayacucho",
-        "#Peru",
-        "#Migrantes",
-        "#Venezolanos",
-        "#Trend",
-        "#CulturaLatina",
-        "#EnviarDinero"
       ]
     },
     "sensibilidad": "media",
