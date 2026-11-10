@@ -31,7 +31,7 @@ permissions:
 jobs:
   corregir:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 30
     env:
       TIPO: ${{ github.event.action == 'idea_editada' && 'idea' || (github.event.action == 'pieza_correccion' && 'pieza' || inputs.tipo) }}
       ID: ${{ github.event.client_payload.id || inputs.id }}

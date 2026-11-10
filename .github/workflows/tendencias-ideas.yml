@@ -23,7 +23,7 @@ on:
     types: [idea_manual, ideas_diarias]
 
 concurrency:
-  group: vezmoney-tendencias
+  group: tendencias-ideas-${{ github.run_id }}
   cancel-in-progress: false
 
 permissions:
