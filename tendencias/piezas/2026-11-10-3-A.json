@@ -1,0 +1,37 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "man checking smartphone on city street",
+    "hands typing on smartphone close up"
+  ],
+  "escenas": [
+    {
+      "texto": "¿Tu familia está en Perú?",
+      "resalta": "Perú"
+    },
+    {
+      "texto": "Antes de enviar, cotiza con calma desde el celular",
+      "resalta": "cotiza"
+    },
+    {
+      "texto": "Así de fácil es enviar a Perú con VezMoney",
+      "resalta": "fácil"
+    }
+  ],
+  "duracion": 10,
+  "musica": "latino_alegre",
+  "remate": "Cotiza Chile → Perú con VezMoney",
+  "caption": "Peruanos en Chile 🇵🇪🇨🇱 así de fácil se cotiza un envío a tu familia en Perú. Míralo paso a paso 👆\n\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#PeruanosEnChile",
+    "#Peru",
+    "#EnviarDinero",
+    "#Remesas",
+    "#Migrantes",
+    "#ChileAPeru"
+  ],
+  "_idea": "2026-11-10-3",
+  "_letra": "A",
+  "_titulo": "¿Tu familia está en Perú? Así se cotiza"
+}

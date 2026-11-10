@@ -1,0 +1,33 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "woman cooking in home kitchen",
+    "hands holding smartphone at table"
+  ],
+  "escenas": [
+    {
+      "texto": "Hay cosas de casa que no caben en una maleta",
+      "resalta": "maleta"
+    },
+    {
+      "texto": "Pero tu apoyo sí llega: cotiza y envía fácil",
+      "resalta": "apoyo"
+    }
+  ],
+  "duracion": 9,
+  "musica": "latino_alegre",
+  "remate": "Tu apoyo llega fácil con VezMoney",
+  "caption": "El sabor de casa no cabe en una maleta, pero tu apoyo sí puede llegar fácil 🇵🇪💙\n\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#PeruanosEnChile",
+    "#Nostalgia",
+    "#Peru",
+    "#Migrantes",
+    "#EnviarDinero",
+    "#FamiliaPrimero"
+  ],
+  "_idea": "2026-11-10-3",
+  "_letra": "B",
+  "_titulo": "¿Tu familia está en Perú? Así se cotiza"
+}
