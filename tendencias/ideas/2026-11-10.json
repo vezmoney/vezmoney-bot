@@ -158,12 +158,28 @@
     "porque": "Muchos peruanos en Chile envían a casa y quieren ver el proceso claro antes de hacerlo.",
     "gancho_envio": "Así de fácil es cotizar tu envío a Perú antes de enviarlo.",
     "pieza_a": {
-      "plantilla": "tutorial",
-      "tipo": "cotizar",
-      "destino": "Perú",
-      "titulo": "¿Tu familia está en Perú?",
-      "remate": "Cotiza Chile → Perú",
+      "plantilla": "animado",
+      "busqueda": [
+        "man checking smartphone on city street",
+        "hands typing on smartphone close up"
+      ],
+      "escenas": [
+        {
+          "texto": "¿Tu familia está en Perú?",
+          "resalta": "Perú"
+        },
+        {
+          "texto": "Antes de enviar, cotiza con calma desde el celular",
+          "resalta": "cotiza"
+        },
+        {
+          "texto": "Así de fácil es enviar a Perú con VezMoney",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
       "musica": "latino_alegre",
+      "remate": "Cotiza Chile → Perú con VezMoney",
       "caption": "Peruanos en Chile 🇵🇪🇨🇱 así de fácil se cotiza un envío a tu familia en Perú. Míralo paso a paso 👆\n\nCotiza y envía en vezmoney.com 💙",
       "hashtags": [
         "#VezMoney",
