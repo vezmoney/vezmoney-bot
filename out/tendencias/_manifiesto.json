@@ -1,21 +1,43 @@
 [
   {
-    "id": "2026-11-09-mdxwv-A",
-    "archivo": "out/tendencias/tmp/2026-11-09-mdxwv-A_mw9ucshz.mp4",
-    "video": "out/tendencias/tmp/2026-11-09-mdxwv-A_mw9ucshz.mp4",
-    "miniatura": "out/tendencias/tmp/2026-11-09-mdxwv-A_mw9ucshz.jpg",
-    "idea": "2026-11-09-mdxwv",
+    "id": "2026-11-10-m3626-A",
+    "archivo": "out/tendencias/tmp/2026-11-10-m3626-A_mwar6dvz.mp4",
+    "video": "out/tendencias/tmp/2026-11-10-m3626-A_mwar6dvz.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-10-m3626-A_mwar6dvz.jpg",
+    "fecha": "2026-11-11",
+    "idea": "2026-11-10-m3626",
     "letra": "A",
-    "titulo": "Trámites de migrante: ten el plazo claro y el envío ordenado",
-    "caption": "Si ya haces filas, ordenas tus documentos para solicitar la visa y estar migratoriamente al día, haz lo mismo con el envío de dinero. 📝\nOrdénate también para enviar a tu familia: con VezMoney lo puedes hacer.\nCuéntanos en los comentarios qué trámite te toca ahora y comparte esto con alguien que también lo necesite.\nCotiza y envía en vezmoney.com 💙",
+    "titulo": "Todo trabajo merece su pago",
+    "caption": "El trabajo del migrante se hace con esfuerzo y merece respeto 💙\nCuando cada cosa es clara, todo es más tranquilo.\nAsí de claro es enviar con VezMoney: cotizas, ves el detalle y envías a tu familia.\nCotiza y envía en vezmoney.com 💙",
     "hashtags": [
       "#VezMoney",
       "#MigrantesEnChile",
-      "#TramitesChile",
-      "#VenezolanosEnChile",
-      "#PeruanosEnChile",
-      "#ColombianosEnChile",
-      "#RemesasChile"
+      "#VenezolanosEnPerú",
+      "#EnvioDeDinero",
+      "#TrabajoDigno",
+      "#FamiliaPrimero",
+      "#Remesas"
+    ]
+  },
+  {
+    "id": "2026-11-10-m3626-B",
+    "archivo": "out/tendencias/tmp/2026-11-10-m3626-B_mwar6z4d.mp4",
+    "video": "out/tendencias/tmp/2026-11-10-m3626-B_mwar6z4d.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-10-m3626-B_mwar6z4d.jpg",
+    "fecha": "2026-11-11",
+    "idea": "2026-11-10-m3626",
+    "letra": "B",
+    "titulo": "Todo trabajo merece su pago",
+    "caption": "Todo trabajo merece respeto y su pago justo.\nLos migrantes sabemos lo que cuesta ganarse cada sol, cada peso 🙏\nEn VezMoney creemos en lo claro: cotizas, ves el detalle y envías a tu familia.\nVideo de @venezolanosenperu en Instagram.\nCotiza y envía en vezmoney.com 💙",
+    "hashtags": [
+      "#VezMoney",
+      "#VenezolanosEnPerú",
+      "#MigrantesEnChile",
+      "#TrabajoDigno",
+      "#EnvioDeDinero",
+      "#FamiliaPrimero",
+      "#Remesas",
+      "#Migrantes"
     ]
   }
 ]

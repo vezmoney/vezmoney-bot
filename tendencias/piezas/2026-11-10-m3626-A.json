@@ -1,0 +1,39 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "delivery rider on motorcycle city street vertical",
+    "hands holding smartphone confirming payment",
+    "family video call at home smartphone"
+  ],
+  "escenas": [
+    {
+      "texto": "Cada trabajo se hace con esfuerzo",
+      "resalta": "esfuerzo"
+    },
+    {
+      "texto": "Y merece que se reconozca y se pague",
+      "resalta": "pague"
+    },
+    {
+      "texto": "Así de claro es enviar con VezMoney",
+      "resalta": "claro"
+    }
+  ],
+  "duracion": 10,
+  "musica": "emotivo",
+  "remate": "Cotiza y envía con claridad",
+  "caption": "El trabajo del migrante se hace con esfuerzo y merece respeto 💙\nCuando cada cosa es clara, todo es más tranquilo.\nAsí de claro es enviar con VezMoney: cotizas, ves el detalle y envías a tu familia.\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#MigrantesEnChile",
+    "#VenezolanosEnPerú",
+    "#EnvioDeDinero",
+    "#TrabajoDigno",
+    "#FamiliaPrimero",
+    "#Remesas"
+  ],
+  "fecha_publicacion": "2026-11-11",
+  "_idea": "2026-11-10-m3626",
+  "_letra": "A",
+  "_titulo": "Todo trabajo merece su pago"
+}
