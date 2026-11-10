@@ -1,43 +1,41 @@
 [
   {
-    "id": "2026-11-10-m3626-A",
-    "archivo": "out/tendencias/tmp/2026-11-10-m3626-A_mwar6dvz.mp4",
-    "video": "out/tendencias/tmp/2026-11-10-m3626-A_mwar6dvz.mp4",
-    "miniatura": "out/tendencias/tmp/2026-11-10-m3626-A_mwar6dvz.jpg",
-    "fecha": "2026-11-11",
-    "idea": "2026-11-10-m3626",
+    "id": "2026-11-10-4-A",
+    "archivo": "out/tendencias/tmp/2026-11-10-4-A_mwarj7xe.mp4",
+    "video": "out/tendencias/tmp/2026-11-10-4-A_mwarj7xe.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-10-4-A_mwarj7xe.jpg",
+    "idea": "2026-11-10-4",
     "letra": "A",
-    "titulo": "Todo trabajo merece su pago",
-    "caption": "El trabajo del migrante se hace con esfuerzo y merece respeto 💙\nCuando cada cosa es clara, todo es más tranquilo.\nAsí de claro es enviar con VezMoney: cotizas, ves el detalle y envías a tu familia.\nCotiza y envía en vezmoney.com 💙",
+    "titulo": "Cuando tiembla, lo primero es saber de los tuyos",
+    "caption": "Un sismo se sintió en el norte de Chile. Si tu familia está lejos, un mensaje a tiempo les da tranquilidad 🙏\n\nCuídate y cuida a los tuyos.\n\nVezMoney: vezmoney.com 💙",
     "hashtags": [
       "#VezMoney",
-      "#MigrantesEnChile",
-      "#VenezolanosEnPerú",
-      "#EnvioDeDinero",
-      "#TrabajoDigno",
+      "#Chile",
+      "#Sismo",
       "#FamiliaPrimero",
-      "#Remesas"
+      "#Migrantes",
+      "#CuidaATuFamilia",
+      "#VenezolanosEnChile",
+      "#PeruanosEnChile"
     ]
   },
   {
-    "id": "2026-11-10-m3626-B",
-    "archivo": "out/tendencias/tmp/2026-11-10-m3626-B_mwar6z4d.mp4",
-    "video": "out/tendencias/tmp/2026-11-10-m3626-B_mwar6z4d.mp4",
-    "miniatura": "out/tendencias/tmp/2026-11-10-m3626-B_mwar6z4d.jpg",
-    "fecha": "2026-11-11",
-    "idea": "2026-11-10-m3626",
+    "id": "2026-11-10-4-B",
+    "archivo": "out/tendencias/tmp/2026-11-10-4-B_mwark2au.mp4",
+    "video": "out/tendencias/tmp/2026-11-10-4-B_mwark2au.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-10-4-B_mwark2au.jpg",
+    "idea": "2026-11-10-4",
     "letra": "B",
-    "titulo": "Todo trabajo merece su pago",
-    "caption": "Todo trabajo merece respeto y su pago justo.\nLos migrantes sabemos lo que cuesta ganarse cada sol, cada peso 🙏\nEn VezMoney creemos en lo claro: cotizas, ves el detalle y envías a tu familia.\nVideo de @venezolanosenperu en Instagram.\nCotiza y envía en vezmoney.com 💙",
+    "titulo": "Cuando tiembla, lo primero es saber de los tuyos",
+    "caption": "Estar lejos no significa estar ausente. Tres hábitos simples para cuidar a los tuyos 💙\n\nCotiza y envía en vezmoney.com",
     "hashtags": [
       "#VezMoney",
-      "#VenezolanosEnPerú",
-      "#MigrantesEnChile",
-      "#TrabajoDigno",
-      "#EnvioDeDinero",
       "#FamiliaPrimero",
-      "#Remesas",
-      "#Migrantes"
+      "#Migrantes",
+      "#Chile",
+      "#CuidaATuFamilia",
+      "#VidaDeMigrante",
+      "#VenezolanosEnChile"
     ]
   }
 ]

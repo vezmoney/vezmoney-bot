@@ -1,0 +1,38 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "person calling family on phone worried",
+    "family hugging at home"
+  ],
+  "escenas": [
+    {
+      "texto": "Cuando tiembla, lo primero es saber de los tuyos",
+      "resalta": "tuyos"
+    },
+    {
+      "texto": "Avisa que estás bien y pregunta por ellos",
+      "resalta": "bien"
+    },
+    {
+      "texto": "Cuida a tu gente, aunque estén lejos",
+      "resalta": "Cuida"
+    }
+  ],
+  "duracion": 11,
+  "musica": "emotivo",
+  "remate": "La familia primero",
+  "caption": "Un sismo se sintió en el norte de Chile. Si tu familia está lejos, un mensaje a tiempo les da tranquilidad 🙏\n\nCuídate y cuida a los tuyos.\n\nVezMoney: vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#Chile",
+    "#Sismo",
+    "#FamiliaPrimero",
+    "#Migrantes",
+    "#CuidaATuFamilia",
+    "#VenezolanosEnChile",
+    "#PeruanosEnChile"
+  ],
+  "_idea": "2026-11-10-4",
+  "_letra": "A",
+  "_titulo": "Cuando tiembla, lo primero es saber de los tuyos"
+}
