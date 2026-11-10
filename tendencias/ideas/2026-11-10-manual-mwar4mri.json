@@ -1,0 +1,84 @@
+[
+  {
+    "id": "2026-11-10-m4mri",
+    "fecha": "2026-11-10",
+    "titulo": "Cinco días para el combate: la preparación lo es todo",
+    "tipo": "tendencia",
+    "publico": "Migrantes colombianos en Chile y venezolanos en Chile y Colombia, que siguen el chisme y el entretenimiento latino",
+    "senal": {
+      "texto": "Dos creadoras de contenido colombianas entrenan boxeo a pocos días de un combate de influencers (Stream Fighters). Video de @letengoelchisme, 9-nov-2026.",
+      "pais": "Colombia",
+      "url": "https://www.instagram.com/p/DfhOnTYiMzm/"
+    },
+    "porque": "Es la conversación del momento entre colombianos y latinos: todos opinan de quién ganará, y el tema da pie a hablar de prepararse bien.",
+    "gancho_envio": "Así como en el ring nadie sube sin prepararse, tu envío también sale mejor cuando cotizas antes con calma.",
+    "publicar_el": "2026-11-10",
+    "sensibilidad": "media",
+    "nota_revision": "El video es de entrenamiento de boxeo entre dos creadoras de contenido (no hay sangre ni golpes graves). Aparece de pasada el evento Stream Fighters (@stream_fighters) y la cuenta @valdirifitness en el texto del video original, y el logo de @letengoelchisme; no son el fin del video, pero es mención de terceros. En el gancho y el caption no se nombra a ninguna celebridad ni al evento para no sugerir respaldo. Como el audio original es desconocido, se usa música propia con licencia. Revisa que el texto del video original no te incomode (incluye la palabra «p3le4» escrita con números).",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "woman boxing training gym vertical",
+        "person tying boxing gloves close up",
+        "woman using smartphone at home"
+      ],
+      "escenas": [
+        {
+          "texto": "Todo gran combate empieza con preparación",
+          "resalta": "preparación"
+        },
+        {
+          "texto": "Un envío también se prepara con calma",
+          "resalta": "calma"
+        },
+        {
+          "texto": "Así de preparado envías con VezMoney",
+          "resalta": "preparado"
+        }
+      ],
+      "duracion": 11,
+      "musica": "gancho_urbano",
+      "remate": "Cotiza antes de enviar a tu familia",
+      "caption": "Antes de subir al ring, toca prepararse 🥊\nCon un envío pasa igual: cotizar con calma antes de enviar hace la diferencia.\nAsí de preparado envías a tu familia.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#EnviarDinero",
+        "#Migrantes",
+        "#Colombia",
+        "#Venezuela",
+        "#Chile",
+        "#Remesas",
+        "#Familia"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "reel",
+      "video": {
+        "url": "https://www.instagram.com/p/DfhOnTYiMzm/",
+        "autor": "letengoelchisme",
+        "plataforma": "Instagram",
+        "mensaje_aviso": "¡Hola! Nos gustó mucho su contenido y lo vamos a publicar en VezMoney mencionándolos (@letengoelchisme). Esperamos que no les moleste; si es así, avísennos y bajamos la publicación de inmediato. ¡Gracias y mucho éxito! 💙",
+        "vistas": 111165,
+        "duracion_original": 42
+      },
+      "gancho": "Cinco días para el combate y ya están en modo entrenamiento",
+      "remate": "Prepárate: cotiza antes de enviar",
+      "inicio": 0,
+      "duracion": 12,
+      "estilo": "sutil",
+      "audio": "musica",
+      "musica": "gancho_urbano",
+      "caption": "A pocos días del combate, el entrenamiento no para 🥊 ¿Quién crees que gana?\nAsí como ellas se preparan, tú también puedes preparar tu envío: cotiza con calma y envía a tu familia.\nVideo de @letengoelchisme en Instagram.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Boxeo",
+        "#Colombia",
+        "#Migrantes",
+        "#Chile",
+        "#Venezuela",
+        "#Tendencia",
+        "#EnviarDinero"
+      ]
+    }
+  }
+]
