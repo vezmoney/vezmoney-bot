@@ -1,0 +1,37 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "concert crowd lights vertical",
+    "friends singing together at a show"
+  ],
+  "escenas": [
+    {
+      "texto": "Ya hay primera artista para Viña 2027",
+      "resalta": "Viña"
+    },
+    {
+      "texto": "Lo bueno se organiza con tiempo",
+      "resalta": "tiempo"
+    },
+    {
+      "texto": "Así de fácil se prepara un envío a tu familia",
+      "resalta": "fácil"
+    }
+  ],
+  "duracion": 11,
+  "musica": "latino_alegre",
+  "remate": "Cotiza y envía con calma",
+  "caption": "Ya empezó la cuenta regresiva para Viña 2027 🎤\nLo bueno se organiza con tiempo, y enviarle apoyo a tu familia también.\nAsí de fácil es cotizar con calma.\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#Viña2027",
+    "#FestivalDeViña",
+    "#MigrantesEnChile",
+    "#Chile",
+    "#EnvíoDeDinero",
+    "#Remesas"
+  ],
+  "_idea": "2026-11-11-1",
+  "_letra": "A",
+  "_titulo": "Laura Pausini abre Viña 2027"
+}

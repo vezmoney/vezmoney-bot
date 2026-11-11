@@ -1,23 +1,40 @@
 [
   {
-    "id": "2026-11-10-mjnmn-B",
-    "archivo": "out\\tendencias\\tmp\\2026-11-10-mjnmn-B_mwb0azhs.mp4",
-    "video": "out\\tendencias\\tmp\\2026-11-10-mjnmn-B_mwb0azhs.mp4",
-    "miniatura": "out\\tendencias\\tmp\\2026-11-10-mjnmn-B_mwb0azhs.jpg",
-    "fecha": "2026-11-10",
-    "idea": "2026-11-10-mjnmn",
-    "letra": "B",
-    "titulo": "Noticias de Venezuela: estar informado y cerca de los tuyos",
-    "caption": "Resumen de lo que se dijo: en julio de 2026, y de nuevo en septiembre, Trump afirmó que Venezuela todavía no está lista para celebrar elecciones y que no hay una fecha fijada. (Fuentes: EFE, PBS NewsHour y NTN24).\nMientras te informas, no olvides lo más importante: los tuyos. 💛\nCotiza y envía en vezmoney.com 💙",
+    "id": "2026-11-11-1-A",
+    "archivo": "out/tendencias/tmp/2026-11-11-1-A_mwc2x40h.mp4",
+    "video": "out/tendencias/tmp/2026-11-11-1-A_mwc2x40h.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-11-1-A_mwc2x40h.jpg",
+    "idea": "2026-11-11-1",
+    "letra": "A",
+    "titulo": "Laura Pausini abre Viña 2027",
+    "caption": "Ya empezó la cuenta regresiva para Viña 2027 🎤\nLo bueno se organiza con tiempo, y enviarle apoyo a tu familia también.\nAsí de fácil es cotizar con calma.\nCotiza y envía en vezmoney.com 💙",
     "hashtags": [
       "#VezMoney",
-      "#Venezuela",
-      "#NoticiasVenezuela",
-      "#MigrantesVenezolanos",
-      "#VenezolanosEnChile",
-      "#VenezolanosEnPeru",
-      "#VenezolanosEnColombia",
-      "#FamiliaPrimero"
+      "#Viña2027",
+      "#FestivalDeViña",
+      "#MigrantesEnChile",
+      "#Chile",
+      "#EnvíoDeDinero",
+      "#Remesas"
+    ]
+  },
+  {
+    "id": "2026-11-11-1-B",
+    "archivo": "out/tendencias/tmp/2026-11-11-1-B_mwc2xva1.mp4",
+    "video": "out/tendencias/tmp/2026-11-11-1-B_mwc2xva1.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-11-1-B_mwc2xva1.jpg",
+    "idea": "2026-11-11-1",
+    "letra": "B",
+    "titulo": "Laura Pausini abre Viña 2027",
+    "caption": "Mientras llega Viña 2027, ve organizando lo importante 🎶\nEn tres pasos cotizas y envías a tu familia.\nCotiza y envía en vezmoney.com 💙",
+    "hashtags": [
+      "#VezMoney",
+      "#Viña2027",
+      "#Tutorial",
+      "#MigrantesEnChile",
+      "#Chile",
+      "#EnvíoDeDinero",
+      "#Remesas"
     ]
   }
 ]
