@@ -1,0 +1,290 @@
+[
+  {
+    "id": "2026-11-11-1",
+    "fecha": "2026-11-11",
+    "titulo": "Laura Pausini abre Viña 2027",
+    "tipo": "tendencia",
+    "publico": "Migrantes en Chile que siguen el Festival de Viña",
+    "senal": {
+      "texto": "Laura Pausini es la primera artista confirmada para el Festival de Viña 2027",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "El Festival de Viña es parte de la vida cultural en Chile y ya se habla de la edición 2027.",
+    "gancho_envio": "Así de fácil: lo bueno se organiza con tiempo, y tu envío también.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "concert crowd lights vertical",
+        "friends singing together at a show"
+      ],
+      "escenas": [
+        {
+          "texto": "Ya hay primera artista para Viña 2027",
+          "resalta": "Viña"
+        },
+        {
+          "texto": "Lo bueno se organiza con tiempo",
+          "resalta": "tiempo"
+        },
+        {
+          "texto": "Así de fácil se prepara un envío a tu familia",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 11,
+      "musica": "latino_alegre",
+      "remate": "Cotiza y envía con calma",
+      "caption": "Ya empezó la cuenta regresiva para Viña 2027 🎤\nLo bueno se organiza con tiempo, y enviarle apoyo a tu familia también.\nAsí de fácil es cotizar con calma.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Viña2027",
+        "#FestivalDeViña",
+        "#MigrantesEnChile",
+        "#Chile",
+        "#EnvíoDeDinero",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "titulo": "Viña 2027 ya se viene: ¿y tu envío?",
+      "pasos": [
+        "Entra a vezmoney.com",
+        "Cotiza Chile hacia el país de tu familia",
+        "Revisa el detalle y confirma tu envío"
+      ],
+      "fondo": "s12.jpg",
+      "remate": "Cotiza en vezmoney.com",
+      "musica": "latino_alegre",
+      "caption": "Mientras llega Viña 2027, ve organizando lo importante 🎶\nEn tres pasos cotizas y envías a tu familia.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Viña2027",
+        "#Tutorial",
+        "#MigrantesEnChile",
+        "#Chile",
+        "#EnvíoDeDinero",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-11-2",
+    "fecha": "2026-11-11",
+    "titulo": "Santiago estrena el Teleférico Bicentenario",
+    "tipo": "noticia",
+    "publico": "Migrantes que viven y se mueven por Santiago",
+    "senal": {
+      "texto": "El Teleférico Bicentenario inició su marcha blanca el 10 de noviembre, conectando Huechuraba con Providencia",
+      "pais": "CL",
+      "url": "https://www.instagram.com/p/DflNnVhsGPD/"
+    },
+    "porque": "Es una novedad de transporte útil para quienes se mueven a diario por Santiago.",
+    "gancho_envio": "Así de directo y fácil es enviar dinero: sin vueltas, de un punto a otro.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "cable car over city aerial vertical",
+        "people riding a cable car"
+      ],
+      "escenas": [
+        {
+          "texto": "Santiago estrena su teleférico bicentenario",
+          "resalta": "teleférico"
+        },
+        {
+          "texto": "Une Huechuraba con Providencia",
+          "resalta": "une"
+        },
+        {
+          "texto": "Así de directo es enviar con nosotros",
+          "resalta": "directo"
+        }
+      ],
+      "duracion": 11,
+      "musica": "positivo",
+      "remate": "Cotiza y envía sin vueltas",
+      "caption": "El teleférico de Santiago inició su marcha blanca 🚠\nDe un punto a otro, sin vueltas.\nAsí de directo es enviar dinero con nosotros.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Santiago",
+        "#Teleférico",
+        "#Chile",
+        "#MigrantesEnChile",
+        "#EnvíoDeDinero",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "commuter looking at phone city bus",
+        "hands holding smartphone street"
+      ],
+      "escenas": [
+        {
+          "texto": "Tu día en Santiago no para",
+          "resalta": "no para"
+        },
+        {
+          "texto": "Y tu familia también está en tu mente",
+          "resalta": "familia"
+        },
+        {
+          "texto": "Cotiza desde el celular, así de fácil",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "gancho_urbano",
+      "remate": "Cotiza desde tu celular",
+      "caption": "Entre el trabajo y el trayecto, tu familia siempre está presente 💙\nCotizar desde el celular es así de fácil.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#VidaDeMigrante",
+        "#Santiago",
+        "#Chile",
+        "#EnvíoDeDinero",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-11-3",
+    "fecha": "2026-11-11",
+    "titulo": "Tomás Rincón asume un nuevo rol en la Vinotinto",
+    "tipo": "noticia",
+    "publico": "Venezolanos en Chile, Perú y Colombia que siguen a la Vinotinto",
+    "senal": {
+      "texto": "La FVF nombró a Tomás Rincón secretario técnico de las selecciones masculinas de Venezuela",
+      "pais": "CL",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5xOFRHb0VhSHZnemk2c3ktWWVEd2ZFQWx6VEV0MnZUZ1A0T1VrN1NXb21acjA1WUN5VmFRbklpbGpLRTVVa2duZTJ6eUJ4YjFVX1VqdUNwMmFsV2FDS1BVdm1XZkR6RlU5bVR6aUFUbElLUQ?oc=5"
+    },
+    "porque": "La Vinotinto une a los venezolanos donde estén y cualquier cambio en el equipo se comenta.",
+    "gancho_envio": "Cambia el rol, pero el equipo sigue: así de unida es la familia, también a la distancia.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "soccer stadium crowd vertical",
+        "soccer ball on grass close up"
+      ],
+      "escenas": [
+        {
+          "texto": "La Vinotinto tiene nuevo rol en su equipo",
+          "resalta": "nuevo"
+        },
+        {
+          "texto": "Cambian los roles, el equipo sigue unido",
+          "resalta": "unido"
+        },
+        {
+          "texto": "Así de unida es tu familia, aunque estés lejos",
+          "resalta": "unida"
+        }
+      ],
+      "duracion": 11,
+      "musica": "positivo",
+      "remate": "La familia primero",
+      "caption": "La Vinotinto se renueva y todos opinamos 🇻🇪⚽\nCambian los roles, pero el equipo sigue unido.\nAsí de unida es la familia, aunque estés lejos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Vinotinto",
+        "#VenezolanosEnChile",
+        "#VenezolanosEnPerú",
+        "#VenezolanosEnColombia",
+        "#Fútbol",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "friends watching soccer on tv",
+        "family celebrating together living room"
+      ],
+      "escenas": [
+        {
+          "texto": "La Vinotinto se vive en cada casa",
+          "resalta": "casa"
+        },
+        {
+          "texto": "Aunque estés lejos, sigues en el equipo",
+          "resalta": "equipo"
+        },
+        {
+          "texto": "Envía apoyo a tu gente, así de fácil",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 11,
+      "musica": "latino_alegre",
+      "remate": "Tu familia, siempre en tu equipo",
+      "caption": "Se vive en cada casa, aunque estés lejos 💛💙❤️\nTu familia siempre está en tu equipo.\nAsí de fácil es enviarle apoyo.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Vinotinto",
+        "#VenezolanosEnChile",
+        "#Familia",
+        "#Fútbol",
+        "#EnvíoDeDinero",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-11-4",
+    "fecha": "2026-11-11",
+    "titulo": "¿Tu familia está en Venezuela? Así se cotiza",
+    "tipo": "evergreen",
+    "publico": "Venezolanos en Chile con familia en Venezuela",
+    "senal": {
+      "texto": "Evergreen: cotizar antes de enviar",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Mostrar cómo cotizar paso a paso le quita dudas a quien envía por primera vez.",
+    "gancho_envio": "Así de fácil es cotizar tu envío a Venezuela antes de enviar.",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "cotizar",
+      "destino": "Venezuela",
+      "titulo": "¿Tu familia está en Venezuela?",
+      "remate": "Cotiza Chile → Venezuela",
+      "musica": "latino_alegre",
+      "caption": "¿Tu familia está en Venezuela? 🇻🇪\nCotiza tu envío desde Chile en pocos toques, así de fácil.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Venezuela",
+        "#VenezolanosEnChile",
+        "#Tutorial",
+        "#EnvíoDeDinero",
+        "#Remesas",
+        "#Chile"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "titulo": "3 cosas antes de enviar a tu familia",
+      "pasos": [
+        "Cotiza el día que vas a enviar",
+        "Revisa bien los datos de quien recibe",
+        "Entra siempre desde vezmoney.com"
+      ],
+      "fondo": "s08.jpg",
+      "remate": "Cotiza en vezmoney.com",
+      "musica": "positivo",
+      "caption": "Tres consejos simples antes de enviar 💙\nCotiza, revisa los datos y entra siempre al sitio oficial.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#ConsejosVezMoney",
+        "#VenezolanosEnChile",
+        "#Tutorial",
+        "#EnvíoDeDinero",
+        "#Remesas"
+      ]
+    }
+  }
+]
