@@ -1,0 +1,37 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "cable car over city aerial vertical",
+    "people riding a cable car"
+  ],
+  "escenas": [
+    {
+      "texto": "Santiago estrena su teleférico bicentenario",
+      "resalta": "teleférico"
+    },
+    {
+      "texto": "Une Huechuraba con Providencia",
+      "resalta": "une"
+    },
+    {
+      "texto": "Así de directo es enviar con nosotros",
+      "resalta": "directo"
+    }
+  ],
+  "duracion": 11,
+  "musica": "positivo",
+  "remate": "Cotiza y envía sin vueltas",
+  "caption": "El teleférico de Santiago inició su marcha blanca 🚠\nDe un punto a otro, sin vueltas.\nAsí de directo es enviar dinero con nosotros.\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#Santiago",
+    "#Teleférico",
+    "#Chile",
+    "#MigrantesEnChile",
+    "#EnvíoDeDinero",
+    "#Remesas"
+  ],
+  "_idea": "2026-11-11-2",
+  "_letra": "A",
+  "_titulo": "Santiago estrena el Teleférico Bicentenario"
+}

@@ -1,0 +1,36 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "commuter looking at phone city bus",
+    "hands holding smartphone street"
+  ],
+  "escenas": [
+    {
+      "texto": "Tu día en Santiago no para",
+      "resalta": "no para"
+    },
+    {
+      "texto": "Y tu familia también está en tu mente",
+      "resalta": "familia"
+    },
+    {
+      "texto": "Cotiza desde el celular, así de fácil",
+      "resalta": "fácil"
+    }
+  ],
+  "duracion": 10,
+  "musica": "gancho_urbano",
+  "remate": "Cotiza desde tu celular",
+  "caption": "Entre el trabajo y el trayecto, tu familia siempre está presente 💙\nCotizar desde el celular es así de fácil.\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#VidaDeMigrante",
+    "#Santiago",
+    "#Chile",
+    "#EnvíoDeDinero",
+    "#Remesas"
+  ],
+  "_idea": "2026-11-11-2",
+  "_letra": "B",
+  "_titulo": "Santiago estrena el Teleférico Bicentenario"
+}
