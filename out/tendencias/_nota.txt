@@ -1,1 +1,1 @@
-Hice: alargué el reel de 12 a 15 segundos (`duracion`, el máximo permitido) para que el video llegue más lejos en lo que dice; no vi los fotogramas, así que no sé si 15 s alcanza para que termine la frase.
+Hice: cambié el `remate` de «Cotiza en vezmoney.com» a «Envía con calma y con los tuyos en mente» (39 caracteres, dentro del límite de 60), para que el cierre ya no repita el sitio. El paso 3 y el `caption` mantienen vezmoney.com una sola vez cada uno.
