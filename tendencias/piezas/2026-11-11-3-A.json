@@ -1,0 +1,37 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "soccer stadium crowd vertical",
+    "soccer ball on grass close up"
+  ],
+  "escenas": [
+    {
+      "texto": "La Vinotinto tiene nuevo rol en su equipo",
+      "resalta": "nuevo"
+    },
+    {
+      "texto": "Cambian los roles, el equipo sigue unido",
+      "resalta": "unido"
+    },
+    {
+      "texto": "Así de unida es tu familia, aunque estés lejos",
+      "resalta": "unida"
+    }
+  ],
+  "duracion": 11,
+  "musica": "positivo",
+  "remate": "La familia primero",
+  "caption": "La Vinotinto se renueva y todos opinamos 🇻🇪⚽\nCambian los roles, pero el equipo sigue unido.\nAsí de unida es la familia, aunque estés lejos.\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#Vinotinto",
+    "#VenezolanosEnChile",
+    "#VenezolanosEnPerú",
+    "#VenezolanosEnColombia",
+    "#Fútbol",
+    "#Remesas"
+  ],
+  "_idea": "2026-11-11-3",
+  "_letra": "A",
+  "_titulo": "Tomás Rincón asume un nuevo rol en la Vinotinto"
+}

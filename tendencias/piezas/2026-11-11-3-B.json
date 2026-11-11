@@ -1,0 +1,37 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "friends watching soccer on tv",
+    "family celebrating together living room"
+  ],
+  "escenas": [
+    {
+      "texto": "La Vinotinto se vive en cada casa",
+      "resalta": "casa"
+    },
+    {
+      "texto": "Aunque estés lejos, sigues en el equipo",
+      "resalta": "equipo"
+    },
+    {
+      "texto": "Envía apoyo a tu gente, así de fácil",
+      "resalta": "fácil"
+    }
+  ],
+  "duracion": 11,
+  "musica": "latino_alegre",
+  "remate": "Tu familia, siempre en tu equipo",
+  "caption": "Se vive en cada casa, aunque estés lejos 💛💙❤️\nTu familia siempre está en tu equipo.\nAsí de fácil es enviarle apoyo.\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#Vinotinto",
+    "#VenezolanosEnChile",
+    "#Familia",
+    "#Fútbol",
+    "#EnvíoDeDinero",
+    "#Remesas"
+  ],
+  "_idea": "2026-11-11-3",
+  "_letra": "B",
+  "_titulo": "Tomás Rincón asume un nuevo rol en la Vinotinto"
+}
