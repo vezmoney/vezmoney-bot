@@ -26,7 +26,7 @@ async function renderPieza(id) {
   if (errs.length) throw new Error(`La pieza ${id} no cumple: ${errs.join("; ")}`);
   if (pieza.plantilla === "reel") { const r = await crearReel(pieza, id, { token: process.env.APIFY_TOKEN }); console.log(`Reel ${id}: ${r.segundos}s, ${r.mb} MB`); return { id, archivo: r.archivo, video: r.archivo, miniatura: r.miniatura, pieza }; }
   if (pieza.plantilla === "tutorial") { const r = await crearTutorial(pieza, id); console.log(`Tutorial ${id}: ${r.segundos}s, ${r.mb} MB${r.tasa ? ", tasa mostrada " + r.tasa : ""}`); return { id, archivo: r.archivo, video: r.archivo, miniatura: r.miniatura, pieza }; }
-  if (pieza.plantilla === "animado") { const r = await crearAnimado(pieza, id); console.log(`Video animado ${id}: ${r.segundos}s, ${r.mb} MB, clips: ${r.clips.join(", ")}`); return { id, archivo: r.archivo, video: r.archivo, miniatura: r.miniatura, pieza }; }
+  if (pieza.plantilla === "animado") { const r = await crearAnimado(pieza, id); console.log(`Video animado ${id}: ${r.segundos}s, ${r.mb} MB, clips: ${r.clips.join(", ")}`); const cred = r.creditos?.length ? "\n\n📷 " + [...new Set(r.creditos)].join(" · ") : ""; return { id, archivo: r.archivo, video: r.archivo, miniatura: r.miniatura, pieza: cred ? { ...pieza, caption: pieza.caption + cred } : pieza }; }
   const version = Date.now().toString(36); // el nombre cambia con cada versión (evita la caché de GitHub y de Telegram)
   const archivo = `out/tendencias/${id}_${version}.jpg`;
   await renderPage(html(pieza), { width: 1080, height: 1350, out: archivo });

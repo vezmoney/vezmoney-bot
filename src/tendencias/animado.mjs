@@ -16,8 +16,25 @@ const { PEXELS_API_KEY, PIXABAY_API_KEY } = process.env;
 async function json(url, headers) { const r = await fetch(url, { headers }); if (!r.ok) throw new Error(`${new URL(url).hostname} respondió ${r.status}`); return r.json(); }
 
 // Busca un clip vertical que sirva de fondo (mínimo 5 s). Devuelve { id, url, autor }.
+// Fotos REALES de un tema concreto (un lugar, una persona, un equipo, un evento) desde Wikimedia Commons: solo licencias que permiten uso comercial.
+// «commons:Teleférico Bicentenario Santiago» busca; devuelve la foto + autor + licencia para el crédito.
+const LICENCIA_OK = /^(CC0|Public domain|PD|CC BY(-SA)? [\d.]+( [a-z]{2,3})?|Attribution)/i;
+async function buscarCommons(q, usados) {
+  const url = "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=30&gsrsearch=" + encodeURIComponent(q + " filetype:bitmap") +
+    "&prop=imageinfo&iiprop=url|size|extmetadata&iiextmetadatafilter=LicenseShortName|Artist&iiurlwidth=2160";
+  const d = await (await fetch(url, { headers: { "User-Agent": "vezmoney-bot/1.0 (contenido de marca; Wikimedia Commons API)" } })).json();
+  const pags = Object.values(d.query?.pages || {}).sort((a, b) => a.index - b.index);
+  const orden = (lic) => (/CC0|Public|PD/i.test(lic) ? 0 : /SA/i.test(lic) ? 2 : 1); // se prefiere CC0/dominio público, luego CC BY, luego BY-SA
+  const buenas = pags.map((p) => ({ p, ii: p.imageinfo?.[0] })).filter(({ p, ii }) => ii && !usados.has("commons:" + p.title) && /\.(jpe?g|png)$/i.test(p.title) && !/logo|escudo|flag|bandera|mapa|map /i.test(p.title) && Math.min(ii.width, ii.height) >= 1000 && LICENCIA_OK.test(ii.extmetadata?.LicenseShortName?.value || ""))
+    .sort((a, b) => orden(a.ii.extmetadata.LicenseShortName.value) - orden(b.ii.extmetadata.LicenseShortName.value));
+  if (!buenas[0]) throw new Error("No encontré fotos reales con licencia abierta en Wikimedia Commons para «" + q + "»");
+  const { p, ii } = buenas[0], autor = String(ii.extmetadata?.Artist?.value || "autor desconocido").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim().slice(0, 60);
+  return { id: "commons:" + p.title, url: ii.thumburl || ii.url, autor, licencia: ii.extmetadata.LicenseShortName.value, foto: true };
+}
+
 async function buscarClip(q, usados) {
   const errores = [];
+  if (/^commons:/i.test(q)) return buscarCommons(q.replace(/^commons:/i, "").trim(), usados);
   const fijo = /^pexels:(\d+)$/.exec(q); // clip elegido a mano por su id (sirve para mostrar algo preciso que la búsqueda no encuentra)
   if (fijo) {
     if (!PEXELS_API_KEY) throw new Error("Falta PEXELS_API_KEY para bajar el clip " + q);
@@ -54,11 +71,16 @@ export async function crearAnimado(pieza, id) {
   const dir = "out/tendencias/tmp"; fs.mkdirSync(dir, { recursive: true });
   const D = Number(pieza.duracion), FIN = 2.8, N = pieza.escenas.length, L = (D - FIN) / N;
   // 1) clips de fondo: uno por consulta; si hay menos clips que escenas, se reutilizan desde otro punto
-  const usados = new Set(), clips = [];
+  const usados = new Set(), clips = [], creditos = [];
   for (const [i, q] of pieza.busqueda.entries()) {
     const c = await buscarClip(q, usados); usados.add(c.id);
-    const f = path.join(dir, `${id}_clip${i}.mp4`); const r = await fetch(c.url); if (!r.ok) throw new Error("No pude bajar el clip " + c.id);
-    fs.writeFileSync(f, Buffer.from(await r.arrayBuffer()));
+    const f = path.join(dir, `${id}_clip${i}.mp4`); const r = await fetch(c.url, { headers: { "User-Agent": "vezmoney-bot/1.0" } }); if (!r.ok) throw new Error("No pude bajar el clip " + c.id);
+    if (c.foto) { // la foto se convierte en un clip con un acercamiento lento (efecto Ken Burns)
+      const img = path.join(dir, `${id}_foto${i}.jpg`); fs.writeFileSync(img, Buffer.from(await r.arrayBuffer()));
+      const largo = Math.ceil(L + FIN + 1);
+      run("ffmpeg", ["-y", "-loop", "1", "-i", img, "-vf", `scale=1125:2000:force_original_aspect_ratio=increase,crop=1125:2000,zoompan=z='1+0.1*on/(${largo}*30)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${largo * 30}:s=1080x1920:fps=30,format=yuv420p`, "-t", String(largo), "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", f]);
+      fs.rmSync(img, { force: true }); creditos.push(`Foto: ${c.autor} / Wikimedia Commons (${c.licencia})`);
+    } else fs.writeFileSync(f, Buffer.from(await r.arrayBuffer()));
     clips.push({ ...c, file: f, dur: Number(run("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f])) });
   }
   // 2) capas de texto
@@ -99,6 +121,6 @@ export async function crearAnimado(pieza, id) {
   run("ffmpeg", ["-y", ...entradas, "-filter_complex", fc, "-map", "[out]", ...audio, "-c:v", "libx264", "-preset", "veryfast", "-crf", "23", "-maxrate", "5M", "-bufsize", "10M", "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-t", String(D), archivo]);
   run("ffmpeg", ["-y", "-ss", (L * 0.7).toFixed(2), "-i", archivo, "-frames:v", "1", "-q:v", "3", miniatura]);
   for (const p of [...pngs, ...clips.map((c) => c.file)]) fs.rmSync(p, { force: true });
-  return { archivo, miniatura, segundos: D, mb: +(fs.statSync(archivo).size / 1048576).toFixed(1), clips: clips.map((c) => c.id), musica: musica ? path.basename(musica) : null };
+  return { archivo, miniatura, segundos: D, mb: +(fs.statSync(archivo).size / 1048576).toFixed(1), clips: clips.map((c) => c.id), creditos, musica: musica ? path.basename(musica) : null };
 }
 export { closeBrowser };
