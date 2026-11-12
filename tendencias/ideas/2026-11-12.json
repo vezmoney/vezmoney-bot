@@ -1,0 +1,295 @@
+[
+  {
+    "id": "2026-11-12-1",
+    "fecha": "2026-11-12",
+    "titulo": "Anuncian congelar la tarifa del combustible en Chile",
+    "tipo": "noticia",
+    "publico": "Migrantes venezolanos, peruanos y colombianos en Chile",
+    "senal": {
+      "texto": "Gobierno anuncia que reingresará proyecto y congelará tarifas del combustible hasta febrero para contener el paro de camioneros",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Los precios del transporte y del día a día pesan en el bolsillo de quien también envía dinero a casa.",
+    "gancho_envio": "Así como se busca claridad en los precios, al enviar con VezMoney ves todo claro antes de confirmar.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "gas station pump close up",
+        "truck driving on highway"
+      ],
+      "escenas": [
+        {
+          "texto": "Anuncian congelar las tarifas del combustible",
+          "resalta": "congelar"
+        },
+        {
+          "texto": "Cuando los precios se aclaran, se respira mejor",
+          "resalta": "aclaran"
+        },
+        {
+          "texto": "Así de claro se envía: ves todo antes de confirmar",
+          "resalta": "claro"
+        }
+      ],
+      "duracion": 11,
+      "musica": "positivo",
+      "remate": "Cotiza y ve todo claro antes de enviar",
+      "caption": "Se anunció que las tarifas del combustible se congelarían en Chile. Cuando el panorama se aclara, todo se planifica mejor ⛽\nAsí de claro es enviar con VezMoney: ves todo antes de confirmar.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#MigrantesEnChile",
+        "#Chile",
+        "#Combustible",
+        "#EnviarDinero",
+        "#Remesas",
+        "#Venezolanos",
+        "#Peruanos"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "titulo": "Antes de enviar, mira todo claro",
+      "fondo": "s08.jpg",
+      "pasos": [
+        "Entra a vezmoney.com",
+        "Elige el país y el monto a enviar",
+        "Revisa todo antes de confirmar"
+      ],
+      "remate": "Así de claro es enviar con VezMoney",
+      "musica": "positivo",
+      "caption": "Enviar dinero a tu familia con calma empieza por ver todo claro 👀\nTres pasos y listo.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#EnviarDinero",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#Tutorial",
+        "#Chile",
+        "#Familia"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-12-2",
+    "fecha": "2026-11-12",
+    "titulo": "Las notas de voz eternas de la familia",
+    "tipo": "evergreen",
+    "publico": "Migrantes venezolanos, peruanos y colombianos que viven lejos de casa",
+    "senal": {
+      "texto": "Humor compartido: la nota de voz de mamá que nunca es corta (referencia a la conversación del día sobre notas de voz)",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Todo migrante se ríe y se emociona con los audios largos de su familia.",
+    "gancho_envio": "Así de fácil como responder una nota de voz, acompañas a tu familia con un envío.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "woman listening voice message on phone",
+        "man smiling looking at phone on street"
+      ],
+      "escenas": [
+        {
+          "texto": "La nota de voz de mamá nunca es corta",
+          "resalta": "nunca"
+        },
+        {
+          "texto": "Y tú la escuchas dos veces, con cariño",
+          "resalta": "cariño"
+        },
+        {
+          "texto": "Así de fácil le respondes con un envío",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "humor",
+      "remate": "Responde con cariño: cotiza y envía",
+      "caption": "La nota de voz de mamá nunca es corta... y nunca sobra 😅🎧\nAsí de fácil es responderle con un envío.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#NotasDeVoz",
+        "#MigrantesEnChile",
+        "#HumorMigrante",
+        "#Familia",
+        "#Venezolanos",
+        "#Colombianos",
+        "#Peruanos"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "family laughing at dinner table",
+        "girl smiling with headphones on phone"
+      ],
+      "escenas": [
+        {
+          "texto": "Audios de la familia a doble velocidad",
+          "resalta": "doble"
+        },
+        {
+          "texto": "Y aun así no te pierdes ningún chisme",
+          "resalta": "chisme"
+        },
+        {
+          "texto": "Así de rápido llega tu apoyo cuando lo necesitan",
+          "resalta": "rápido"
+        }
+      ],
+      "duracion": 10,
+      "musica": "latino_alegre",
+      "remate": "Tu apoyo, a la altura del cariño",
+      "caption": "¿Quién más escucha los audios de la familia a doble velocidad? 🙋‍♀️🙋‍♂️\nAsí de rápido quieres estar para los tuyos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#AudiosDeWhatsApp",
+        "#HumorMigrante",
+        "#MigrantesEnChile",
+        "#Familia",
+        "#Remesas",
+        "#Venezolanos"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-12-3",
+    "fecha": "2026-11-12",
+    "titulo": "De Chile a Colombia: así se cotiza",
+    "tipo": "evergreen",
+    "publico": "Colombianos en Chile y venezolanos en Colombia",
+    "senal": {
+      "texto": "Fecha FIFA y feriado del 16 en Colombia: muchos colombianos piensan en casa",
+      "pais": "CO",
+      "url": ""
+    },
+    "porque": "Quien tiene familia en Colombia quiere saber cómo cotizar sin enredos.",
+    "gancho_envio": "Así de fácil es cotizar tu envío a Colombia antes de enviar.",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "cotizar",
+      "destino": "Colombia",
+      "titulo": "Chile a Colombia: así se cotiza",
+      "remate": "Cotiza y envía en vezmoney.com",
+      "musica": "latino_alegre",
+      "caption": "¿Tu familia está en Colombia? 🇨🇴 Mira lo fácil que es cotizar tu envío desde Chile.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Colombia",
+        "#ColombianosEnChile",
+        "#EnviarDinero",
+        "#Remesas",
+        "#ChileColombia",
+        "#Tutorial"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "titulo": "Tu familia en Colombia, a pocos pasos",
+      "fondo": "co06.jpg",
+      "pasos": [
+        "Entra a vezmoney.com",
+        "Elige Chile a Colombia y tu monto",
+        "Confirma los datos y envía"
+      ],
+      "remate": "Así de fácil es acompañar a los tuyos",
+      "musica": "positivo",
+      "caption": "Desde Chile hasta Bogotá, Medellín o donde estén los tuyos 💛\nTres pasos para enviar con calma.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Colombia",
+        "#MigrantesEnChile",
+        "#EnviarDinero",
+        "#Remesas",
+        "#Familia",
+        "#Tutorial"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-12-4",
+    "fecha": "2026-11-12",
+    "titulo": "El papa León XIV llegó a Perú",
+    "tipo": "noticia",
+    "publico": "Peruanos en Chile y sus familias en Perú",
+    "senal": {
+      "texto": "Papa León XIV llegó a Perú; visita a su tierra adoptiva",
+      "pais": "PE",
+      "url": ""
+    },
+    "porque": "Muchos peruanos viven esta visita con emoción y la sienten más fuerte estando lejos.",
+    "gancho_envio": "Aunque estés lejos, estás cerca de los tuyos: la familia primero, también con un envío.",
+    "publicar_el": "2026-11-12",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "commons:Catedral de Lima",
+        "commons:Plaza Mayor de Lima"
+      ],
+      "escenas": [
+        {
+          "texto": "El papa León XIV llegó a Perú",
+          "resalta": "Perú"
+        },
+        {
+          "texto": "Muchos peruanos lo viven desde lejos",
+          "resalta": "lejos"
+        },
+        {
+          "texto": "La familia primero, también a la distancia",
+          "resalta": "familia"
+        }
+      ],
+      "duracion": 11,
+      "musica": "emotivo",
+      "remate": "La familia primero, siempre",
+      "caption": "El papa León XIV llegó a Perú y muchas familias lo viven con emoción 🙏\nA la distancia, la familia siempre va primero.\nCotiza y envía en vezmoney.com 💙\n\nImágenes de Wikimedia Commons.",
+      "hashtags": [
+        "#VezMoney",
+        "#Perú",
+        "#PeruanosEnChile",
+        "#Familia",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#Noticias"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "commons:Lima Perú",
+        "grandmother smiling video call on phone"
+      ],
+      "escenas": [
+        {
+          "texto": "Hay días que los peruanos sienten en el pecho",
+          "resalta": "pecho"
+        },
+        {
+          "texto": "Aunque estés lejos, estás con los tuyos",
+          "resalta": "tuyos"
+        },
+        {
+          "texto": "Así de cerca: tu envío los acompaña",
+          "resalta": "cerca"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "Cerca de los tuyos, donde estés",
+      "caption": "Hay días que se viven con el corazón en Perú 💙\nAunque estés lejos, tu apoyo los acompaña.\nCotiza y envía en vezmoney.com 💙\n\nImágenes de Wikimedia Commons.",
+      "hashtags": [
+        "#VezMoney",
+        "#Perú",
+        "#PeruanosEnChile",
+        "#Familia",
+        "#Migrantes",
+        "#Remesas",
+        "#EnviarDinero"
+      ]
+    }
+  }
+]
