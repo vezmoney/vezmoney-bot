@@ -1,0 +1,37 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "family laughing at dinner table",
+    "girl smiling with headphones on phone"
+  ],
+  "escenas": [
+    {
+      "texto": "Audios de la familia a doble velocidad",
+      "resalta": "doble"
+    },
+    {
+      "texto": "Y aun así no te pierdes ningún chisme",
+      "resalta": "chisme"
+    },
+    {
+      "texto": "Así de rápido llega tu apoyo cuando lo necesitan",
+      "resalta": "rápido"
+    }
+  ],
+  "duracion": 10,
+  "musica": "latino_alegre",
+  "remate": "Tu apoyo, a la altura del cariño",
+  "caption": "¿Quién más escucha los audios de la familia a doble velocidad? 🙋‍♀️🙋‍♂️\nAsí de rápido quieres estar para los tuyos.\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#AudiosDeWhatsApp",
+    "#HumorMigrante",
+    "#MigrantesEnChile",
+    "#Familia",
+    "#Remesas",
+    "#Venezolanos"
+  ],
+  "_idea": "2026-11-12-2",
+  "_letra": "B",
+  "_titulo": "Las notas de voz eternas de la familia"
+}

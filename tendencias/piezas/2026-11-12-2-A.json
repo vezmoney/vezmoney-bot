@@ -1,0 +1,38 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "woman listening voice message on phone",
+    "man smiling looking at phone on street"
+  ],
+  "escenas": [
+    {
+      "texto": "La nota de voz de mamá nunca es corta",
+      "resalta": "nunca"
+    },
+    {
+      "texto": "Y tú la escuchas dos veces, con cariño",
+      "resalta": "cariño"
+    },
+    {
+      "texto": "Así de fácil le respondes con un envío",
+      "resalta": "fácil"
+    }
+  ],
+  "duracion": 10,
+  "musica": "humor",
+  "remate": "Responde con cariño: cotiza y envía",
+  "caption": "La nota de voz de mamá nunca es corta... y nunca sobra 😅🎧\nAsí de fácil es responderle con un envío.\nCotiza y envía en vezmoney.com 💙",
+  "hashtags": [
+    "#VezMoney",
+    "#NotasDeVoz",
+    "#MigrantesEnChile",
+    "#HumorMigrante",
+    "#Familia",
+    "#Venezolanos",
+    "#Colombianos",
+    "#Peruanos"
+  ],
+  "_idea": "2026-11-12-2",
+  "_letra": "A",
+  "_titulo": "Las notas de voz eternas de la familia"
+}
