@@ -1,21 +1,42 @@
 [
   {
-    "id": "2026-11-11-2-A",
-    "archivo": "out\\tendencias\\tmp\\2026-11-11-2-A_mwc54e3m.mp4",
-    "video": "out\\tendencias\\tmp\\2026-11-11-2-A_mwc54e3m.mp4",
-    "miniatura": "out\\tendencias\\tmp\\2026-11-11-2-A_mwc54e3m.jpg",
-    "idea": "2026-11-11-2",
+    "id": "2026-11-12-4-A",
+    "archivo": "out/tendencias/tmp/2026-11-12-4-A_mwdhqpax.mp4",
+    "video": "out/tendencias/tmp/2026-11-12-4-A_mwdhqpax.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-12-4-A_mwdhqpax.jpg",
+    "fecha": "2026-11-12",
+    "idea": "2026-11-12-4",
     "letra": "A",
-    "titulo": "Santiago estrena el Teleférico Bicentenario",
-    "caption": "El teleférico de Santiago inició su marcha blanca 🚠\nDe un punto a otro, sin vueltas.\nAsí de directo es enviar dinero con nosotros.\nCotiza y envía en vezmoney.com 💙\n\n📷 Foto: TomasVial / Wikimedia Commons (CC BY-SA 4.0)",
+    "titulo": "El papa León XIV llegó a Perú",
+    "caption": "El papa León XIV llegó a Perú y muchas familias lo viven con emoción 🙏\nA la distancia, la familia siempre va primero.\nCotiza y envía en vezmoney.com 💙\n\nImágenes de Wikimedia Commons.\n\n📷 Foto: Diego Delso / Wikimedia Commons (CC BY-SA 4.0) · Foto: Enock, C. Reginald (Charles Reginald), 1868-1970 / Wikimedia Commons (Public domain)",
     "hashtags": [
       "#VezMoney",
-      "#Santiago",
-      "#Teleférico",
-      "#Chile",
+      "#Perú",
+      "#PeruanosEnChile",
+      "#Familia",
       "#MigrantesEnChile",
-      "#EnvíoDeDinero",
-      "#Remesas"
+      "#Remesas",
+      "#Noticias"
+    ]
+  },
+  {
+    "id": "2026-11-12-4-B",
+    "archivo": "out/tendencias/tmp/2026-11-12-4-B_mwdhr8qu.mp4",
+    "video": "out/tendencias/tmp/2026-11-12-4-B_mwdhr8qu.mp4",
+    "miniatura": "out/tendencias/tmp/2026-11-12-4-B_mwdhr8qu.jpg",
+    "fecha": "2026-11-12",
+    "idea": "2026-11-12-4",
+    "letra": "B",
+    "titulo": "El papa León XIV llegó a Perú",
+    "caption": "Hay días que se viven con el corazón en Perú 💙\nAunque estés lejos, tu apoyo los acompaña.\nCotiza y envía en vezmoney.com 💙\n\nImágenes de Wikimedia Commons.\n\n📷 Foto: Diego Delso / Wikimedia Commons (CC BY-SA 4.0)",
+    "hashtags": [
+      "#VezMoney",
+      "#Perú",
+      "#PeruanosEnChile",
+      "#Familia",
+      "#Migrantes",
+      "#Remesas",
+      "#EnviarDinero"
     ]
   }
 ]

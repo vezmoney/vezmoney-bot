@@ -1,0 +1,38 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "commons:Lima Perú",
+    "grandmother smiling video call on phone"
+  ],
+  "escenas": [
+    {
+      "texto": "Hay días que los peruanos sienten en el pecho",
+      "resalta": "pecho"
+    },
+    {
+      "texto": "Aunque estés lejos, estás con los tuyos",
+      "resalta": "tuyos"
+    },
+    {
+      "texto": "Así de cerca: tu envío los acompaña",
+      "resalta": "cerca"
+    }
+  ],
+  "duracion": 10,
+  "musica": "emotivo",
+  "remate": "Cerca de los tuyos, donde estés",
+  "caption": "Hay días que se viven con el corazón en Perú 💙\nAunque estés lejos, tu apoyo los acompaña.\nCotiza y envía en vezmoney.com 💙\n\nImágenes de Wikimedia Commons.",
+  "hashtags": [
+    "#VezMoney",
+    "#Perú",
+    "#PeruanosEnChile",
+    "#Familia",
+    "#Migrantes",
+    "#Remesas",
+    "#EnviarDinero"
+  ],
+  "fecha_publicacion": "2026-11-12",
+  "_idea": "2026-11-12-4",
+  "_letra": "B",
+  "_titulo": "El papa León XIV llegó a Perú"
+}

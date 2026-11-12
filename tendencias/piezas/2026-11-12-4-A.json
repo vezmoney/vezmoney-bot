@@ -1,0 +1,38 @@
+{
+  "plantilla": "animado",
+  "busqueda": [
+    "commons:Catedral de Lima",
+    "commons:Plaza Mayor de Lima"
+  ],
+  "escenas": [
+    {
+      "texto": "El papa León XIV llegó a Perú",
+      "resalta": "Perú"
+    },
+    {
+      "texto": "Muchos peruanos lo viven desde lejos",
+      "resalta": "lejos"
+    },
+    {
+      "texto": "La familia primero, también a la distancia",
+      "resalta": "familia"
+    }
+  ],
+  "duracion": 11,
+  "musica": "emotivo",
+  "remate": "La familia primero, siempre",
+  "caption": "El papa León XIV llegó a Perú y muchas familias lo viven con emoción 🙏\nA la distancia, la familia siempre va primero.\nCotiza y envía en vezmoney.com 💙\n\nImágenes de Wikimedia Commons.",
+  "hashtags": [
+    "#VezMoney",
+    "#Perú",
+    "#PeruanosEnChile",
+    "#Familia",
+    "#MigrantesEnChile",
+    "#Remesas",
+    "#Noticias"
+  ],
+  "fecha_publicacion": "2026-11-12",
+  "_idea": "2026-11-12-4",
+  "_letra": "A",
+  "_titulo": "El papa León XIV llegó a Perú"
+}
