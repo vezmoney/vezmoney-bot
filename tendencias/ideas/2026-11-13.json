@@ -1,0 +1,324 @@
+[
+  {
+    "id": "2026-11-13-1",
+    "fecha": "2026-11-13",
+    "titulo": "Hoy hay partido: la casa se divide",
+    "tipo": "tendencia",
+    "publico": "Colombianos y chilenos (y todos los que aman el fútbol) que viven en Chile",
+    "senal": {
+      "texto": "Amistoso Colombia vs Chile en fecha FIFA, tema en búsquedas de CL, CO y PE",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Hay colombianos en Chile viendo el partido, y hablar de la rivalidad sana es compartir y comentar.",
+    "gancho_envio": "Así de rápido como un contraataque, así de fácil es enviar dinero a tu familia.",
+    "publicar_el": "2026-11-13",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "friends cheering watching soccer on tv at home",
+        "people celebrating in living room vertical"
+      ],
+      "escenas": [
+        {
+          "texto": "Hoy hay partido y se nota en casa",
+          "resalta": "partido"
+        },
+        {
+          "texto": "Colombianos y chilenos, todos al televisor",
+          "resalta": "televisor"
+        },
+        {
+          "texto": "Así de rápido es un contraataque",
+          "resalta": "rápido"
+        },
+        {
+          "texto": "Y así de fácil es enviar a tu familia",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "gancho_urbano",
+      "remate": "Así de fácil envías con VezMoney",
+      "caption": "Hoy se juega el partido y en casa nadie habla de otra cosa ⚽\nSea quien sea el que gane, la rivalidad se vive en familia.\nY así de rápido como un contraataque, así de fácil es enviarle apoyo a los tuyos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Fútbol",
+        "#Colombia",
+        "#Chile",
+        "#Migrantes",
+        "#FechaFIFA",
+        "#EnvíoDeDinero",
+        "#FamiliaPrimero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "friends joking at a cafe looking at phone",
+        "man laughing with friends vertical"
+      ],
+      "escenas": [
+        {
+          "texto": "Ese amigo que apuesta el almuerzo",
+          "resalta": "almuerzo"
+        },
+        {
+          "texto": "Gane quien gane, nos reímos juntos",
+          "resalta": "juntos"
+        },
+        {
+          "texto": "Lo que no se apuesta es la familia",
+          "resalta": "familia"
+        },
+        {
+          "texto": "Esa se cuida con un envío fácil",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 11,
+      "musica": "humor",
+      "remate": "La familia primero, con VezMoney",
+      "caption": "El que apuesta el almuerzo en cada partido, ¿lo tienes en tu grupo? 😂\nQue gane el mejor, pero a la familia siempre se le cumple.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Humor",
+        "#Fútbol",
+        "#Migrantes",
+        "#Colombia",
+        "#Chile",
+        "#AmigosDeLaChamba",
+        "#EnvíoDeDinero"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-13-2",
+    "fecha": "2026-11-13",
+    "titulo": "La música latina nos junta: Latin Grammy 2026",
+    "tipo": "tendencia",
+    "publico": "Venezolanos, peruanos y colombianos en Chile; sus familias",
+    "senal": {
+      "texto": "Premios Latin Grammy 2026, ganadores y alfombra roja en tendencia en Perú",
+      "pais": "PE",
+      "url": ""
+    },
+    "porque": "La música de nuestros países es nostalgia pura: suena en la casa y en la distancia.",
+    "gancho_envio": "Así como una canción te acerca a casa, un envío acerca tu apoyo a la familia.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "woman listening to music with headphones smiling",
+        "family dancing in kitchen vertical"
+      ],
+      "escenas": [
+        {
+          "texto": "Hay canciones que te llevan a casa",
+          "resalta": "casa"
+        },
+        {
+          "texto": "Suenan en la cocina, en la fiesta, en el bus",
+          "resalta": "suenan"
+        },
+        {
+          "texto": "Así de cerca te deja la música",
+          "resalta": "cerca"
+        },
+        {
+          "texto": "Y así de fácil es acercar tu apoyo",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "latino_alegre",
+      "remate": "Tu apoyo llega con VezMoney",
+      "caption": "Esa canción que escuchas y de pronto estás de vuelta en casa 🎶\nLa música latina nos junta, estemos donde estemos.\nY así de fácil acercas tu apoyo a los tuyos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#MúsicaLatina",
+        "#LatinGrammy",
+        "#Nostalgia",
+        "#Migrantes",
+        "#Venezuela",
+        "#Perú",
+        "#Colombia"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "mother and daughter video call smiling phone",
+        "man dancing at home happy vertical"
+      ],
+      "escenas": [
+        {
+          "texto": "¿Cuál canción te hace llorar y bailar?",
+          "resalta": "bailar"
+        },
+        {
+          "texto": "La que ponía mamá un domingo",
+          "resalta": "mamá"
+        },
+        {
+          "texto": "Cuéntanos la tuya en los comentarios",
+          "resalta": "comentarios"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "La familia primero, con VezMoney",
+      "caption": "¿Cuál es esa canción que te hace extrañar tu tierra? 🥹\nCuéntanos la tuya en los comentarios y etiqueta a quien la cantaba en casa.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#MúsicaLatina",
+        "#Nostalgia",
+        "#Migrantes",
+        "#Familia",
+        "#Recuerdos",
+        "#Chile"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-13-3",
+    "fecha": "2026-11-13",
+    "titulo": "Del calor al paraguas: el clima de Santiago cambia",
+    "tipo": "noticia",
+    "publico": "Migrantes en Santiago y la zona central de Chile",
+    "senal": {
+      "texto": "Tras la ola de calor, vuelven la lluvia y la baja de temperatura a Santiago este domingo",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Todo el que vive en Santiago lo comenta: calor un día, paraguas al otro.",
+    "gancho_envio": "El clima cambia de un día a otro, pero el apoyo a tu familia se mantiene fácil.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "person with umbrella walking in rainy city street",
+        "sunny hot city street people with sunglasses vertical"
+      ],
+      "escenas": [
+        {
+          "texto": "Santiago: calor el viernes",
+          "resalta": "calor"
+        },
+        {
+          "texto": "Y el domingo saca el paraguas",
+          "resalta": "paraguas"
+        },
+        {
+          "texto": "El clima cambia rapidísimo",
+          "resalta": "cambia"
+        },
+        {
+          "texto": "Enviar a tu familia sigue siendo fácil",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 11,
+      "musica": "humor",
+      "remate": "Llueva o haga calor, con VezMoney",
+      "caption": "Calor, lluvia, abrigo, paraguas… ¡todo en un fin de semana! ☔☀️\nAsí cambia el clima en Santiago, pero hay cosas que no cambian: la familia primero.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Santiago",
+        "#Clima",
+        "#Chile",
+        "#Humor",
+        "#Migrantes",
+        "#VidaEnChile",
+        "#EnvíoDeDinero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "woman looking out window at rain with coffee",
+        "cozy home rainy day phone call family vertical"
+      ],
+      "escenas": [
+        {
+          "texto": "Día de lluvia y llamada a casa",
+          "resalta": "llamada"
+        },
+        {
+          "texto": "Un cafecito y la familia al celular",
+          "resalta": "familia"
+        },
+        {
+          "texto": "Así de cerca se siente el hogar",
+          "resalta": "cerca"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "Cerca de los tuyos con VezMoney",
+      "caption": "Cuando llueve en Chile, una llamada a casa abriga más que cualquier chaqueta ☕\nAsí de cerca se siente la familia, aunque estén lejos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Lluvia",
+        "#Chile",
+        "#Familia",
+        "#Migrantes",
+        "#Santiago",
+        "#Hogar"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-13-4",
+    "fecha": "2026-11-13",
+    "titulo": "Antes de enviar: tres pasos y listo",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile que envían dinero a su familia",
+    "senal": {
+      "texto": "Contenido útil recurrente para quienes envían dinero",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Les muestra que enviar es simple y evita dudas de quien lo hace por primera vez.",
+    "gancho_envio": "Así de fácil: cotizas, confirmas y envías, todo desde el celular.",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s15.jpg",
+      "titulo": "Enviar dinero en 3 pasos fáciles",
+      "pasos": [
+        "Entra a vezmoney.com y cotiza tu envío",
+        "Elige el país y revisa lo que recibe tu familia",
+        "Confirma tus datos y envía"
+      ],
+      "remate": "Así de fácil envías con VezMoney",
+      "musica": "positivo",
+      "caption": "¿Primera vez enviando con VezMoney? Es más simple de lo que piensas 📲\nCotizas, revisas y envías, sin vueltas.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#EnvíoDeDinero",
+        "#Tutorial",
+        "#Migrantes",
+        "#Chile",
+        "#Remesas",
+        "#Paso a Paso"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "cotizar",
+      "destino": "Estados Unidos",
+      "titulo": "¿Tu familia está en EE. UU.? Así se cotiza",
+      "remate": "Cotiza antes de enviar",
+      "musica": "positivo",
+      "caption": "También enviamos entre Chile y Estados Unidos 🇺🇸\nMira lo fácil que es cotizar tu envío antes de confirmar.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#EstadosUnidos",
+        "#EnvíoDeDinero",
+        "#Migrantes",
+        "#Chile",
+        "#Cotiza",
+        "#Remesas"
+      ]
+    }
+  }
+]
