@@ -1,0 +1,173 @@
+[
+  {
+    "id": "2026-11-14-1",
+    "fecha": "2026-11-14",
+    "titulo": "El dólar vuelve a ser noticia en Chile",
+    "tipo": "noticia",
+    "publico": "Migrantes venezolanos, peruanos y colombianos en Chile que envían dinero a su familia",
+    "senal": {
+      "texto": "Dólar supera los $ 1.000 en Chile por primera vez desde abril de 2025 (Diario Financiero)",
+      "pais": "CL",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ubUEzTEc4RThWTzNleXgtaVFEOV9CUE5PYmRVa0ZlMzhqQW1SS3h3NkxJOFBJRlBVUDU3UUtadHNPRTBCQnF2X3ZnQnFIVGE1TFRVZjI3dnkwQUpvcDEzXy0yMUxORlE?oc=5"
+    },
+    "porque": "Cuando el dólar se mueve, todos quieren saber cuánto recibe su familia.",
+    "gancho_envio": "Así de claro: miras el monto que recibe tu familia antes de confirmar.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "person checking phone on a city street in the evening",
+        "hands holding a smartphone close up"
+      ],
+      "escenas": [
+        {
+          "texto": "El dólar vuelve a ser noticia en Chile",
+          "resalta": "dólar"
+        },
+        {
+          "texto": "Antes de enviar, mira cuánto recibe tu familia",
+          "resalta": "mira"
+        },
+        {
+          "texto": "Así de claro: cotizas y decides con calma",
+          "resalta": "claro"
+        }
+      ],
+      "duracion": 11,
+      "musica": "positivo",
+      "remate": "Cotiza antes de enviar",
+      "caption": "El dólar es tema de conversación en Chile esta semana 👀\nAntes de enviar, lo mejor es mirar con calma cuánto recibe tu familia.\nAsí de claro es cotizar con VezMoney.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#DolarChile",
+        "#EnviarDinero",
+        "#MigrantesEnChile",
+        "#RemesasChile",
+        "#VenezolanosEnChile",
+        "#PeruanosEnChile",
+        "#ColombianosEnChile"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "young man surprised looking at his phone on a bus",
+        "woman smiling calmly using phone at a cafe"
+      ],
+      "escenas": [
+        {
+          "texto": "Todos hablando del dólar en las noticias",
+          "resalta": "dólar"
+        },
+        {
+          "texto": "Y tú ya cotizaste con calma",
+          "resalta": "cotizaste"
+        },
+        {
+          "texto": "Así de fácil: revisas y envías a los tuyos",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "humor",
+      "remate": "Cotiza con calma, envía tranquilo",
+      "caption": "Todos mirando el dólar y tú, tranquilo 😅\nCotizar antes de enviar te deja decidir con calma.\n¿Ya revisaste tu envío de esta semana?\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#DolarHoy",
+        "#HumorMigrante",
+        "#MigrantesEnChile",
+        "#EnviarDinero",
+        "#VenezolanosEnChile",
+        "#RemesasChile"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-14-2",
+    "fecha": "2026-11-14",
+    "titulo": "Lunes festivo en Colombia: Independencia de Cartagena",
+    "tipo": "fecha",
+    "publico": "Colombianos en Chile y sus familias en Colombia; venezolanos en Colombia",
+    "senal": {
+      "texto": "Feriado en Colombia el 16 de noviembre (Independencia de Cartagena)",
+      "pais": "CO",
+      "url": ""
+    },
+    "porque": "Un festivo largo se siente más en casa cuando estás lejos de la familia.",
+    "gancho_envio": "Así de fácil: dejas listo tu envío para que tu familia disfrute el festivo.",
+    "publicar_el": "2026-11-15",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "commons:Torre del Reloj Cartagena de Indias",
+        "family video call on a phone at home"
+      ],
+      "escenas": [
+        {
+          "texto": "Lunes festivo en Colombia",
+          "resalta": "festivo"
+        },
+        {
+          "texto": "Cartagena celebra su independencia",
+          "resalta": "Cartagena"
+        },
+        {
+          "texto": "Tu familia descansa y tú los acompañas",
+          "resalta": "acompañas"
+        },
+        {
+          "texto": "Así de fácil: dejas listo tu envío",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "latino_alegre",
+      "remate": "La familia primero, también a la distancia",
+      "caption": "Este lunes es festivo en Colombia 🇨🇴\nCartagena celebra su independencia y muchas familias se reúnen.\nDesde lejos también se acompaña: así de fácil es dejar listo tu envío.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Colombia",
+        "#FestivoColombia",
+        "#Cartagena",
+        "#ColombianosEnChile",
+        "#EnviarDinero",
+        "#FamiliaPrimero",
+        "#MigrantesColombianos"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "family eating lunch together at a table at home",
+        "children playing outside a house on a sunny day"
+      ],
+      "escenas": [
+        {
+          "texto": "Puente festivo y la mesa llena",
+          "resalta": "mesa"
+        },
+        {
+          "texto": "Desde lejos también se acompaña",
+          "resalta": "acompaña"
+        },
+        {
+          "texto": "Así de fácil: un envío para la familia",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "Cotiza y acompaña a los tuyos",
+      "caption": "Puente festivo en Colombia: almuerzo largo, mesa llena y familia reunida 🍽️\nTú estás lejos, pero puedes acompañarlos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Colombia",
+        "#PuenteFestivo",
+        "#FamiliaUnida",
+        "#ColombianosEnChile",
+        "#VenezolanosEnColombia",
+        "#EnviarDinero"
+      ]
+    }
+  }
+]
