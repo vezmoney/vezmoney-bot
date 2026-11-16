@@ -1,0 +1,308 @@
+[
+  {
+    "id": "2026-11-16-1",
+    "fecha": "2026-11-16",
+    "titulo": "Black Friday: cotiza antes de decidir",
+    "tipo": "fecha",
+    "publico": "Migrantes venezolanos, peruanos y colombianos en Chile",
+    "senal": {
+      "texto": "Se acerca el Black Friday y todos comparan ofertas antes de comprar",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "En Black Friday todos comparan antes de comprar, y enviar dinero también se decide mejor con calma.",
+    "gancho_envio": "Así como comparas antes de comprar, cotizas antes de enviar.",
+    "publicar_el": "2026-11-25",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "woman shopping online laptop sofa",
+        "hands using smartphone checkout close up",
+        "family video call on phone"
+      ],
+      "escenas": [
+        {
+          "texto": "Black Friday: todos comparan antes de comprar",
+          "resalta": "comparan"
+        },
+        {
+          "texto": "Revisas, cotizas y decides con calma",
+          "resalta": "cotizas"
+        },
+        {
+          "texto": "Así de fácil es enviar a tu familia",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 11,
+      "musica": "humor",
+      "remate": "Cotiza antes de enviar, como todo",
+      "caption": "Esta semana todos comparan antes de comprar 🛍️\nCon tus envíos pasa lo mismo: primero miras, luego decides.\nAsí de fácil es cotizar y enviar a tu familia.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#BlackFriday",
+        "#MigrantesEnChile",
+        "#EnviosDeDinero",
+        "#Venezolanos",
+        "#Peruanos",
+        "#Colombianos",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "grandmother smiling video call phone",
+        "woman happy looking at phone home"
+      ],
+      "escenas": [
+        {
+          "texto": "Esta semana todos buscan ofertas",
+          "resalta": "ofertas"
+        },
+        {
+          "texto": "Pero lo más importante sigue siendo la familia",
+          "resalta": "familia"
+        },
+        {
+          "texto": "Así de cerca: un envío a quien más quieres",
+          "resalta": "cerca"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "La familia primero, siempre",
+      "caption": "Entre tanta oferta, lo que más cuenta sigue siendo la familia 💙\nUn envío a tiempo también es un detalle que se siente.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#BlackFriday",
+        "#LaFamiliaPrimero",
+        "#MigrantesEnChile",
+        "#EnviosDeDinero",
+        "#Venezuela",
+        "#Peru",
+        "#Colombia"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-16-2",
+    "fecha": "2026-11-16",
+    "titulo": "Salario mínimo 2027 en Colombia: a planificar el año",
+    "tipo": "noticia",
+    "publico": "Colombianos en Chile y venezolanos en Colombia",
+    "senal": {
+      "texto": "Se conforma la mesa de concertación y empresas apuestan por cuánto subirán los salarios en 2027",
+      "pais": "CO",
+      "url": ""
+    },
+    "porque": "El salario mínimo define el presupuesto de muchas familias, y quien envía dinero también planifica su año.",
+    "gancho_envio": "Así como el país planifica el año, tú organizas tus envíos con calma.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "people walking busy city street latin america",
+        "person writing budget in notebook with phone"
+      ],
+      "escenas": [
+        {
+          "texto": "Ya se habla del salario mínimo de 2027",
+          "resalta": "2027"
+        },
+        {
+          "texto": "Todos empiezan a planificar el año que viene",
+          "resalta": "planificar"
+        },
+        {
+          "texto": "Organiza también tus envíos a la familia",
+          "resalta": "envíos"
+        }
+      ],
+      "duracion": 11,
+      "musica": "positivo",
+      "remate": "Así de fácil se planifica un envío",
+      "caption": "Ya se habla del salario mínimo de 2027 en Colombia 📊\nEs buen momento para pensar cómo organizar el año y los envíos a tu familia.\nCotiza antes y envía con calma en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#SalarioMinimo",
+        "#Colombia",
+        "#MigrantesEnChile",
+        "#EnviosDeDinero",
+        "#Planificacion",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "co06.jpg",
+      "titulo": "Organiza tus envíos del año en 3 pasos",
+      "pasos": [
+        "Define cuánto quieres enviar cada mes",
+        "Cotiza en vezmoney.com y mira cuánto recibe tu familia",
+        "Confirma con calma desde tu celular"
+      ],
+      "remate": "Así de fácil se organiza",
+      "musica": "positivo",
+      "caption": "Planificar tus envíos es más fácil de lo que parece 📱\nTres pasos y tu familia lo agradece.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#EnviosDeDinero",
+        "#Colombia",
+        "#MigrantesEnChile",
+        "#Ahorro",
+        "#Remesas",
+        "#TipsDeDinero"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-16-3",
+    "fecha": "2026-11-16",
+    "titulo": "Ya huele a diciembre venezolano",
+    "tipo": "fecha",
+    "publico": "Venezolanos en Chile, Perú y Colombia",
+    "senal": {
+      "texto": "Arranca la temporada decembrina: gaitas, hallacas y reuniones en familia",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Para un venezolano, noviembre ya es gaitas y Navidad, y la distancia se siente más.",
+    "gancho_envio": "Así de cerca sientes la Navidad de casa, y así de fácil acompañas con un envío.",
+    "publicar_el": "2026-11-20",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "christmas lights street at night",
+        "family gathering living room dancing"
+      ],
+      "escenas": [
+        {
+          "texto": "Suenan las gaitas y ya es temporada",
+          "resalta": "gaitas"
+        },
+        {
+          "texto": "Diciembre se siente aunque estés lejos",
+          "resalta": "lejos"
+        },
+        {
+          "texto": "Acompaña a los tuyos con un envío fácil",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 11,
+      "musica": "gaita",
+      "remate": "La Navidad se siente más cerca",
+      "caption": "Suenan las gaitas y la Navidad venezolana ya se siente 🎶\nAunque estés lejos, puedes acompañar a los tuyos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Gaitas",
+        "#NavidadVenezolana",
+        "#Venezolanos",
+        "#MigrantesEnChile",
+        "#EnviosDeDinero",
+        "#Diciembre"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "family dinner table christmas decorations",
+        "woman cooking in kitchen smiling"
+      ],
+      "escenas": [
+        {
+          "texto": "En diciembre la mesa siempre tiene un lugar",
+          "resalta": "lugar"
+        },
+        {
+          "texto": "Aunque no estés, tu familia te piensa",
+          "resalta": "piensa"
+        },
+        {
+          "texto": "Un envío también te sienta a su mesa",
+          "resalta": "mesa"
+        }
+      ],
+      "duracion": 11,
+      "musica": "emotivo",
+      "remate": "La familia primero, también a distancia",
+      "caption": "En diciembre, la mesa familiar guarda un lugar para ti 🎄\nUn envío es una forma de estar presente.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Navidad",
+        "#LaFamiliaPrimero",
+        "#Venezolanos",
+        "#Peruanos",
+        "#Colombianos",
+        "#MigrantesEnChile"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-16-4",
+    "fecha": "2026-11-16",
+    "titulo": "¿Tu familia está en Ecuador? Así se cotiza",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile con familia en Ecuador",
+    "senal": {
+      "texto": "Contenido útil permanente sobre cómo cotizar un envío",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Mucha gente no sabe que puede cotizar a Ecuador desde Chile en pocos pasos.",
+    "gancho_envio": "Así de fácil es cotizar tu envío a Ecuador antes de enviar.",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "cotizar",
+      "destino": "Ecuador",
+      "titulo": "Cómo cotizar de Chile a Ecuador",
+      "remate": "Cotiza y envía en vezmoney.com",
+      "nota": "Revisa el monto que recibe tu familia antes de confirmar.",
+      "musica": "positivo",
+      "caption": "¿Tu familia está en Ecuador? 🇪🇨\nAsí cotizas tu envío desde Chile, paso a paso y desde el celular.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Ecuador",
+        "#EnviosDeDinero",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#ChileEcuador",
+        "#TutorialVezMoney"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "hands using smartphone close up",
+        "woman smiling at phone outdoors street"
+      ],
+      "escenas": [
+        {
+          "texto": "¿Tienes familia en Ecuador?",
+          "resalta": "Ecuador"
+        },
+        {
+          "texto": "Cotizas desde el celular, sin vueltas",
+          "resalta": "celular"
+        },
+        {
+          "texto": "Así de fácil es acompañarlos",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "latino_alegre",
+      "remate": "Cotiza antes de enviar",
+      "caption": "Desde el celular y sin vueltas 📱\nCotiza tu envío a Ecuador y ve cuánto recibe tu familia antes de confirmar.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Ecuador",
+        "#EnviosDeDinero",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#FamiliaEnEcuador"
+      ]
+    }
+  }
+]
