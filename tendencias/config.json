@@ -2,7 +2,7 @@
   "zona": "America/Santiago",
   "ideasPorDia": 4,
   "ventanaNoticiasDias": 2,
-  "maxDiasFrescura": 3,
+  "maxDiasFrescura": 7,
   "horizonteFechasDias": 10,
   "repo": "vezmoney/vezmoney-bot",
   "geosTendencias": [
@@ -135,5 +135,25 @@
       "top": 6
     },
     "hashtagsPorDia": 4
+  },
+  "corridaSemanal": {
+    "activa": true,
+    "dia": "Wed",
+    "ideas": 33,
+    "lote": 11,
+    "ventanaNoticiasDias": 7,
+    "maxDescargas": 14,
+    "videos": {
+      "hashtagsPorDia": 7,
+      "porHashtag": 6,
+      "top": 12,
+      "maxDias": 8
+    },
+    "videosInstagram": {
+      "cuentasPorDia": 36,
+      "reelsPorCuenta": 4,
+      "top": 16,
+      "maxDias": 8
+    }
   }
 }

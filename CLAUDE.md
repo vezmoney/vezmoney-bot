@@ -36,7 +36,7 @@ Las analogías «así de seguro / así de rápido / así de fácil» son estilo 
 ## Cómo es una buena idea
 - Que un migrante la **entienda en 2 segundos** y la quiera compartir o comentar.
 - Que la analogía con enviar dinero sea **natural** (no forzada). Si no se puede conectar bien, no la propongas.
-- Frescura: la tendencia debe tener **máximo 3 días**. Las fechas especiales se proponen con anticipación.
+- Frescura: la tendencia debe tener **máximo 7 días** (la búsqueda es semanal, los miércoles: 33 ideas para elegir). Las fechas especiales se proponen con anticipación.
 - Variedad: mezcla fútbol/cultura, humor, noticia útil, fecha especial y dato práctico. No repitas el ángulo de las ideas recientes.
 
 ## Estrategia: SIEMPRE VIDEO (decisión de Francisco, 9-nov-2026)

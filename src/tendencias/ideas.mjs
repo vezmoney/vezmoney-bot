@@ -12,7 +12,10 @@ const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, ...
 const cfg = JSON.parse(fs.readFileSync("tendencias/config.json", "utf8"));
 const fotos = JSON.parse(fs.readFileSync("tendencias/fotos.json", "utf8"));
 const fechas = JSON.parse(fs.readFileSync("tendencias/fechas-especiales.json", "utf8"));
-const N = Number(args.n ?? cfg.ideasPorDia);
+// Desde el 16-nov-2026 la búsqueda es SEMANAL (miércoles) y más amplia: más hashtags, todas las cuentas de Instagram, noticias de 7 días y 33 ideas (en lotes de 11).
+const SEMANAL = !args.manual, S = cfg.corridaSemanal || {};
+if (SEMANAL && S.activa) { cfg.ventanaNoticiasDias = S.ventanaNoticiasDias ?? 7; Object.assign(cfg.videos, S.videos || {}); Object.assign(cfg.videos.instagram, S.videosInstagram || {}); }
+const N = Number(args.n ?? (SEMANAL && S.activa ? S.ideas : cfg.ideasPorDia)), LOTE = Number(S.lote || 11), MAXDESC = SEMANAL && S.activa ? Number(S.maxDescargas || 14) : 4;
 const ahora = new Date(), hoy = ahora.toLocaleDateString("sv-SE", { timeZone: cfg.zona });
 const diasHasta = (f) => Math.round((Date.UTC(...f.split("-").map((x, i) => (i === 1 ? x - 1 : +x))) - Date.UTC(...hoy.split("-").map((x, i) => (i === 1 ? x - 1 : +x)))) / 86400000);
 
@@ -48,7 +51,7 @@ if (TOKEN && cfg.videos) {
     const tt = args.manual ? String(args.manual).match(/https:\/\/\S*(?:tiktok|instagram)\.com\/\S+/)?.[0] : null;
     if (args.manual) { if (tt) videos = [{ tipo: "video", plataforma: plataformaDe(tt) ?? "TikTok", url: tt, autor: tt.match(/@([^/?]+)/)?.[1] ?? "", titulo: String(args.manual).slice(0, 160), vistas: "—", duracion: 0 }]; }
     else videos = await videosEnTendencia(cfg, TOKEN);
-    for (const [n, v] of videos.slice(0, 4).entries()) { try { await prepararVideo(v, n + 1); } catch (e) { fallos.push(`video ${v.url}: ${e.message}`); } }
+    for (const [n, v] of videos.slice(0, MAXDESC).entries()) { try { await prepararVideo(v, n + 1); } catch (e) { fallos.push(`video ${v.url}: ${e.message}`); } }
   } catch (e) { fallos.push("videos: " + e.message); }
 }
 console.log(`Videos candidatos: ${videos.length} (con fotogramas: ${videos.filter((v) => v.fotogramas?.length).length})`);
@@ -57,9 +60,10 @@ const proximas = fechas.fechas.filter((f) => { const d = diasHasta(f.fecha); ret
 // ── prompt ──────────────────────────────────────────────────────────────
 const linea = (s) => `- [${s.tipo}${s.pais ? " " + s.pais : ""}] ${s.titulo}${s.medio ? " (" + s.medio + ")" : ""}${s.trafico ? " · búsquedas " + s.trafico : ""}${s.contexto?.length ? " · contexto: " + s.contexto.join(" / ") : ""}${s.url ? " · " + s.url : ""}`;
 const catalogo = Object.entries({ ...fotos.personas, ...fotos.lugares_y_cosas }).map(([k, v]) => `${k}: ${v}`).join("\n");
-const prompt = `Hoy es ${hoy} (hora de Chile). Lee CLAUDE.md y sigue SUS reglas al pie de la letra.
+const SEMANAL_TXT = "CORRIDA SEMANAL: esta es la ÚNICA búsqueda de la semana (se hace los miércoles) y Francisco elegirá solo las mejores, así que propón ideas para publicar durante las PRÓXIMAS 2 SEMANAS, no solo para hoy: usa «publicar_el» (AAAA-MM-DD) en las que dependan de un día y evita temas que caduquen en un par de días. Mezcla muy bien: unas con video real de creadores pequeños, tutoriales propios (cotizar a cada destino, pasos), videos animados con fotos reales, humor, cultura, las fechas y feriados de estas dos semanas y datos útiles. Prioriza calidad y variedad por encima de cantidad y no repitas ideas entre sí. ";
+const armar = (K, ya = []) => `Hoy es ${hoy} (hora de Chile). Lee CLAUDE.md y sigue SUS reglas al pie de la letra.
 
-${args.manual ? `Francisco (el usuario) te pasó por Telegram esto para convertirlo en contenido:\n${linea(senales[0])}\n\nPropón exactamente 1 idea basada en eso.${videos.length ? " Francisco ELIGIÓ ese video: la decisión es suya y ya está tomada. NO lo vetes ni lo cambies por otra cosa: úsalo SIEMPRE como REEL en la pieza_b, con el estilo y el audio que mejor calcen (mira los fotogramas antes). Si ves algo delicado o el video hace publicidad a un local o marca, déjalo anotado en «nota_revision» (y sensibilidad «media») para que él lo revise, minimiza la marca con inicio y duracion cuando puedas, pero igual arma el reel completo." : ""}` : `Estas son las señales de HOY (tendencias de búsqueda y noticias de las últimas ${cfg.ventanaNoticiasDias} días). Muchas NO sirven (son sensibles o irrelevantes): descártalas sin comentar.\n${senales.map(linea).join("\n")}\n\nFechas especiales próximas:\n${proximas.length ? proximas.map((f) => `- ${f.fecha} (en ${f.en_dias} días): ${f.nombre}${f.nota ? " — " + f.nota : ""}${f.cierre ? " · " + f.cierre : ""}`).join("\n") : "- ninguna en los próximos días"}\n\nRecurrente: fin de mes y quincena son días de pago, cuando más gente envía dinero a casa.\n\nPropón ${N} ideas, mezcladas (tendencia/cultura/humor, noticia útil, fecha especial si hay una cerca, y un evergreen si hace falta). Si hay menos señales buenas que ${N}, propón menos: nunca rellenes con ideas flojas o forzadas.`}
+${args.manual ? `Francisco (el usuario) te pasó por Telegram esto para convertirlo en contenido:\n${linea(senales[0])}\n\nPropón exactamente 1 idea basada en eso.${videos.length ? " Francisco ELIGIÓ ese video: la decisión es suya y ya está tomada. NO lo vetes ni lo cambies por otra cosa: úsalo SIEMPRE como REEL en la pieza_b, con el estilo y el audio que mejor calcen (mira los fotogramas antes). Si ves algo delicado o el video hace publicidad a un local o marca, déjalo anotado en «nota_revision» (y sensibilidad «media») para que él lo revise, minimiza la marca con inicio y duracion cuando puedas, pero igual arma el reel completo." : ""}` : `Estas son las señales de ${SEMANAL && S.activa ? "ESTA SEMANA" : "HOY"} (tendencias de búsqueda y noticias de las últimas ${cfg.ventanaNoticiasDias} días). Muchas NO sirven (son sensibles o irrelevantes): descártalas sin comentar.\n${senales.map(linea).join("\n")}\n\nFechas especiales próximas:\n${proximas.length ? proximas.map((f) => `- ${f.fecha} (en ${f.en_dias} días): ${f.nombre}${f.nota ? " — " + f.nota : ""}${f.cierre ? " · " + f.cierre : ""}`).join("\n") : "- ninguna en los próximos días"}\n\nRecurrente: fin de mes y quincena son días de pago, cuando más gente envía dinero a casa.\n\n${SEMANAL && S.activa ? SEMANAL_TXT : ""}Propón ${K} ideas, mezcladas (tendencia/cultura/humor, noticia útil, fecha especial si hay una cerca, y un evergreen si hace falta). Si hay menos señales buenas que ${K}, propón menos: nunca rellenes con ideas flojas o forzadas.`}
 
 ${videos.length ? `VIDEOS REALES EN TENDENCIA (TikTok e Instagram). Los que tienen "fotogramas" se bajaron: ABRE esos archivos con la herramienta Read ANTES de decidir y juzga por lo que VES, no por el título (a veces el título no coincide con el video).
 ${videos.map((v, n) => `- #${n + 1} [${v.plataforma}] @${v.autor} · ${v.vistas} vistas · ${v.duracion}s · ${v.fecha ?? "hoy"} · audio: ${v.audio_original === false ? `CANCIÓN COMERCIAL${v.cancion ? " («" + v.cancion + "»)" : ""}` : v.audio_original === true ? "sonido original del creador" : "desconocido"} · "${v.titulo}" · ${v.url}\n  fotogramas: ${(v.fotogramas || []).join(", ") || "(no disponibles: no lo uses)"}`).join("\n")}
@@ -69,7 +73,7 @@ TUTORIAL (video dinámico propio: foto real de fondo, teléfono con capturas rea
 TUTORIAL INFORMATIVO A PARTIR DE UN VIDEO EN TENDENCIA: cuando un video de la lista sea INFORMATIVO (visas, trámites, requisitos, migración, noticias útiles para migrantes) y tenga vistas, NO lo republiques con su crédito: toma la INFORMACIÓN (no sus palabras, su guion ni sus imágenes) y conviértela en un tutorial propio, con nuestra marca y hablándole a la comunidad, SIN mencionar ni dar crédito a esa cuenta (no copiamos su video ni su texto: solo la información, dicha con palabras nuestras). Reglas obligatorias para temas migratorios o legales: (a) VERIFICA los datos con las herramientas de búsqueda en fuentes OFICIALES (Servicio Nacional de Migraciones y Extranjería de Chile, PDI, Migraciones del Perú, Migración Colombia, etc.) y usa solo lo que confirmes; si no puedes confirmarlo, NO hagas el tutorial; (b) agrega "tema":"migratorio", "fuente_oficial":"URL https oficial que confirma los datos" y una "nota" que diga que es información referencial y que se confirma siempre en el sitio oficial; (c) sin promesas ni asesoría legal (nada de «te aprueban» ni «garantizado»), solo información; (d) plazos, montos y requisitos tal como figuran en la fuente oficial; (e) el giro hacia VezMoney va solo en el remate, sin forzarlo; (f) pon "sensibilidad":"media" y en "nota_revision" lo que Francisco debe comprobar antes de aprobar. Para videos de humor, emoción o cultura, en cambio, sigue usando el reel con crédito.
 REGLA DE ORO DE LA VERDAD VISUAL (video animado): si un texto nombra un lugar, una persona, un equipo, un evento o una obra CONCRETOS (Viña del Mar, la Vinotinto, Tomás Rincón, un teleférico, una artista), lo que se ve DEBE ser eso y no un clip genérico: en la "busqueda" de esa escena pon "commons:<nombre concreto>" (busca fotos REALES con licencia abierta en Wikimedia Commons, p. ej. "commons:Teleférico Bicentenario Santiago" o "commons:Tomás Rincón"; el crédito se agrega solo); si dudas de que exista esa foto, no nombres lo concreto: escribe el texto en términos generales. Nunca pongas un nombre propio sobre un clip de stock que no lo muestra. Las escenas genéricas siguen usando consultas en inglés para clips de stock.
 Si el tema de un video real no calza, no lo fuerces: crea un tutorial o un animado.\n\n` : ""}Ideas ya propuestas en los últimos días (NO las repitas ni uses el mismo ángulo):
-${historial.slice(-30).map((h) => "- " + h).join("\n") || "- (ninguna)"}
+${[...historial.slice(-30), ...ya].map((h) => "- " + h).join("\n") || "- (ninguna)"}
 
 Fotos disponibles para la plantilla "meme" (solo para casos excepcionales de imagen fija; usa solo estos nombres de archivo):
 ${catalogo}
@@ -78,9 +82,9 @@ Si la idea tiene un día ideal de publicación (un meme de «viernes», una fech
 Responde SOLO con el JSON {"ideas":[...]} descrito en CLAUDE.md, sin texto adicional.`;
 
 // ── Claude + validación (un reintento si algo no cumple) ────────────────
-async function pedir(extra = "") {
+async function pedir(K, ya, extra = "") {
   const conFotos = videos.some((v) => v.fotogramas?.length);
-  const txt = claude(prompt + extra, { maxTurns: 24, timeoutMin: 20, tools: ["Read", "WebSearch", "WebFetch"] });
+  const txt = claude(armar(K, ya) + extra, { maxTurns: SEMANAL && S.activa ? 40 : 24, timeoutMin: 25, tools: ["Read", "WebSearch", "WebFetch"] });
   const { ideas } = extraerJSON(txt);
   const malas = [];
   for (const i of ideas) for (const L of ["pieza_a", "pieza_b"]) { const e = validar(i[L]); if (e.length) malas.push(`«${i.titulo}» ${L}: ${e.join("; ")}`); if (i[L]?.plantilla === "meme" && i[L].foto && !{ ...fotos.personas, ...fotos.lugares_y_cosas }[i[L].foto]) malas.push(`«${i.titulo}» ${L}: la foto ${i[L].foto} no existe en el catálogo`); }
@@ -92,9 +96,18 @@ async function pedir(extra = "") {
   if (est > tope) malas.push(`Hay ${est} piezas de imagen fija y el tope es ${tope} (1 de cada 5): conviértelas en video (reel con video real de la lista o animado).`);
   return { ideas, malas };
 }
-let { ideas, malas } = await pedir();
-if (malas.length) { console.log("Corrigiendo:", malas); ({ ideas, malas } = await pedir(`\n\nTu respuesta anterior tuvo estos problemas, corrígelos todos y devuelve el JSON completo otra vez:\n${malas.join("\n")}`)); }
-if (malas.length) { console.warn("Quedaron problemas, descarto esas ideas:", malas); ideas = ideas.filter((i) => ["pieza_a", "pieza_b"].every((L) => !validar(i[L]).length)); }
+// Se pide en lotes (11 por llamada) para que cada respuesta quepa completa; cada lote ve los títulos ya propuestos para no repetir.
+let ideas = [];
+while (ideas.length < N) {
+  const K = Math.min(LOTE, N - ideas.length), ya = ideas.map((i) => `${i.titulo} — ${i.gancho_envio}`);
+  let lote = [], malas = [];
+  try { ({ ideas: lote, malas } = await pedir(K, ya)); } catch (e) { console.warn("Un lote falló:", e.message); if (ideas.length) break; throw e; }
+  if (malas.length) { console.log("Corrigiendo:", malas); try { ({ ideas: lote, malas } = await pedir(K, ya, `\n\nTu respuesta anterior tuvo estos problemas, corrígelos todos y devuelve el JSON completo otra vez:\n${malas.join("\n")}`)); } catch (e) { console.warn("El reintento falló:", e.message); } }
+  if (malas.length) { console.warn("Quedaron problemas, descarto esas ideas:", malas); lote = lote.filter((i) => ["pieza_a", "pieza_b"].every((L) => !validar(i[L]).length)); }
+  if (!lote.length) break;
+  ideas.push(...lote);
+}
+ideas = ideas.slice(0, N);
 
 // ── guardar y enviar ────────────────────────────────────────────────────
 const archivo = `tendencias/ideas/${hoy}${args.manual ? "-manual-" + Date.now().toString(36) : ""}.json`;
@@ -106,13 +119,17 @@ console.log(`Señales: ${senales.length} (fallos: ${fallos.length}) · ideas nue
 for (const i of salida) console.log(`\n[${i.id}] ${i.tipo} · ${i.titulo}\n  por qué: ${i.porque}\n  gancho: ${i.gancho_envio}\n  A (${i.pieza_a.plantilla}): ${JSON.stringify(i.pieza_a).slice(0, 220)}\n  B (${i.pieza_b.plantilla}): ${JSON.stringify(i.pieza_b).slice(0, 220)}`);
 
 if (!args.dry && !args.manual && videos.length && process.env.WORKER_URL && process.env.ADMIN_KEY) {
-  const lista = videos.map((v, n) => `${n + 1}. [${v.plataforma}] @${v.autor} · ${Number(v.vistas || 0).toLocaleString("es-CL")} vistas · ${v.duracion}s · ${v.fecha}\n   ${v.titulo.slice(0, 80)}\n   ${v.url}`).join("\n");
+  const lista = videos.slice(0, 18).map((v, n) => `${n + 1}. [${v.plataforma}] @${v.autor} · ${Number(v.vistas || 0).toLocaleString("es-CL")} vistas · ${v.duracion}s · ${v.fecha}\n   ${v.titulo.slice(0, 80)}\n   ${v.url}`).join("\n");
   const r = await fetch(process.env.WORKER_URL.replace(/\/$/, "") + "/admin/aviso", { method: "POST", headers: { "X-Admin-Key": process.env.ADMIN_KEY, "content-type": "application/json" }, body: JSON.stringify({ texto: `🎬 VIDEOS EN TENDENCIA de hoy (TikTok e Instagram)\n\n${lista}\n\nSi alguno te sirve, responde aquí con:\n/idea <enlace del video>\ny te armo la idea con el reel (gancho arriba, crédito al autor y remate de VezMoney).` }) });
   console.log("Aviso de videos", r.status);
 }
 if (!args.dry && process.env.WORKER_URL && process.env.ADMIN_KEY) {
+  const pausa = (ms) => new Promise((ok) => setTimeout(ok, ms)), W = process.env.WORKER_URL.replace(/\/$/, "");
+  if (SEMANAL && S.activa && salida.length > 3) await fetch(W + "/admin/aviso", { method: "POST", headers: { "X-Admin-Key": process.env.ADMIN_KEY, "content-type": "application/json" }, body: JSON.stringify({ texto: `📅 CORRIDA SEMANAL (miércoles): ${salida.length} ideas para elegir. Aprueba solo las que quieras publicar; las que no decidas se archivan solas a los 7 días. Te las voy mandando de a una.` }) }).catch(() => {});
   for (const i of salida) {
-    const r = await fetch(process.env.WORKER_URL.replace(/\/$/, "") + "/admin/idea", { method: "POST", headers: { "X-Admin-Key": process.env.ADMIN_KEY, "content-type": "application/json" }, body: JSON.stringify({ id: i.id, idea: i }) });
+    let r;
+    for (let t = 0; t < 4; t++) { r = await fetch(W + "/admin/idea", { method: "POST", headers: { "X-Admin-Key": process.env.ADMIN_KEY, "content-type": "application/json" }, body: JSON.stringify({ id: i.id, idea: i }) }); if (r.status !== 502 && r.status !== 429) break; await pausa(15000); } // Telegram admite ~20 mensajes por minuto en un grupo
     console.log("Telegram", i.id, r.status);
+    if (salida.length > 5) await pausa(3500);
   }
 } else console.log("\n(modo prueba: no se envió a Telegram)");
