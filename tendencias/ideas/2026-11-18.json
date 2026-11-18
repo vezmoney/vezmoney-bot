@@ -1,0 +1,2061 @@
+[
+  {
+    "id": "2026-11-18-1",
+    "fecha": "2026-11-18",
+    "titulo": "¿Tu familia está en Argentina? Así se cotiza",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile con familia en Argentina",
+    "senal": {
+      "texto": "Contenido útil permanente: cotizar el envío a cada destino",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Quien envía a Argentina quiere ver cuánto recibe su familia antes de confirmar.",
+    "gancho_envio": "Así de fácil es cotizar tu envío a Argentina antes de enviar.",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "cotizar",
+      "destino": "Argentina",
+      "titulo": "Así cotizas tu envío a Argentina",
+      "remate": "Cotiza y envía en vezmoney.com",
+      "musica": "positivo",
+      "caption": "¿Tu familia está en Argentina? 🇦🇷\nMira en segundos cuánto recibirían antes de confirmar.\nAsí de fácil es cotizar desde tu celular.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#EnviarDinero",
+        "#Argentina",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#FamiliaPrimero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "ar02.jpg",
+      "titulo": "Tres pasos para enviar a Argentina",
+      "pasos": [
+        "Entra a vezmoney.com y elige Argentina",
+        "Escribe el monto y revisa lo que recibe tu familia",
+        "Confirma tus datos y envía desde el celular"
+      ],
+      "remate": "Tu apoyo llega a casa",
+      "musica": "latino_alegre",
+      "caption": "Enviar a Argentina no tiene que ser complicado 💙\nTres pasos, todo desde el celular.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Argentina",
+        "#EnviarDinero",
+        "#Migrantes",
+        "#TutorialVezMoney",
+        "#Chile"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-2",
+    "fecha": "2026-11-18",
+    "titulo": "¿Tu familia está en Estados Unidos? Así se cotiza",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile con familia en EE. UU.",
+    "senal": {
+      "texto": "Contenido útil permanente: cotizar el envío a cada destino",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Mucha gente tiene familia repartida y quiere saber cuánto recibe cada uno.",
+    "gancho_envio": "Así de fácil es cotizar tu envío a Estados Unidos antes de enviar.",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "cotizar",
+      "destino": "Estados Unidos",
+      "titulo": "Así cotizas tu envío a Estados Unidos",
+      "remate": "Cotiza y envía en vezmoney.com",
+      "musica": "positivo",
+      "caption": "¿Tienes familia en Estados Unidos? 🇺🇸\nCotiza desde tu celular y mira cuánto recibirían antes de confirmar.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#EstadosUnidos",
+        "#EnviarDinero",
+        "#Remesas",
+        "#MigrantesEnChile",
+        "#FamiliaPrimero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "person using smartphone on a city street",
+        "hands typing on phone close up",
+        "family video call on smartphone"
+      ],
+      "escenas": [
+        {
+          "texto": "Tu familia está lejos",
+          "resalta": "lejos"
+        },
+        {
+          "texto": "Pero tu apoyo puede ir directo",
+          "resalta": "directo"
+        },
+        {
+          "texto": "Así de fácil: cotizas y envías",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "Cotiza y envía en vezmoney.com",
+      "caption": "La distancia no cambia lo importante 💙\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#EnviarDinero",
+        "#FamiliaPrimero",
+        "#Migrantes",
+        "#Remesas",
+        "#Chile"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-3",
+    "fecha": "2026-11-18",
+    "titulo": "Llegó el sueldo: primero la familia",
+    "tipo": "fecha",
+    "publico": "Migrantes en Chile que envían a fin de mes",
+    "senal": {
+      "texto": "Fin de mes es día de pago y cuando más gente envía dinero a casa",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "A fin de mes llega el sueldo y se organiza el envío a la familia.",
+    "gancho_envio": "Así de fácil es ordenar tu envío apenas llega el pago.",
+    "publicar_el": "2026-11-30",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "person happy looking at phone notification",
+        "woman checking phone and smiling at home",
+        "hands holding smartphone close up"
+      ],
+      "escenas": [
+        {
+          "texto": "Llegó el sueldo y el celular vibra",
+          "resalta": "sueldo"
+        },
+        {
+          "texto": "Las ganas de gastar tocan la puerta",
+          "resalta": "ganas"
+        },
+        {
+          "texto": "Pero primero la familia en casa",
+          "resalta": "familia"
+        },
+        {
+          "texto": "Así de fácil: cotizas y envías",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "humor",
+      "remate": "Cotiza y envía en vezmoney.com",
+      "caption": "Fin de mes: tú vs. tus ganas de gastar 😅\nPrimero la familia, después lo demás.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#FinDeMes",
+        "#DiaDePago",
+        "#MigrantesEnChile",
+        "#Humor",
+        "#EnviarDinero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s08.jpg",
+      "titulo": "Día de pago: deja tu envío listo",
+      "pasos": [
+        "Cotiza en vezmoney.com con tu monto",
+        "Revisa lo que recibe tu familia",
+        "Confirma y listo, sin salir de casa"
+      ],
+      "remate": "Tu familia primero",
+      "musica": "positivo",
+      "caption": "Día de pago, envío ordenado 💙\nTres pasos desde el celular.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#FinDeMes",
+        "#EnviarDinero",
+        "#TutorialVezMoney",
+        "#Migrantes",
+        "#Chile"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-4",
+    "fecha": "2026-11-18",
+    "titulo": "Acción de Gracias: gracias a quienes te apoyan",
+    "tipo": "fecha",
+    "publico": "Migrantes con familia en EE. UU. y quienes valoran la gratitud",
+    "senal": {
+      "texto": "Día de Acción de Gracias en Estados Unidos, jueves 26 de noviembre",
+      "pais": "US",
+      "url": ""
+    },
+    "porque": "Es una fecha para agradecer a la familia, muy sentida entre migrantes.",
+    "gancho_envio": "Así de fácil es decir gracias con un envío.",
+    "publicar_el": "2026-11-26",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "family dinner table gathering warm light",
+        "grandmother smiling at phone",
+        "hands holding hands close up"
+      ],
+      "escenas": [
+        {
+          "texto": "Hoy es día de dar gracias",
+          "resalta": "gracias"
+        },
+        {
+          "texto": "A quien te cuidó desde lejos",
+          "resalta": "cuidó"
+        },
+        {
+          "texto": "A quien te espera en casa",
+          "resalta": "casa"
+        },
+        {
+          "texto": "Así de fácil: dilo con un envío",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "emotivo",
+      "remate": "Cotiza y envía en vezmoney.com",
+      "caption": "Gracias a quienes están, aunque sea a la distancia 🧡\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#AccionDeGracias",
+        "#Gratitud",
+        "#FamiliaPrimero",
+        "#Migrantes",
+        "#EnviarDinero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s20.jpg",
+      "titulo": "Di gracias con un envío",
+      "pasos": [
+        "Cotiza en vezmoney.com",
+        "Elige el monto que quieres enviar",
+        "Confirma y acompaña a los tuyos"
+      ],
+      "remate": "La familia primero",
+      "musica": "emotivo",
+      "caption": "Un gracias también se envía 💙\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Gratitud",
+        "#EnviarDinero",
+        "#Familia",
+        "#TutorialVezMoney",
+        "#Migrantes"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-5",
+    "fecha": "2026-11-18",
+    "titulo": "Se acerca el finde: deja tu envío listo a tiempo",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile que envían el fin de semana",
+    "senal": {
+      "texto": "Dato práctico: horario de atención y domingo cerrado",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Saber el horario evita dejar el envío para última hora.",
+    "gancho_envio": "Así de tranquilo es enviar cuando lo planeas con tiempo.",
+    "publicar_el": "2026-11-20",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "ap02.jpg",
+      "titulo": "Horario para tu envío",
+      "pasos": [
+        "Atención de lunes a viernes, 8:30 a 20:00",
+        "Sábado hasta las 16:00, hora de Chile",
+        "Domingo cerrado: deja tu envío listo antes"
+      ],
+      "nota": "Horario de atención en hora de Chile.",
+      "remate": "Planifica y envía con calma",
+      "musica": "positivo",
+      "caption": "Anota el horario y evita las corridas 🗓️\nLunes a viernes 8:30–20:00 y sábado hasta 16:00 (hora de Chile).\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Horario",
+        "#EnviarDinero",
+        "#FinDeSemana",
+        "#MigrantesEnChile",
+        "#Chile"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "person looking at wristwatch rushing",
+        "woman relaxed on couch with phone",
+        "hands typing on phone close up"
+      ],
+      "escenas": [
+        {
+          "texto": "El sábado se pasa volando",
+          "resalta": "sábado"
+        },
+        {
+          "texto": "Y el domingo no hay atención",
+          "resalta": "domingo"
+        },
+        {
+          "texto": "Planifica y envía con calma",
+          "resalta": "calma"
+        },
+        {
+          "texto": "Así de fácil es dejarlo listo",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 11,
+      "musica": "humor",
+      "remate": "Cotiza y envía en vezmoney.com",
+      "caption": "Que no te agarre el domingo 😅\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#FinDeSemana",
+        "#Humor",
+        "#Migrantes",
+        "#EnviarDinero",
+        "#Chile"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-6",
+    "fecha": "2026-11-18",
+    "titulo": "Revisa dos veces los datos de quien recibe",
+    "tipo": "evergreen",
+    "publico": "Migrantes que envían dinero a sus familias",
+    "senal": {
+      "texto": "Dato práctico permanente: verificar nombre y datos del destinatario",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Un dato mal escrito puede retrasar el envío; revisarlo es un hábito útil.",
+    "gancho_envio": "Así de seguro es enviar cuando revisas todo antes de confirmar.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "person carefully reading phone screen",
+        "hands holding smartphone close up",
+        "man double checking notes at table"
+      ],
+      "escenas": [
+        {
+          "texto": "Un dato mal escrito lo cambia todo",
+          "resalta": "dato"
+        },
+        {
+          "texto": "Revisa el nombre de quien recibe",
+          "resalta": "nombre"
+        },
+        {
+          "texto": "Revisa dos veces y confirma",
+          "resalta": "dos"
+        },
+        {
+          "texto": "Así de seguro se envía con calma",
+          "resalta": "seguro"
+        }
+      ],
+      "duracion": 11,
+      "musica": "gancho_urbano",
+      "remate": "Cotiza y envía en vezmoney.com",
+      "caption": "Un minuto de revisión te ahorra dolores de cabeza 👀\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#TipDeEnvio",
+        "#EnviarDinero",
+        "#Migrantes",
+        "#Remesas",
+        "#Chile"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s19.jpg",
+      "titulo": "Antes de confirmar, revisa esto",
+      "pasos": [
+        "El nombre completo de quien recibe",
+        "Que los datos coincidan con su cuenta",
+        "El monto que recibirá tu familia"
+      ],
+      "remate": "Revisa y envía con calma",
+      "musica": "positivo",
+      "caption": "Tres cosas para revisar antes de confirmar 💙\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#TipDeEnvio",
+        "#TutorialVezMoney",
+        "#EnviarDinero",
+        "#Migrantes",
+        "#Chile"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-7",
+    "fecha": "2026-11-18",
+    "titulo": "El almuerzo de domingo que se extraña",
+    "tipo": "evergreen",
+    "publico": "Venezolanos, peruanos y colombianos en Chile",
+    "senal": {
+      "texto": "Nostalgia por la comida casera y los domingos en familia",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "La mesa familiar del domingo es de lo que más extrañan los migrantes.",
+    "gancho_envio": "Así de cerca se siente la mesa de casa, y así de fácil acompañas con un envío.",
+    "publicar_el": "2026-11-22",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "family sitting at lunch table laughing",
+        "hands cooking in a home kitchen",
+        "grandmother serving food at table"
+      ],
+      "escenas": [
+        {
+          "texto": "Domingo y el olor a sazón de casa",
+          "resalta": "sazón"
+        },
+        {
+          "texto": "Esa mesa llena que tanto extrañas",
+          "resalta": "mesa"
+        },
+        {
+          "texto": "Hoy te toca acompañarlos desde lejos",
+          "resalta": "lejos"
+        },
+        {
+          "texto": "Así de fácil: con un envío",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "emotivo",
+      "remate": "Cotiza y envía en vezmoney.com",
+      "caption": "¿Qué plato de casa extrañas más hoy? 🍲\nCuéntanos en los comentarios.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Domingo",
+        "#ComidaDeCasa",
+        "#Nostalgia",
+        "#Migrantes",
+        "#FamiliaPrimero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "ln_arepa.jpg",
+      "titulo": "Domingo en familia, aunque sea a distancia",
+      "pasos": [
+        "Cotiza en vezmoney.com",
+        "Elige el monto para tu familia",
+        "Confirma y que disfruten la mesa"
+      ],
+      "remate": "La mesa de casa, más cerca",
+      "musica": "latino_alegre",
+      "caption": "Que la mesa del domingo no se sienta tan lejos 💙\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Domingo",
+        "#ComidaDeCasa",
+        "#Migrantes",
+        "#EnviarDinero",
+        "#Familia"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-8",
+    "fecha": "2026-11-18",
+    "titulo": "«¿Ya comiste?»: la pregunta de mamá",
+    "tipo": "evergreen",
+    "publico": "Migrantes con mamá en el país de origen",
+    "senal": {
+      "texto": "Humor compartido sobre las mamás latinas que siempre preguntan lo mismo",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Todo migrante se identifica con la llamada de mamá y su pregunta de siempre.",
+    "gancho_envio": "Así de fácil le respondes a mamá: con cariño y un envío.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "woman talking on phone call smiling kitchen",
+        "mother and daughter video call smartphone",
+        "man laughing while talking on phone"
+      ],
+      "escenas": [
+        {
+          "texto": "Suena el celular: es mamá",
+          "resalta": "mamá"
+        },
+        {
+          "texto": "Primera pregunta: ¿ya comiste?",
+          "resalta": "comiste"
+        },
+        {
+          "texto": "Siempre pregunta lo mismo y la queremos",
+          "resalta": "queremos"
+        },
+        {
+          "texto": "Así de fácil: respóndele con un envío",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "humor",
+      "remate": "Cotiza y envía en vezmoney.com",
+      "caption": "Mamá siempre pregunta lo mismo 😂💙\nEtiqueta a quien le pasa igual.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Mama",
+        "#HumorMigrante",
+        "#Familia",
+        "#Migrantes",
+        "#EnviarDinero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s10.jpg",
+      "titulo": "Para mamá, aunque estés lejos",
+      "pasos": [
+        "Cotiza en vezmoney.com",
+        "Elige cuánto quieres enviarle",
+        "Confirma y cuéntale que ya va en camino"
+      ],
+      "remate": "Mamá primero",
+      "musica": "emotivo",
+      "caption": "Una llamada y un envío: así se cuida a mamá 💙\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Mama",
+        "#TutorialVezMoney",
+        "#Familia",
+        "#EnviarDinero",
+        "#Migrantes"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-9",
+    "fecha": "2026-11-18",
+    "titulo": "Chile y Colombia empataron 0-0: en casa nadie pierde",
+    "tipo": "tendencia",
+    "publico": "Colombianos y chilenos en Chile",
+    "senal": {
+      "texto": "Chile y Colombia igualaron sin goles en el último amistoso del año en Santiago",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Chilenos y colombianos comparten casa, trabajo y conversación, y el partido da tema para el chat familiar.",
+    "gancho_envio": "Así de fácil: en casa todos ganan cuando la familia está acompañada con un envío.",
+    "publicar_el": "2026-11-19",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "friends watching soccer match on tv living room",
+        "people cheering on couch at home"
+      ],
+      "escenas": [
+        {
+          "texto": "Chile y Colombia empataron sin goles",
+          "resalta": "empataron"
+        },
+        {
+          "texto": "En casa, cada uno con su camiseta",
+          "resalta": "camiseta"
+        },
+        {
+          "texto": "Pero la familia siempre va primero",
+          "resalta": "primero"
+        },
+        {
+          "texto": "Así de fácil es enviar: gana toda la familia",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 11,
+      "musica": "humor",
+      "remate": "Gana toda la familia con un envío fácil",
+      "caption": "0-0 en la cancha, pero en casa seguimos siendo equipo ⚽\nChilenos, colombianos y venezolanos: la rivalidad es de un rato, la familia es de siempre.\nAsí de fácil es enviar a los tuyos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#ChileColombia",
+        "#Futbol",
+        "#MigrantesEnChile",
+        "#Colombianos",
+        "#Remesas",
+        "#FamiliaPrimero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "family group chat on smartphone smiling",
+        "woman laughing while texting on phone at home"
+      ],
+      "escenas": [
+        {
+          "texto": "0 a 0 en la cancha",
+          "resalta": "0"
+        },
+        {
+          "texto": "Pero en el chat familiar siempre hay goles",
+          "resalta": "goles"
+        },
+        {
+          "texto": "Así de rápido llega un mensaje de casa",
+          "resalta": "rápido"
+        },
+        {
+          "texto": "Y así de fácil le respondes con un envío",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 11,
+      "musica": "latino_alegre",
+      "remate": "Responde a casa con un envío fácil",
+      "caption": "El partido terminó sin goles, pero el chat de la familia no para 😄\nAsí de rápido llega un mensaje de casa, y así de fácil es responderle con un envío.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#ChatFamiliar",
+        "#Migrantes",
+        "#HumorLatino",
+        "#Remesas",
+        "#EnvioDeDinero",
+        "#FamiliaUnida"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-10",
+    "fecha": "2026-11-18",
+    "titulo": "La hallaca se arma entre todos",
+    "tipo": "fecha",
+    "publico": "Venezolanos en Chile, Perú y Colombia",
+    "senal": {
+      "texto": "Se acerca la temporada de hallacas y las compras de diciembre",
+      "pais": "VE",
+      "url": ""
+    },
+    "porque": "Las hallacas son el símbolo de la Navidad venezolana y se extrañan más lejos de casa.",
+    "gancho_envio": "Así como en la hallaca todos aportan, un envío suma para que la mesa de casa se arme.",
+    "publicar_el": "2026-11-25",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "hands wrapping tamales in banana leaves kitchen",
+        "family cooking together in kitchen"
+      ],
+      "escenas": [
+        {
+          "texto": "La hallaca se arma entre todos",
+          "resalta": "todos"
+        },
+        {
+          "texto": "Uno guisa, otro corta, otro amarra",
+          "resalta": "amarra"
+        },
+        {
+          "texto": "Si estás lejos, también puedes aportar",
+          "resalta": "aportar"
+        },
+        {
+          "texto": "Así de fácil sumas con un envío",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "gaita",
+      "remate": "Suma a la mesa de casa con un envío fácil",
+      "caption": "En diciembre la hallaca no se hace sola: se arma entre todos 🫔\nSi estás lejos, tu aporte también cuenta.\nAsí de fácil es sumar a la mesa de casa.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Hallacas",
+        "#NavidadVenezolana",
+        "#VenezolanosEnChile",
+        "#VenezolanosEnPeru",
+        "#VenezolanosEnColombia",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "grocery shopping fresh vegetables market",
+        "family christmas dinner table"
+      ],
+      "escenas": [
+        {
+          "texto": "La lista del mercado de diciembre crece",
+          "resalta": "crece"
+        },
+        {
+          "texto": "Y tu familia ya la está armando",
+          "resalta": "armando"
+        },
+        {
+          "texto": "Ayúdalos a llegar con calma",
+          "resalta": "calma"
+        },
+        {
+          "texto": "Cotiza hoy y envía con tranquilidad",
+          "resalta": "hoy"
+        }
+      ],
+      "duracion": 11,
+      "musica": "emotivo",
+      "remate": "Ayuda a que diciembre llegue con calma",
+      "caption": "La lista de diciembre crece cada semana y la familia ya está planeando 🎄\nOrganiza tu apoyo con tiempo y sin estrés.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Diciembre",
+        "#NavidadEnFamilia",
+        "#Migrantes",
+        "#Remesas",
+        "#EnvioDeDinero",
+        "#FamiliaPrimero"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-11",
+    "fecha": "2026-11-18",
+    "titulo": "¿Cuándo puedes enviar? Nuestro horario",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile",
+    "senal": {
+      "texto": "Dato práctico del servicio",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Saber el horario evita sorpresas cuando necesitas enviar.",
+    "gancho_envio": "Así de fácil es planificar: conoces el horario y envías con calma.",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s15.jpg",
+      "titulo": "¿Cuándo puedes enviar con VezMoney?",
+      "pasos": [
+        "Lunes a viernes de 8:30 a 20:00, hora de Chile",
+        "Sábados hasta las 16:00, hora de Chile",
+        "Domingos cerrado: cotiza y planifica"
+      ],
+      "remate": "Planifica y envía con calma",
+      "nota": "Horarios de atención en hora de Chile.",
+      "musica": "positivo",
+      "caption": "¿Cuándo puedes enviar? 🗓️\nLunes a viernes de 8:30 a 20:00 y sábados hasta las 16:00, hora de Chile. Los domingos descansamos.\nPlanifica tu envío y listo.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#HorarioDeAtencion",
+        "#EnvioDeDinero",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#DatoUtil"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "person checking phone morning coffee",
+        "woman using smartphone at home"
+      ],
+      "escenas": [
+        {
+          "texto": "Sábado en la mañana, café y celular",
+          "resalta": "sábado"
+        },
+        {
+          "texto": "Ese envío pendiente se resuelve tranquilo",
+          "resalta": "tranquilo"
+        },
+        {
+          "texto": "Recuerda: sábados hasta las 16:00, hora de Chile",
+          "resalta": "16:00"
+        }
+      ],
+      "duracion": 10,
+      "musica": "latino_alegre",
+      "remate": "Deja tu envío resuelto con tiempo",
+      "caption": "El sábado también cuenta ☕\nAtendemos hasta las 16:00, hora de Chile. Deja ese envío pendiente resuelto con calma.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Sabado",
+        "#EnvioDeDinero",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#PlanificaTuEnvio"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-12",
+    "fecha": "2026-11-18",
+    "titulo": "Que nada te cierre el camino hacia los tuyos",
+    "tipo": "noticia",
+    "publico": "Migrantes en Chile",
+    "senal": {
+      "texto": "La Corte Suprema ordenó reabrir el acceso al lago Caburgua, bloqueado con cadenas y candado",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Noticia chilena comentada en todas partes, con una lectura simple: los caminos se despejan.",
+    "gancho_envio": "Así de fácil: el camino hacia tu familia, despejado con un envío.",
+    "publicar_el": "2026-11-19",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "commons:Lago Caburgua"
+      ],
+      "escenas": [
+        {
+          "texto": "Suprema ordena reabrir el camino al lago Caburgua",
+          "resalta": "reabrir"
+        },
+        {
+          "texto": "Un camino cerrado dejaba a otros sin pasar",
+          "resalta": "cerrado"
+        },
+        {
+          "texto": "Que nada te cierre el paso hacia los tuyos",
+          "resalta": "nada"
+        },
+        {
+          "texto": "Así de fácil: el camino a casa, despejado",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "positivo",
+      "remate": "El camino a casa, despejado",
+      "caption": "La Corte Suprema ordenó reabrir el acceso al lago Caburgua 🏞️\nHay caminos que no deben cerrarse, y menos los que te llevan hacia los tuyos.\nAsí de fácil es acompañar a tu familia con un envío.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Caburgua",
+        "#Chile",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#FamiliaPrimero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "scenic lake and mountains road trip",
+        "family walking forest path"
+      ],
+      "escenas": [
+        {
+          "texto": "Hay caminos que se disfrutan en familia",
+          "resalta": "familia"
+        },
+        {
+          "texto": "Y hay distancias que también se acortan",
+          "resalta": "acortan"
+        },
+        {
+          "texto": "Así de fácil llegas a los tuyos con un envío",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "Acorta la distancia con un envío fácil",
+      "caption": "Hay caminos que se caminan juntos y distancias que se acortan con un gesto 💙\nAsí de fácil llegas a los tuyos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#FamiliaUnida",
+        "#Migrantes",
+        "#Remesas",
+        "#EnvioDeDinero",
+        "#ADistancia"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-13",
+    "fecha": "2026-11-18",
+    "titulo": "Un perro te apoya la pata: «aquí estoy»",
+    "tipo": "tendencia",
+    "publico": "Migrantes en Chile",
+    "senal": {
+      "texto": "Veterinario explica qué significa cuando el perro apoya la pata sobre ti: busca cercanía",
+      "pais": "CO",
+      "url": ""
+    },
+    "porque": "Muchos migrantes tienen mascota, o extrañan a la que dejaron en casa; el tema es tierno y compartible.",
+    "gancho_envio": "Así de fácil es decir «aquí estoy» a tu familia: con un envío.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "dog resting paw on owner hand",
+        "dog waiting at front door"
+      ],
+      "escenas": [
+        {
+          "texto": "Un perro apoya la pata: aquí estoy contigo",
+          "resalta": "aquí"
+        },
+        {
+          "texto": "Tu familia también quiere saber que estás",
+          "resalta": "estás"
+        },
+        {
+          "texto": "Un envío dice presente sin palabras",
+          "resalta": "presente"
+        },
+        {
+          "texto": "Así de fácil es acompañarlos",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "emotivo",
+      "remate": "Así de fácil es decir: aquí estoy",
+      "caption": "Cuando tu perro apoya la pata sobre ti, dice: aquí estoy 🐶\nTu familia también necesita saber que estás ahí, aunque estés lejos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Mascotas",
+        "#Perros",
+        "#Migrantes",
+        "#FamiliaPrimero",
+        "#Remesas",
+        "#EnvioDeDinero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "happy puppy greeting owner at door",
+        "dog jumping with joy at home"
+      ],
+      "escenas": [
+        {
+          "texto": "Nadie celebra tu llegada como un perro",
+          "resalta": "perro"
+        },
+        {
+          "texto": "Tu familia también te espera igual",
+          "resalta": "espera"
+        },
+        {
+          "texto": "Acompáñalos con un envío, así de fácil",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "humor",
+      "remate": "Acompaña a los tuyos con un envío fácil",
+      "caption": "Nadie te recibe como un perro 😂🐕\nY en casa, tu familia te espera igual de feliz.\nAcompáñalos con un envío, así de fácil.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#HumorLatino",
+        "#Perros",
+        "#Migrantes",
+        "#Remesas",
+        "#FamiliaUnida"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-14",
+    "fecha": "2026-11-18",
+    "titulo": "Estafas con IA: verifica antes de enviar",
+    "tipo": "noticia",
+    "publico": "Migrantes en Chile, Perú y Colombia",
+    "senal": {
+      "texto": "El FBI advierte que la IA ayuda a hackers a lanzar ciberataques más rápido",
+      "pais": "CO",
+      "url": ""
+    },
+    "porque": "Los mensajes falsos con apariencia real son cada vez más comunes y afectan a quien envía dinero.",
+    "gancho_envio": "Así de seguro es enviar cuando verificas y entras directo a vezmoney.com.",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "f04.jpg",
+      "titulo": "Antes de pagar, protege tu envío",
+      "pasos": [
+        "Entra siempre desde vezmoney.com",
+        "Desconfía de mensajes que te apuran",
+        "Revisa los datos de quien recibe"
+      ],
+      "remate": "Así de seguro es enviar con cuidado",
+      "nota": "Nunca compartas claves ni códigos con nadie.",
+      "musica": "positivo",
+      "caption": "Los mensajes falsos cada vez parecen más reales, incluso con ayuda de IA 🛡️\nAntes de enviar: entra directo a vezmoney.com, no te apures y revisa los datos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#SeguridadDigital",
+        "#EstafasOnline",
+        "#EnvioDeDinero",
+        "#Migrantes",
+        "#Remesas",
+        "#DatoUtil"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "woman reading suspicious message on smartphone",
+        "man checking website on laptop"
+      ],
+      "escenas": [
+        {
+          "texto": "Un mensaje apurado que te pide dinero",
+          "resalta": "apurado"
+        },
+        {
+          "texto": "Respira y verifica antes de enviar",
+          "resalta": "verifica"
+        },
+        {
+          "texto": "Entra directo a vezmoney.com",
+          "resalta": "directo"
+        }
+      ],
+      "duracion": 10,
+      "musica": "positivo",
+      "remate": "Verifica, cotiza y envía con calma",
+      "caption": "¿Un mensaje con mucha prisa? Respira ✋\nVerifica siempre y entra directo a nuestra web.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#SeguridadDigital",
+        "#Verifica",
+        "#Migrantes",
+        "#Remesas",
+        "#EnvioDeDinero"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-15",
+    "fecha": "2026-11-18",
+    "titulo": "Después de enviar: guarda tu comprobante",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile",
+    "senal": {
+      "texto": "Consejo práctico para quien envía dinero",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Tener el comprobante a mano da tranquilidad si la familia pregunta por el envío.",
+    "gancho_envio": "Así de fácil es dejar todo ordenado: envías y guardas tu comprobante.",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s08.jpg",
+      "titulo": "Después de enviar, deja todo ordenado",
+      "pasos": [
+        "Revisa que monto y datos sean correctos",
+        "Guarda el comprobante en tu celular",
+        "Avísale a tu familia que el envío va en camino"
+      ],
+      "remate": "Un buen envío termina con tranquilidad",
+      "nota": "",
+      "musica": "latino_alegre",
+      "caption": "Enviar no termina al confirmar 📲\nGuarda tu comprobante y avísale a tu familia.\nAsí de fácil dejas todo ordenado.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Comprobante",
+        "#EnvioDeDinero",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#DatoUtil"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "mother smiling on video call phone",
+        "woman showing phone screen to camera"
+      ],
+      "escenas": [
+        {
+          "texto": "Enviaste. Ahora, ¿se lo cuentas a mamá?",
+          "resalta": "mamá"
+        },
+        {
+          "texto": "Un comprobante guardado es tranquilidad",
+          "resalta": "tranquilidad"
+        },
+        {
+          "texto": "Así de fácil queda todo ordenado",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "Envía, guarda y cuéntaselo a casa",
+      "caption": "Enviaste y ahora le cuentas a mamá 🥹\nGuarda tu comprobante y avisa en casa.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Mama",
+        "#FamiliaPrimero",
+        "#Migrantes",
+        "#Remesas",
+        "#EnvioDeDinero"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-16",
+    "fecha": "2026-11-18",
+    "titulo": "Arepa venezolana o colombiana: el debate eterno",
+    "tipo": "tendencia",
+    "publico": "Venezolanos y colombianos en Chile",
+    "senal": {
+      "texto": "Comida y cultura compartida entre venezolanos y colombianos",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "El debate de la arepa divierte a ambas comunidades y se comenta solo.",
+    "gancho_envio": "Se discute la arepa, pero enviar a casa es fácil para todos.",
+    "publicar_el": "2026-11-21",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "hands cooking arepas on griddle",
+        "friends eating together at table"
+      ],
+      "escenas": [
+        {
+          "texto": "Arepa venezolana o colombiana: debate eterno",
+          "resalta": "debate"
+        },
+        {
+          "texto": "Cada quien defiende la suya",
+          "resalta": "suya"
+        },
+        {
+          "texto": "Pero en algo todos coincidimos: la familia",
+          "resalta": "familia"
+        },
+        {
+          "texto": "Y enviar a casa es fácil para todos",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "humor",
+      "remate": "Enviar a casa es fácil para todos",
+      "caption": "Arepa venezolana o colombiana: ¿cuál defiendes? 🫓😄\nCada quien con su receta, pero todos con la misma familia en el corazón.\nY enviar a casa es fácil para todos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Arepa",
+        "#HumorLatino",
+        "#VenezolanosEnChile",
+        "#ColombianosEnChile",
+        "#Remesas",
+        "#Cultura"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "stuffing arepa with cheese close up",
+        "family sharing meal laughing"
+      ],
+      "escenas": [
+        {
+          "texto": "Con queso, con carne o con todo",
+          "resalta": "todo"
+        },
+        {
+          "texto": "Cada quien la pide a su manera",
+          "resalta": "manera"
+        },
+        {
+          "texto": "Tu envío también: tú decides cuánto y cuándo",
+          "resalta": "decides"
+        }
+      ],
+      "duracion": 10,
+      "musica": "latino_alegre",
+      "remate": "Tú decides: envía a tu manera",
+      "caption": "Con queso, con carne o con todo 🧀\nCada quien la arma a su manera, y tú decides cómo apoyar a los tuyos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Arepas",
+        "#Cultura",
+        "#Migrantes",
+        "#Remesas",
+        "#EnvioDeDinero"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-17",
+    "fecha": "2026-11-18",
+    "titulo": "Otro cumpleaños lejos de casa",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile, Perú y Colombia",
+    "senal": {
+      "texto": "Fechas familiares que se viven a distancia",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Perderse cumpleaños es de las cosas más sentidas de migrar.",
+    "gancho_envio": "Así de fácil es llegar a su fiesta: con un envío.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "birthday cake with candles family",
+        "woman looking at phone smiling emotional"
+      ],
+      "escenas": [
+        {
+          "texto": "Otro cumpleaños lejos de casa",
+          "resalta": "lejos"
+        },
+        {
+          "texto": "No estás, pero siempre te acuerdas",
+          "resalta": "acuerdas"
+        },
+        {
+          "texto": "Un envío también es un abrazo",
+          "resalta": "abrazo"
+        },
+        {
+          "texto": "Así de fácil es llegar a su fiesta",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 12,
+      "musica": "emotivo",
+      "remate": "Llega a su fiesta con un envío",
+      "caption": "Otro cumpleaños lejos de casa 🎂\nNo estás en la mesa, pero te acuerdas de todos.\nAsí de fácil es llegar a su fiesta.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Cumpleanos",
+        "#FamiliaPrimero",
+        "#Migrantes",
+        "#Remesas",
+        "#EnvioDeDinero",
+        "#ADistancia"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s23.jpg",
+      "titulo": "Cumpleaños en casa: llega con tiempo",
+      "pasos": [
+        "Anota la fecha del cumpleaños en tu celular",
+        "Cotiza unos días antes en vezmoney.com",
+        "Confirma y avisa a tu familia"
+      ],
+      "remate": "Así de fácil es no faltar",
+      "nota": "",
+      "musica": "latino_alegre",
+      "caption": "No te pierdas el cumpleaños de los tuyos 🎉\nAnota la fecha, cotiza con tiempo y avisa en casa.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Cumpleanos",
+        "#FamiliaPrimero",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#PlanificaTuEnvio"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-18",
+    "fecha": "2026-11-18",
+    "titulo": "El 8 de diciembre es feriado: deja tu envío listo",
+    "tipo": "fecha",
+    "publico": "Migrantes en Chile, Perú y Colombia",
+    "senal": {
+      "texto": "El 8 de diciembre (Inmaculada Concepción) es feriado en Chile, Perú y Colombia",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Con un feriado cerca, conviene planificar los envíos con tiempo.",
+    "gancho_envio": "Así de fácil es dejar tu envío listo antes del feriado.",
+    "publicar_el": "2026-12-01",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "family relaxing at home on sofa with phone",
+        "people walking in a sunny city park"
+      ],
+      "escenas": [
+        {
+          "texto": "El 8 de diciembre es feriado en Chile y Perú",
+          "resalta": "feriado"
+        },
+        {
+          "texto": "Planifica y deja tu envío listo antes",
+          "resalta": "listo"
+        },
+        {
+          "texto": "Así de fácil es enviar con tiempo",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "latino_alegre",
+      "remate": "Planifica y envía con calma",
+      "caption": "El 8 de diciembre es feriado en Chile, Perú y Colombia 🎄\nSi quieres que tu familia lo disfrute con tu apoyo, deja todo listo antes.\nAsí de fácil es planificar tu envío.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Feriado",
+        "#8deDiciembre",
+        "#MigrantesEnChile",
+        "#EnviarDinero",
+        "#Remesas",
+        "#Familia"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s15.jpg",
+      "titulo": "Antes del feriado: deja todo listo",
+      "pasos": [
+        "Entra a vezmoney.com desde tu celular",
+        "Elige el país de tu familia y el monto",
+        "Revisa lo que recibirán antes de confirmar"
+      ],
+      "remate": "Planifica y envía con calma",
+      "musica": "positivo",
+      "caption": "Antes del feriado, un minuto de calma 🙌\nTres pasos para dejar tu envío ordenado.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Feriado",
+        "#Tutorial",
+        "#EnviarDinero",
+        "#MigrantesEnChile",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-19",
+    "fecha": "2026-11-18",
+    "titulo": "Noche de velitas: la familia se junta aunque estés lejos",
+    "tipo": "fecha",
+    "publico": "Colombianos en Chile y Perú; familias en Colombia",
+    "senal": {
+      "texto": "El 7 de diciembre es el Día de las Velitas en Colombia, inicio de la Navidad",
+      "pais": "CO",
+      "url": ""
+    },
+    "porque": "Es una tradición muy querida que se extraña lejos de casa.",
+    "gancho_envio": "Aunque estés lejos, estás cerca: un envío también acompaña.",
+    "publicar_el": "2026-12-02",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "candles glowing at night on a sidewalk",
+        "family lighting candles together at home"
+      ],
+      "escenas": [
+        {
+          "texto": "Se acerca la noche de las velitas",
+          "resalta": "velitas"
+        },
+        {
+          "texto": "Aunque estés lejos, estás con ellos",
+          "resalta": "lejos"
+        },
+        {
+          "texto": "Un envío también acompaña a tu familia",
+          "resalta": "acompaña"
+        }
+      ],
+      "duracion": 11,
+      "musica": "emotivo",
+      "remate": "Así de cerca, así de fácil",
+      "caption": "Se acerca la noche de las velitas 🕯️\nLa luz de casa se extraña, pero la familia siempre está cerca.\nAcompáñalos con un envío fácil.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Velitas",
+        "#DiaDeLasVelitas",
+        "#Colombia",
+        "#Navidad",
+        "#Familia",
+        "#MigrantesColombianos"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "woman looking at phone with candle light",
+        "hands holding a lit candle close up"
+      ],
+      "escenas": [
+        {
+          "texto": "¿Quién prende tu velita en casa?",
+          "resalta": "velita"
+        },
+        {
+          "texto": "Ellos lo hacen, tú acompañas desde lejos",
+          "resalta": "acompañas"
+        },
+        {
+          "texto": "La familia primero, siempre",
+          "resalta": "familia"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "La familia primero",
+      "caption": "¿Quién prende tu velita en casa? 🕯️\nTú acompañas desde lejos, y se nota.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Velitas",
+        "#Colombia",
+        "#Navidad",
+        "#FamiliaPrimero",
+        "#Migrantes",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-20",
+    "fecha": "2026-11-18",
+    "titulo": "El tinto de la mañana no se negocia",
+    "tipo": "evergreen",
+    "publico": "Colombianos y venezolanos en Chile",
+    "senal": {
+      "texto": "Cultura cotidiana del café en la comunidad migrante",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "El cafecito de la mañana es un ritual que huele a casa.",
+    "gancho_envio": "Así de fácil como servir tu tinto es cotizar tu envío.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "pouring coffee into a cup in the morning",
+        "hands holding a warm coffee cup by the window"
+      ],
+      "escenas": [
+        {
+          "texto": "El tinto de la mañana no se negocia",
+          "resalta": "tinto"
+        },
+        {
+          "texto": "Aunque estés en Santiago, huele a casa",
+          "resalta": "casa"
+        },
+        {
+          "texto": "Y enviar a tu familia también es fácil",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "latino_alegre",
+      "remate": "Así de fácil, así de nuestro",
+      "caption": "El tinto de la mañana no se negocia ☕\nAunque estés lejos, el cafecito te acerca a casa.\nY enviar a tu familia es igual de fácil.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Tinto",
+        "#Cafe",
+        "#MigrantesEnChile",
+        "#Colombia",
+        "#Venezuela",
+        "#Cultura"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s03.jpg",
+      "titulo": "Con tu café en la mano, cotiza fácil",
+      "pasos": [
+        "Abre vezmoney.com en tu celular",
+        "Cotiza el monto para tu familia",
+        "Confirma tu envío con calma"
+      ],
+      "remate": "Café, celular y listo",
+      "musica": "positivo",
+      "caption": "Café en una mano, celular en la otra ☕📱\nAsí de fácil es cotizar tu envío.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Tutorial",
+        "#Cafe",
+        "#EnviarDinero",
+        "#MigrantesEnChile",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-21",
+    "fecha": "2026-11-18",
+    "titulo": "Navidad con calor: también se vive así en Chile",
+    "tipo": "tendencia",
+    "publico": "Venezolanos, peruanos y colombianos en Chile",
+    "senal": {
+      "texto": "En Chile la Navidad llega en pleno verano, con calor y asados",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Les resulta familiar y divertido: celebrar con calor, lejos de casa.",
+    "gancho_envio": "Cambia el clima, no la familia: acompañar sigue siendo fácil.",
+    "publicar_el": "2026-11-25",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "family barbecue in a sunny backyard",
+        "christmas tree next to a sunny window"
+      ],
+      "escenas": [
+        {
+          "texto": "Navidad en Chile se celebra con calor",
+          "resalta": "calor"
+        },
+        {
+          "texto": "Cambia el clima, no la familia",
+          "resalta": "familia"
+        },
+        {
+          "texto": "Y acompañarlos sigue siendo fácil",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "latino_alegre",
+      "remate": "Así de fácil, haga calor o frío",
+      "caption": "Navidad en pleno verano: así se vive en Chile ☀️🎄\nCambia el clima, pero la familia sigue en el corazón.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Navidad",
+        "#NavidadEnChile",
+        "#MigrantesEnChile",
+        "#Verano",
+        "#Familia",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "friends laughing outdoors in summer clothes",
+        "person wearing a santa hat outdoors in the sun"
+      ],
+      "escenas": [
+        {
+          "texto": "Nochebuena en short: sí, en Chile",
+          "resalta": "short"
+        },
+        {
+          "texto": "Lo importante es quién te acompaña",
+          "resalta": "acompaña"
+        },
+        {
+          "texto": "Envía apoyo a casa de forma fácil",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 9,
+      "musica": "humor",
+      "remate": "La familia primero",
+      "caption": "Nochebuena en short 😎🎅\nAsí se vive la Navidad en Chile.\nLo importante: acompañar a los tuyos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Navidad",
+        "#HumorMigrante",
+        "#MigrantesEnChile",
+        "#Verano",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-22",
+    "fecha": "2026-11-18",
+    "titulo": "Presupuesto de diciembre: ordena tus envíos",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile con familia en origen",
+    "senal": {
+      "texto": "Diciembre concentra gastos y envíos por Navidad y fin de año",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Planificar evita apuros cuando llegan las fiestas.",
+    "gancho_envio": "Así de fácil es llegar tranquilo a Navidad: cotizas y ordenas tu envío.",
+    "publicar_el": "2026-11-23",
+    "pieza_a": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s08.jpg",
+      "titulo": "Diciembre pide planificación",
+      "pasos": [
+        "Anota cuánto quieres enviar esta Navidad",
+        "Elige el día de pago para enviar",
+        "Cotiza antes y revisa lo que recibe tu familia"
+      ],
+      "remate": "Tu Navidad, ordenada",
+      "musica": "positivo",
+      "caption": "Diciembre se llena de gastos 🎁\nUna lista y un plan te dejan tranquilo.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Diciembre",
+        "#Navidad",
+        "#Presupuesto",
+        "#MigrantesEnChile",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "woman using phone at kitchen table making a plan",
+        "hands writing a list in a notebook"
+      ],
+      "escenas": [
+        {
+          "texto": "Diciembre se llena de gastos",
+          "resalta": "gastos"
+        },
+        {
+          "texto": "Haz una lista y ordena tu envío",
+          "resalta": "lista"
+        },
+        {
+          "texto": "Así de fácil es llegar tranquilo a Navidad",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "positivo",
+      "remate": "Planifica y envía con calma",
+      "caption": "Antes de que llegue diciembre, una lista 📝\nOrdena tus gastos y deja tu envío listo.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Diciembre",
+        "#Planificacion",
+        "#Navidad",
+        "#MigrantesEnChile",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-23",
+    "fecha": "2026-11-18",
+    "titulo": "«Ya voy» en versión latina",
+    "tipo": "tendencia",
+    "publico": "Migrantes latinos en Chile",
+    "senal": {
+      "texto": "Humor compartido sobre la puntualidad latina y el «ya voy»",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Todos se ríen porque todos lo hacemos.",
+    "gancho_envio": "Con tu envío no hay que adivinar: cotizas y ves el monto antes de confirmar.",
+    "publicar_el": "2026-11-20",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "person checking watch while waiting outside",
+        "friends laughing together on a street"
+      ],
+      "escenas": [
+        {
+          "texto": "«Ya voy» en latino significa «me estoy bañando»",
+          "resalta": "Ya"
+        },
+        {
+          "texto": "Con tu envío no hay que adivinar",
+          "resalta": "adivinar"
+        },
+        {
+          "texto": "Cotizas y ves el monto antes de confirmar",
+          "resalta": "cotizas"
+        }
+      ],
+      "duracion": 10,
+      "musica": "humor",
+      "remate": "Así de claro es enviar",
+      "caption": "«Ya voy» en latino: capítulo infinito 😂\nLo que sí es claro: cotizas y ves el monto antes de confirmar.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#YaVoy",
+        "#HumorLatino",
+        "#MigrantesEnChile",
+        "#Remesas",
+        "#Humor"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "person running late grabbing keys",
+        "family waiting at a dinner table"
+      ],
+      "escenas": [
+        {
+          "texto": "Hora latina: llegamos a todo con retraso",
+          "resalta": "retraso"
+        },
+        {
+          "texto": "Menos a lo que importa: la familia",
+          "resalta": "familia"
+        },
+        {
+          "texto": "Ahí sí, siempre presentes con un envío",
+          "resalta": "presentes"
+        }
+      ],
+      "duracion": 10,
+      "musica": "humor",
+      "remate": "La familia primero",
+      "caption": "Hora latina: tarde a todo, menos a lo importante 😅\nLa familia siempre primero.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#HoraLatina",
+        "#HumorLatino",
+        "#MigrantesEnChile",
+        "#Familia",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-24",
+    "fecha": "2026-11-18",
+    "titulo": "La Vinotinto cierra el año: la fe sigue",
+    "tipo": "noticia",
+    "publico": "Venezolanos en Chile, Perú y Colombia",
+    "senal": {
+      "texto": "La selección vinotinto cayó 2-0 ante Rusia y cerró su gira sin victorias",
+      "pais": "VE",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYl9FZ2VlendKMHZKUi10M2pSWHNzbmpLV1ZpakFzOW1qYW51VlRWckIxNkFRaUlnbWFBN0FhZnpBZTc4eFZjV2xLMzZCOC01b0gtSER3SWcwdlBRcFpFeWhUdWZQbXotQkVpR0h5MlFzTVdQVVl2bFgyVnJIU1U0LUZjRTZScno1b0ZDWlduVi1sZ05kbXQwWTJ1aXRTU291UHU4LVdWYm5qZXM?oc=5"
+    },
+    "porque": "El fútbol une a los venezolanos, también en las derrotas.",
+    "gancho_envio": "Pase lo que pase, la familia primero: se acompaña con un envío.",
+    "publicar_el": "2026-11-19",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "soccer fans watching a match together at home",
+        "empty soccer stadium seats at dusk"
+      ],
+      "escenas": [
+        {
+          "texto": "La Vinotinto cerró la gira sin victorias",
+          "resalta": "Vinotinto"
+        },
+        {
+          "texto": "Pero la fe de la familia no se pierde",
+          "resalta": "fe"
+        },
+        {
+          "texto": "La familia primero, siempre",
+          "resalta": "familia"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "Cuida a los tuyos",
+      "caption": "La Vinotinto cerró la gira sin victorias.\nSe siente, pero la fe y la familia siguen firmes 💛💙❤️\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Vinotinto",
+        "#Venezuela",
+        "#Futbol",
+        "#MigrantesVenezolanos",
+        "#FamiliaPrimero"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "family sitting together watching tv in a living room",
+        "hands holding a phone in a video call with family"
+      ],
+      "escenas": [
+        {
+          "texto": "Se pierde un partido, no la esperanza",
+          "resalta": "esperanza"
+        },
+        {
+          "texto": "Lo que importa es estar juntos",
+          "resalta": "juntos"
+        },
+        {
+          "texto": "También a la distancia, con un envío",
+          "resalta": "distancia"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "La familia primero",
+      "caption": "Se pierde un partido, no la esperanza 💛\nLo importante es estar juntos, también a la distancia.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Vinotinto",
+        "#Venezuela",
+        "#Esperanza",
+        "#Familia",
+        "#Migrantes"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-25",
+    "fecha": "2026-11-18",
+    "titulo": "La once chilena: pan, té y llamada a casa",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile",
+    "senal": {
+      "texto": "La once es parte de la vida diaria en Chile y muchos migrantes la adoptan",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Es una costumbre chilena que ya sienten como propia.",
+    "gancho_envio": "Así de fácil como una llamada en la once, acompañas con un envío.",
+    "publicar_el": "2026-11-24",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "bread and tea served on a table",
+        "woman talking on the phone in a kitchen"
+      ],
+      "escenas": [
+        {
+          "texto": "La once chilena: pan, té y mil historias",
+          "resalta": "once"
+        },
+        {
+          "texto": "Y siempre hay espacio para llamar a casa",
+          "resalta": "llamar"
+        },
+        {
+          "texto": "Así de fácil acompañas con un envío",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "positivo",
+      "remate": "Así de fácil, así de cerca",
+      "caption": "La once chilena ya es parte de ti 🫖🥖\nPan, té y una llamada a casa.\nTambién acompañas con un envío fácil.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Once",
+        "#OnceChilena",
+        "#MigrantesEnChile",
+        "#Cultura",
+        "#Familia"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "tutorial",
+      "tipo": "pasos",
+      "fondo": "s06.jpg",
+      "titulo": "En la once, también cotizas fácil",
+      "pasos": [
+        "Abre vezmoney.com mientras tomas tu té",
+        "Elige el país y el monto de tu envío",
+        "Revisa lo que recibe tu familia y confirma"
+      ],
+      "remate": "Té, pan y envío listo",
+      "musica": "positivo",
+      "caption": "Té en mano y celular en la otra 🫖📱\nAsí de fácil es cotizar tu envío en la once.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Once",
+        "#Tutorial",
+        "#EnviarDinero",
+        "#MigrantesEnChile",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-26",
+    "fecha": "2026-11-18",
+    "titulo": "Buenos días con flores y glitter: la cadena de la tía",
+    "tipo": "tendencia",
+    "publico": "Migrantes latinos y sus familias",
+    "senal": {
+      "texto": "Humor compartido: los mensajes de buenos días con flores y brillos de la familia",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Todo el mundo tiene una tía o una mamá que los manda.",
+    "gancho_envio": "Respondes con cariño y, cuando puedes, con un envío fácil.",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "flowers in morning sunlight",
+        "woman smiling at her phone in the morning"
+      ],
+      "escenas": [
+        {
+          "texto": "Mamá: buenos días con flores y glitter",
+          "resalta": "glitter"
+        },
+        {
+          "texto": "Cadena de bendiciones: llegó otra más",
+          "resalta": "bendiciones"
+        },
+        {
+          "texto": "Respondes con cariño y un envío fácil",
+          "resalta": "cariño"
+        }
+      ],
+      "duracion": 10,
+      "musica": "humor",
+      "remate": "Así de fácil es responder",
+      "caption": "Buenos días con flores y glitter 🌸✨\nTodos tenemos una mamá o una tía que los manda.\nRespóndele con cariño y un envío fácil.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#BuenosDias",
+        "#HumorLatino",
+        "#MadresLatinas",
+        "#MigrantesEnChile",
+        "#Familia"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "grandmother using a smartphone smiling",
+        "hands typing a message on a phone"
+      ],
+      "escenas": [
+        {
+          "texto": "El meme de la tía que llega a todos los grupos",
+          "resalta": "tía"
+        },
+        {
+          "texto": "Ya lo reenviaste a cinco chats",
+          "resalta": "reenviaste"
+        },
+        {
+          "texto": "Y enviarle apoyo también es fácil",
+          "resalta": "fácil"
+        }
+      ],
+      "duracion": 10,
+      "musica": "humor",
+      "remate": "Así de fácil, así de cercano",
+      "caption": "La tía y sus cadenas: leyenda viva 😂\nCon cariño, y también con un envío.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#HumorLatino",
+        "#Tias",
+        "#MigrantesEnChile",
+        "#Familia",
+        "#Remesas"
+      ]
+    }
+  },
+  {
+    "id": "2026-11-18-27",
+    "fecha": "2026-11-18",
+    "titulo": "No todos pueden viajar a casa en diciembre",
+    "tipo": "evergreen",
+    "publico": "Migrantes en Chile, Perú y Colombia",
+    "senal": {
+      "texto": "Cerca de las fiestas, muchos migrantes no pueden viajar a ver a su familia",
+      "pais": "CL",
+      "url": ""
+    },
+    "porque": "Es un sentimiento real y compartido en diciembre.",
+    "gancho_envio": "Aunque no puedas viajar, tu cariño llega: la familia primero con un envío.",
+    "publicar_el": "2026-11-30",
+    "pieza_a": {
+      "plantilla": "animado",
+      "busqueda": [
+        "traveler walking through an airport terminal",
+        "woman looking out of a window thoughtfully"
+      ],
+      "escenas": [
+        {
+          "texto": "No todos pueden viajar a casa en diciembre",
+          "resalta": "viajar"
+        },
+        {
+          "texto": "Pero tu cariño sí puede llegar",
+          "resalta": "cariño"
+        },
+        {
+          "texto": "La familia primero, también con un envío",
+          "resalta": "familia"
+        }
+      ],
+      "duracion": 11,
+      "musica": "emotivo",
+      "remate": "Cuida a los tuyos",
+      "caption": "No todos podemos viajar a casa en diciembre ✈️💙\nPero el cariño llega, y la familia siempre va primero.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Diciembre",
+        "#Familia",
+        "#MigrantesEnChile",
+        "#Navidad",
+        "#Remesas"
+      ]
+    },
+    "pieza_b": {
+      "plantilla": "animado",
+      "busqueda": [
+        "packing a suitcase at home",
+        "family video call on a laptop smiling"
+      ],
+      "escenas": [
+        {
+          "texto": "La maleta se queda, el corazón viaja",
+          "resalta": "corazón"
+        },
+        {
+          "texto": "Una videollamada y un envío acompañan",
+          "resalta": "acompañan"
+        },
+        {
+          "texto": "Así de cerca sigue tu familia",
+          "resalta": "cerca"
+        }
+      ],
+      "duracion": 10,
+      "musica": "emotivo",
+      "remate": "Así de cerca, así de fácil",
+      "caption": "La maleta se queda, pero el corazón viaja 🧳💙\nUna videollamada y un envío acompañan a los tuyos.\nCotiza y envía en vezmoney.com 💙",
+      "hashtags": [
+        "#VezMoney",
+        "#Diciembre",
+        "#Familia",
+        "#Migrantes",
+        "#Navidad",
+        "#Remesas"
+      ]
+    }
+  }
+]
